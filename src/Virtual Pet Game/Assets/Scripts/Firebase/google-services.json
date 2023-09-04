@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096964355680",
+    "project_id": "virtualpetgame-5727e",
+    "storage_bucket": "virtualpetgame-5727e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096964355680:android:2d8368be4089ea25b83505",
+        "android_client_info": {
+          "package_name": "com.se702.virtualPetGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096964355680-5f5aa44ijacqdojeuneq6cukvqtujjhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXVh11lhMp8MbpTdqTKtvLUfJr14nmDTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096964355680-5f5aa44ijacqdojeuneq6cukvqtujjhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
