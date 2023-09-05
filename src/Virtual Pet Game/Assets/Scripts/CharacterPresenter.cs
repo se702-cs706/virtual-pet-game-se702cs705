@@ -9,8 +9,7 @@ using UnityEngine;
 public class CharacterPresenter : MonoBehaviour
 {
     [Header("Model")]
-    public PlayerMovement _playerMovement;
-
+    [SerializeField] PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +25,36 @@ public class CharacterPresenter : MonoBehaviour
 
     public void MovementKeyPressed(bool forward, bool back, bool left, bool right)
     {
+        float vertialInput = 0;
+        float hotizontalInput = 0;
+        if (forward && !back)
+        {
+            vertialInput = 1;
+        }
+        else if(!forward && back)
+        {
+            vertialInput = -1;
+        }
 
+        if (right && !left)
+        {
+            hotizontalInput = 1;
+        }
+        else if (!right && left)
+        {
+            hotizontalInput = -1;
+        }
+
+        playerMovement.MovementInput(vertialInput, hotizontalInput);
+    }
+
+    public void MovementKeyReleased()
+    {
+        playerMovement.MovementInput(0,0);
     }
 
     public void JumpKeyPressed()
     {
-
+        playerMovement.Jump();
     }
 }

@@ -32,6 +32,10 @@ public class InputView : MonoBehaviour
                         Input.GetKey(KeyLeft), 
                         Input.GetKey(KeyRight));
         }
+        else
+        {
+            characterPresenter.MovementKeyReleased();
+        }
         
         // jump key pressed
         if(Input.GetKeyDown(KeyJump))

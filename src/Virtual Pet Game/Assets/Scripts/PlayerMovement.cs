@@ -6,23 +6,20 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
-    public float groundDrag;
+    [SerializeField] float moveSpeed;
+    [SerializeField] float groundDrag;
 
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
+    [SerializeField] float jumpForce;
+    [SerializeField] float jumpCooldown;
+    [SerializeField] float airMultiplier;
     bool readyToJump;
 
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
-
     [Header("Ground Check")]
-    public float playerHeight;
-    public LayerMask whatIsGround;
+    [SerializeField] float playerHeight;
+    [SerializeField] LayerMask whatIsGround;
     bool grounded;
 
-    public Transform orientation;
+    [SerializeField] Transform orientation;
 
     float horizontalInput;
     float verticalInput;
@@ -41,7 +38,6 @@ public class PlayerMovement : MonoBehaviour
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
-        MyInput();
         SpeedControl();
 
         // handle drag
@@ -57,18 +53,10 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
-    private void MyInput()
+    public void MovementInput(float vertialInput, float hotizontalInput)
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-
-        // when to jump
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
-        {
-            readyToJump = false;
-            Jump();
-            Invoke(nameof(ResetJump), jumpCooldown);
-        }
+        this.verticalInput = vertialInput;
+        this.horizontalInput = hotizontalInput;
     }
 
     private void MovePlayer()
@@ -96,12 +84,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Jump()
+    public void Jump()
     {
+        if (!readyToJump || !grounded)
+        {
+            return;
+        }
+
+        readyToJump = false;
+
         // reset y velocity
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+
+        Invoke(nameof(ResetJump), jumpCooldown);
     }
 
     private void ResetJump()
