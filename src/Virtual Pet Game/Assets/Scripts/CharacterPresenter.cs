@@ -6,22 +6,10 @@ using UnityEngine;
 /// A Presenter component in the MVP,
 /// Takes care of state change in character and moving the character RB.
 /// </summary>
-public class CharacterPresenter : MonoBehaviour
+public class CharacterPresenter : MonoBehaviour, IPresenter
 {
     [Header("Model")]
-    [SerializeField] PlayerMovement playerMovement;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] PlayerController characterController;
 
     public void MovementKeyPressed(bool forward, bool back, bool left, bool right)
     {
@@ -45,16 +33,22 @@ public class CharacterPresenter : MonoBehaviour
             hotizontalInput = -1;
         }
 
-        playerMovement.MovementInput(vertialInput, hotizontalInput);
+        characterController.MovementInput(vertialInput, hotizontalInput);
     }
 
     public void MovementKeyReleased()
     {
-        playerMovement.MovementInput(0,0);
+        characterController.MovementInput(0,0);
     }
 
     public void JumpKeyPressed()
     {
-        playerMovement.Jump();
+        characterController.Jump();
+    }
+
+    public void onModelStateChanged()
+    {
+        var state = characterController.playerState;
+        Debug.Log("CharacterPresenter: Player state changed to: " + state.ToString());
     }
 }

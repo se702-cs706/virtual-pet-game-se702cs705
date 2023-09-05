@@ -3,8 +3,15 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+/// <summary>
+/// Provides the presenter the ability to control the player.
+/// Also holds the player's state;
+/// </summary>
+public class PlayerController : MonoBehaviour
 {
+    [Header("Presenter")]
+    [SerializeField] IPresenter characterPresenter;
+
     [Header("Movement")]
     [SerializeField] float moveSpeed;
     [SerializeField] float groundDrag;
@@ -26,11 +33,14 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
     Rigidbody rb;
 
+    public PlayerState playerState { get; private set; }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         readyToJump = true;
+        playerState = PlayerState.Active;
     }
 
     private void Update()
@@ -104,5 +114,11 @@ public class PlayerMovement : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    public void ChangeState(PlayerState newState)
+    {
+        playerState = newState;
+        characterPresenter.onModelStateChanged();
     }
 }
