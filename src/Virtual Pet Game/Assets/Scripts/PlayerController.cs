@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Interactable;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
@@ -204,14 +205,14 @@ public class PlayerController : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Get the names of the interactions. Interactions should not be public to the presenter
+    /// </summary>
+    /// <returns>
+    /// A list of interaction names. The index matches the interaction index
+    /// </returns>
     public List<string> GetInteractionNames()
     {
-        List<string> names = new List<string>();
-        foreach (var interaction in interactions)
-        {
-            names.Add(interaction.GetName());
-        }
-
-        return names;
+        return interactions.Select(interaction => interaction.GetName()).ToList();
     }
 }
