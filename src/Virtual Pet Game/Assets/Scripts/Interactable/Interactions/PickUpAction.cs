@@ -23,7 +23,7 @@ namespace Interactable.Interactions
 
         public override void Invoke(PlayerController controller)
         {
-            controller.setAction(action);
+            controller.hasBall = true;
             //remove self
             Destroy(_selfRef);
         }

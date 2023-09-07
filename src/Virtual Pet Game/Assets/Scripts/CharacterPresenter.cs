@@ -56,4 +56,9 @@ public class CharacterPresenter : MonoBehaviour, IPresenter
     {
         characterController.Interact(i);
     }
+
+    public void ThrowBallKeyPressed()
+    {
+        characterController.ThrowBall();
+    }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using Interactable;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 /// <summary>
@@ -33,6 +34,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform orientation;
     [SerializeField] Transform headPosition;
     [SerializeField] private Transform headOrientation;
+    
+    [Header("action")]
+    [SerializeField] GameObject BallPrefab;
+    public bool hasBall = false;
 
     public Vector3 getPlayerOrientation()
     {
@@ -49,8 +54,6 @@ public class PlayerController : MonoBehaviour
 
     // interactions with external objects
     private List<Interaction<PlayerController>> interactions;
-    // actions within the player
-    [CanBeNull] private Interaction<PlayerController> action;
     private GameObject lastTargetObj;
     public PlayerState playerState { get; private set; }
 
@@ -181,7 +184,7 @@ public class PlayerController : MonoBehaviour
     /// </returns>
     public bool Interact(int i)
     {
-        if (interactions.Count < i)
+        if (interactions == null || interactions.Count - 1 < i)
         {
             return false;
         }
@@ -191,23 +194,19 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// Performs the current action of the player.
+    /// Throw a ball as a predefined action
     /// </summary>
-    /// <returns>
-    /// True when there is an action to perform.
-    /// False when there is not.
-    /// </returns>
-    public bool PerformAction()
+    public void ThrowBall()
     {
-        if (action)
+        if (!hasBall)
         {
-            action.Invoke(this);
-            return true;
+            return;
         }
-        else
-        {
-            return false;
-        }
+        
+        var ball = Instantiate(BallPrefab, headPosition.position, headOrientation.rotation);
+        ball.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
+        hasBall = false;
+        Debug.Log("thrown ball");
     }
     
     /// <summary>
@@ -219,14 +218,5 @@ public class PlayerController : MonoBehaviour
     public List<string> GetInteractionNames()
     {
         return interactions.Select(interaction => interaction.GetName()).ToList();
-    }
-
-    /// <summary>
-    /// set the action of the player;
-    /// </summary>
-    /// <param name="action">action</param>
-    public void setAction(Interaction<PlayerController> action)
-    {
-        this.action = action;
     }
 }

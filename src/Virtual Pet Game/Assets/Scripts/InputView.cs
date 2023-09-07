@@ -15,6 +15,7 @@ public class InputView : MonoBehaviour
 
     [Header("Interaction")] 
     public KeyCode KeyInteract;
+    public KeyCode KeyThrowBall;
     
     [Header("Presenter")]
     public CharacterPresenter characterPresenter;
@@ -49,6 +50,12 @@ public class InputView : MonoBehaviour
         {
             // TODO make the interaction index dynamic
             characterPresenter.InteractKeyPressed(0);
+        }
+        
+        // throw ball key pressed
+        if (Input.GetKeyDown(KeyThrowBall))
+        {
+            characterPresenter.ThrowBallKeyPressed();
         }
     }
 }
