@@ -35,7 +35,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform headPosition;
     [SerializeField] private Transform headOrientation;
     
-    [Header("action")]
+    [Header("Interactions")]
+    //size of the sphere that checks for interactions
+    [SerializeField] float interactionRadius;
+    // range of the raycast that checks for interactions
+    [SerializeField] float interactionRange;
+    
+    
+    [Header("ThrowBall")]
+    [Serialize] float throwForce;
     [SerializeField] GameObject BallPrefab;
     public bool hasBall = false;
 
@@ -151,7 +159,7 @@ public class PlayerController : MonoBehaviour
 
         // Cast a sphere wrapping character controller 10 meters forward
         // to see if it is about to hit anything.
-        if (Physics.SphereCast(headPosition.position, 1, headOrientation.forward, out hit, 3,layerMask))
+        if (Physics.SphereCast(headPosition.position, interactionRadius, headOrientation.forward, out hit, interactionRange,layerMask))
         {
             GameObject gameObject = hit.collider.gameObject;
             if (gameObject == lastTargetObj)
@@ -203,7 +211,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
         
-        var ball = Instantiate(BallPrefab, headPosition.position, headOrientation.rotation);
+        var ball = Instantiate(BallPrefab, headPosition.position + (headOrientation.forward * 0.2f), headOrientation.rotation);
         ball.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
         hasBall = false;
         Debug.Log("thrown ball");
