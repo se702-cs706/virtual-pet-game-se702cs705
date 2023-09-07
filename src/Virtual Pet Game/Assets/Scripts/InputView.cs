@@ -1,0 +1,61 @@
+using UnityEngine;
+
+/// <summary>
+/// A View component in the MVP pattern.
+/// Used for interpreting inputs from keyboards.
+/// </summary>
+public class InputView : MonoBehaviour
+{
+    [Header("Movement")]
+    public KeyCode KeyForward;
+    public KeyCode KeyBackward;
+    public KeyCode KeyLeft;
+    public KeyCode KeyRight;
+    public KeyCode KeyJump;
+
+    [Header("Interaction")] 
+    public KeyCode KeyInteract;
+    public KeyCode KeyThrowBall;
+    
+    [Header("Presenter")]
+    public CharacterPresenter characterPresenter;
+
+    public void Update()
+    {
+        // key press action
+        if(Input.GetKey(KeyForward) ||
+            Input.GetKey(KeyBackward) || 
+            Input.GetKey(KeyLeft) ||
+            Input.GetKey(KeyRight))
+        {
+            characterPresenter.MovementKeyPressed(
+                        Input.GetKey(KeyForward), 
+                        Input.GetKey(KeyBackward), 
+                        Input.GetKey(KeyLeft), 
+                        Input.GetKey(KeyRight));
+        }
+        else
+        {
+            characterPresenter.MovementKeyReleased();
+        }
+        
+        // jump key pressed
+        if(Input.GetKeyDown(KeyJump))
+        {
+            characterPresenter.JumpKeyPressed();
+        }
+        
+        // interact key pressed
+        if (Input.GetKeyDown(KeyInteract))
+        {
+            // TODO make the interaction index dynamic
+            characterPresenter.InteractKeyPressed(0);
+        }
+        
+        // throw ball key pressed
+        if (Input.GetKeyDown(KeyThrowBall))
+        {
+            characterPresenter.ThrowBallKeyPressed();
+        }
+    }
+}
