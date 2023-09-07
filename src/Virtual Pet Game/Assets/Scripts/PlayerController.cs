@@ -32,7 +32,12 @@ public class PlayerController : MonoBehaviour
     [Header("Positions")]
     [SerializeField] Transform orientation;
     [SerializeField] Transform headPosition;
-    [SerializeField] Transform headOrientation;
+    [SerializeField] private Transform headOrientation;
+
+    public Vector3 getPlayerOrientation()
+    {
+        return headOrientation.forward;
+    }
 
     [Header("Raycast Layermaks")]
     [SerializeField] LayerMask layerMask;
@@ -214,5 +219,14 @@ public class PlayerController : MonoBehaviour
     public List<string> GetInteractionNames()
     {
         return interactions.Select(interaction => interaction.GetName()).ToList();
+    }
+
+    /// <summary>
+    /// set the action of the player;
+    /// </summary>
+    /// <param name="action">action</param>
+    public void setAction(Interaction<PlayerController> action)
+    {
+        this.action = action;
     }
 }
