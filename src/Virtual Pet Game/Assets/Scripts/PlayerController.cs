@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float interactionRadius;
     // range of the raycast that checks for interactions
     [SerializeField] float interactionRange;
+    public bool isTargetingInteractable = false;
     
     
     [Header("ThrowBall")]
@@ -172,11 +173,13 @@ public class PlayerController : MonoBehaviour
 
             if (interactable != null)
             {
+                isTargetingInteractable = true;
                 interactions = interactable.GetInteractions();
             }
         }
         else
         {
+            isTargetingInteractable = false;
             interactions = null;
             lastTargetObj = null;
         }
