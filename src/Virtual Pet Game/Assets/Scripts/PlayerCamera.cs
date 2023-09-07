@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
-    public Transform orientation;
+    [SerializeField] float sensX;
+    [SerializeField] float sensY;
+    [SerializeField] Transform orientation;
 
     float xRotation;
     float yRotation;
