@@ -41,9 +41,10 @@ public class PlayerController : MonoBehaviour
     Vector3 moveDirection;
     Rigidbody rb;
 
-
-    public bool holdingBall = false;
-    [CanBeNull] private IInteractable Target;
+    // interactions with external objects
+    private List<Interaction<PlayerController>> interactions;
+    // actions within the player
+    [CanBeNull] private Interaction<PlayerController> action;
     private GameObject lastTargetObj;
     public PlayerState playerState { get; private set; }
 
@@ -154,22 +155,63 @@ public class PlayerController : MonoBehaviour
 
             if (interactable != null)
             {
-                Debug.Log("got interactable");
-                Target = interactable;
+                interactions = interactable.GetInteractions();
             }
         }
         else
         {
-            Debug.Log("No more interactable");
-            Target = null;
+            interactions = null;
             lastTargetObj = null;
         }
     }
     
-    public void Interact(int i)
+    /// <summary>
+    /// Perform the interaction of index "i"
+    /// </summary>
+    /// <param name="i">index of interaction</param>
+    /// <returns>
+    /// True when the interaction exist.
+    /// False when there is no such index.
+    /// </returns>
+    public bool Interact(int i)
     {
+        if (interactions.Count < i)
+        {
+            return false;
+        }
         // nullable 
-        var interactions = Target?.GetInteractions();
         interactions?[i].Invoke(this);
+        return true;
+    }
+
+    /// <summary>
+    /// Performs the current action of the player.
+    /// </summary>
+    /// <returns>
+    /// True when there is an action to perform.
+    /// False when there is not.
+    /// </returns>
+    public bool PerformAction()
+    {
+        if (action)
+        {
+            action.Invoke(this);
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    public List<string> GetInteractionNames()
+    {
+        List<string> names = new List<string>();
+        foreach (var interaction in interactions)
+        {
+            names.Add(interaction.GetName());
+        }
+
+        return names;
     }
 }

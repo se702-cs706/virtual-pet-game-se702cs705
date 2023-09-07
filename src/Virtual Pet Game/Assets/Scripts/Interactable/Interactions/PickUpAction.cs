@@ -20,7 +20,6 @@ namespace Interactable.Interactions
 
         public override void Invoke(PlayerController controller)
         {
-            controller.holdingBall = true;
             //remove self
             Destroy(_selfRef);
         }
