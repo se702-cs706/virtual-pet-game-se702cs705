@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Interactable;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -26,13 +28,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask whatIsGround;
     bool grounded;
 
+    [Header("Positions")]
     [SerializeField] Transform orientation;
+    [SerializeField] Transform headPosition;
+    [SerializeField] Transform headOrientation;
 
+    [Header("Raycast Layermaks")]
+    [SerializeField] LayerMask layerMask;
+    
     float horizontalInput;
     float verticalInput;
     Vector3 moveDirection;
     Rigidbody rb;
 
+
+    public bool holdingBall = false;
+    [CanBeNull] private IInteractable Target;
+    private GameObject lastTargetObj;
     public PlayerState playerState { get; private set; }
 
     private void Start()
@@ -60,6 +72,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        GetTarget();
         MovePlayer();
     }
 
@@ -120,5 +133,43 @@ public class PlayerController : MonoBehaviour
     {
         playerState = newState;
         characterPresenter.onModelStateChanged();
+    }
+
+    private void GetTarget()
+    {
+        RaycastHit hit;
+
+        // Cast a sphere wrapping character controller 10 meters forward
+        // to see if it is about to hit anything.
+        if (Physics.SphereCast(headPosition.position, 1, headOrientation.forward, out hit, 3,layerMask))
+        {
+            GameObject gameObject = hit.collider.gameObject;
+            if (gameObject == lastTargetObj)
+            {
+                return;
+            }
+
+            lastTargetObj = gameObject;
+            IInteractable interactable = gameObject.GetComponent<InteractableObject>();
+
+            if (interactable != null)
+            {
+                Debug.Log("got interactable");
+                Target = interactable;
+            }
+        }
+        else
+        {
+            Debug.Log("No more interactable");
+            Target = null;
+            lastTargetObj = null;
+        }
+    }
+    
+    public void Interact(int i)
+    {
+        // nullable 
+        var interactions = Target?.GetInteractions();
+        interactions?[i].Invoke(this);
     }
 }

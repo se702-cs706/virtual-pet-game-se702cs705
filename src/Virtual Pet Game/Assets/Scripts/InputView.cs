@@ -15,6 +15,9 @@ public class InputView : MonoBehaviour
     public KeyCode KeyRight;
     public KeyCode KeyJump;
 
+    [Header("Interaction")] 
+    public KeyCode KeyInteract;
+    
     [Header("Presenter")]
     public CharacterPresenter characterPresenter;
 
@@ -41,6 +44,13 @@ public class InputView : MonoBehaviour
         if(Input.GetKeyDown(KeyJump))
         {
             characterPresenter.JumpKeyPressed();
+        }
+        
+        // interact key pressed
+        if (Input.GetKeyDown(KeyInteract))
+        {
+            // TODO make the interaction index dynamic
+            characterPresenter.InteractKeyPressed(0);
         }
     }
 }
