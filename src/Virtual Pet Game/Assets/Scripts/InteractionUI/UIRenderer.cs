@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UIRenderer : MonoBehaviour
@@ -15,18 +14,18 @@ public class UIRenderer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (!controller.isTargetingInteractable)
         {
             // Default case
-            interactPrompt.SetActive(false);
+            interactPrompt.GetComponent<TextMeshProUGUI>().alpha = 0;
             radialMenu.SetActive(false);
         } else
         {
             bool singleAction = controller.interactions.Count <= 1;
 
-            interactPrompt.SetActive(singleAction);
+            interactPrompt.GetComponent<TextMeshProUGUI>().alpha = singleAction ? 1 : 0;
             radialMenu.SetActive(!singleAction);
         }
     }
