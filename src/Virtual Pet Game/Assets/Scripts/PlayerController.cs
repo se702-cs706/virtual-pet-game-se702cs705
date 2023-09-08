@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody rb;
 
     // interactions with external objects
-    private List<Interaction<PlayerController>> interactions;
+    public List<Interaction<PlayerController>> interactions { get; private set; }
     private GameObject lastTargetObj;
     public PlayerState playerState { get; private set; }
 
