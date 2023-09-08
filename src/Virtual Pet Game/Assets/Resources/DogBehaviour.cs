@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+public enum targetBehaviours
+{
+    None = 0,
+    Move = 1,
+    Throw = 2,
+    Sniff = 3
+}
+
 public class DogBehaviour : MonoBehaviour
 {
     private double targetPosX;
@@ -10,6 +18,7 @@ public class DogBehaviour : MonoBehaviour
     private double targetPosZ;
     private int moveSpeed = 2;
     private float[] target = {0f, 0f, 0f};
+    private targetBehaviours targetType = targetBehaviours.Sniff;
     private Vector3 position;
     private float targetTime;
 
@@ -17,6 +26,7 @@ public class DogBehaviour : MonoBehaviour
     void Start()
     {
         Debug.Log("Start");
+        throwToy();
 
     }
 
@@ -26,12 +36,12 @@ public class DogBehaviour : MonoBehaviour
 
         position = GameObject.Find("Capsule Dog").transform.position;
 
-        if (Math.Abs(target[0] - position[0]) > 0.2 || Math.Abs(target[2] - position[2]) > 0.2)
+        if (( Math.Abs(target[0] - position[0]) > 0.2 || Math.Abs(target[2] - position[2]) > 0.2) && targetType == targetBehaviours.Sniff)
         {
 
             move();
 
-        } else
+        } else if (targetType == targetBehaviours.Sniff)
         {
 
             if (targetTime < Time.time)
@@ -46,6 +56,7 @@ public class DogBehaviour : MonoBehaviour
             {
 
                 pickTarget();
+                targetType = targetBehaviours.Sniff;
 
             }
 
@@ -65,6 +76,15 @@ public class DogBehaviour : MonoBehaviour
     {
 
         transform.Translate(new Vector3(moveFunc(target[0], position[0]), 0, moveFunc(target[2], position[2])) * moveSpeed * Time.deltaTime);
+
+    }
+
+    void throwToy()
+    {
+        Rigidbody toy = GameObject.Find("Capsule Toy").GetComponent<Rigidbody>();
+
+        Vector3 toyPos = GameObject.Find("Capsule Toy").transform.position;
+        toy.AddForce(new Vector3(-toyPos[0], 7f, -toyPos[2]) * 1.5f, ForceMode.Impulse);
 
     }
 
