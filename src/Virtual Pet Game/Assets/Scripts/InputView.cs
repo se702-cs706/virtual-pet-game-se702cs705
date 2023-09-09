@@ -16,7 +16,8 @@ public class InputView : MonoBehaviour
     [Header("Interaction")] 
     public KeyCode KeyInteract;
     public KeyCode KeyThrowBall;
-    
+    public KeyCode KeyCloseMenu;
+
     [Header("Presenters")]
     public CharacterPresenter characterPresenter;
     public InteractionUIPresenter interactionUIPresenter;
@@ -46,10 +47,12 @@ public class InputView : MonoBehaviour
             characterPresenter.JumpKeyPressed();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCloseMenu))
         {
             if (interactionUIPresenter.IsMenuOpen())
-                interactionUIPresenter.CloseMenu();
+            {
+                ExitMenuMode();
+            }
         }
         
         // interact key pressed
@@ -69,8 +72,7 @@ public class InputView : MonoBehaviour
                 }
                 else
                 {
-                    interactionUIPresenter.OpenMenu();
-                    // Lock camera
+                    EnterMenuMode();
                 }
             }
         }
@@ -80,5 +82,19 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.ThrowBallKeyPressed();
         }
+    }
+
+    private void EnterMenuMode()
+    {
+        interactionUIPresenter.OpenMenu();
+        // TODO: Lock camera
+        Cursor.visible = true;
+    }
+
+    private void ExitMenuMode()
+    {
+        interactionUIPresenter.CloseMenu();
+        // TODO: Unlock camera
+        Cursor.visible = false;
     }
 }
