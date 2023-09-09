@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InteractionUIPresenter : MonoBehaviour, IPresenter
 {
-    [SerializeField] PlayerController controller;
+    [SerializeField] PlayerController playerController;
 
     [SerializeField] PromptController promptController;
     [SerializeField] RadialMenuController radialMenuController;
@@ -16,22 +16,26 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
     // Update is called once per frame
     void LateUpdate()
     {
-        if (!controller.isTargetingInteractable)
+        if (!playerController.isTargetingInteractable)
         {
             // Default case
             promptController.HideAll();
         } else
         {
-            bool singleAction = controller.interactions.Count <= 1;
-
-            if (singleAction)
+            if (IsSingleAction())
             {
-                promptController.ShowInteract();
+                promptController.SetInteractVisible(true);
             } else
             {
-                promptController.ShowSelect();
+                promptController.SetSelectVisible(!IsMenuOpen());
             }
         }
+    }
+
+    // FIXME: does this belong here?
+    public bool IsSingleAction()
+    {
+        return playerController.interactions.Count <= 1;
     }
 
     public int GetInteractionIndex()
@@ -47,5 +51,20 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
     public void onModelStateChanged()
     {
         Debug.Log("Radial menu change to state: ");
+    }
+
+    public void OpenMenu()
+    {
+        radialMenuController.Show();
+    }
+
+    public void CloseMenu()
+    {
+        radialMenuController.Hide();
+    }
+
+    public bool IsMenuOpen()
+    {
+        return radialMenuController.isVisible;
     }
 }

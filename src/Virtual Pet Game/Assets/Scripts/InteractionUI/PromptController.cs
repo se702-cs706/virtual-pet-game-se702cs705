@@ -22,16 +22,16 @@ public class PromptController : MonoBehaviour
         selectInteractionText.Hide();
     }
 
-    public void ShowInteract()
+    public void SetInteractVisible(bool isVisible)
     {
         HideAll();
-        interactText.Show();
+        interactText.SetVisible(isVisible);
     }
 
-    public void ShowSelect()
+    public void SetSelectVisible(bool isVisible)
     {
         HideAll();
-        selectInteractionText.Show();
+        selectInteractionText.SetVisible(isVisible);
     }
 }
 

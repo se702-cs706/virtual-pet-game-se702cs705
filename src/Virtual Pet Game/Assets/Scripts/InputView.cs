@@ -45,16 +45,36 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.JumpKeyPressed();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (interactionUIPresenter.IsMenuOpen())
+                interactionUIPresenter.CloseMenu();
+        }
         
         // interact key pressed
         if (Input.GetKeyDown(KeyInteract))
         {
-            // TODO make the interaction index dynamic
-            int index = interactionUIPresenter.GetInteractionIndex();
-
-            characterPresenter.InteractKeyPressed(index);
+            if (interactionUIPresenter.IsSingleAction())
+            {
+                characterPresenter.InteractKeyPressed(0);
+            }
+            else
+            {
+                if (interactionUIPresenter.IsMenuOpen())
+                {
+                    // Allow click to select interaction index
+                    int index = interactionUIPresenter.GetInteractionIndex();
+                    characterPresenter.InteractKeyPressed(index);
+                }
+                else
+                {
+                    interactionUIPresenter.OpenMenu();
+                    // Lock camera
+                }
+            }
         }
-        
+
         // throw ball key pressed
         if (Input.GetKeyDown(KeyThrowBall))
         {

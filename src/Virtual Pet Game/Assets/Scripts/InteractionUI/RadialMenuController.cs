@@ -11,20 +11,14 @@ public class RadialMenuController : MonoBehaviour, IInteractionUIElement
     private CanvasGroup canvasGroup;
     public bool isVisible { get; private set; }
 
-    private void Awake()
+    void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Hide();
     }
 
     public int GetInteractionIndex()
@@ -35,8 +29,8 @@ public class RadialMenuController : MonoBehaviour, IInteractionUIElement
 
     public void SetVisible(bool isVisible)
     {
-        canvasGroup.alpha = isVisible ? 1 : 0;
         this.isVisible = isVisible;
+        canvasGroup.alpha = this.isVisible ? 1 : 0;
     }
 
     public void Hide()
