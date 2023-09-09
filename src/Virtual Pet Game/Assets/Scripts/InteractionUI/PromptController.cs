@@ -8,6 +8,7 @@ public class PromptController : MonoBehaviour
 
     [SerializeField] TextUIElement interactText;
     [SerializeField] TextUIElement selectInteractionText;
+    [SerializeField] TextUIElement throwBallText;
 
 
     // Update is called once per frame
@@ -20,18 +21,24 @@ public class PromptController : MonoBehaviour
     {
         interactText.Hide();
         selectInteractionText.Hide();
+        throwBallText.Hide();
     }
+
+
 
     public void SetInteractVisible(bool isVisible)
     {
-        HideAll();
         interactText.SetVisible(isVisible);
     }
 
     public void SetSelectVisible(bool isVisible)
     {
-        HideAll();
         selectInteractionText.SetVisible(isVisible);
+    }
+
+    public void SetThrowBallVisible(bool isVisible)
+    {
+        throwBallText.SetVisible(isVisible);
     }
 }
 

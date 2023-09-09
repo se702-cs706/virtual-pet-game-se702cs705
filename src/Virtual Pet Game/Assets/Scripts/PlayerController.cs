@@ -230,4 +230,9 @@ public class PlayerController : MonoBehaviour
     {
         return interactions.Select(interaction => interaction.GetName()).ToList();
     }
+
+    public bool HasInteractions()
+    {
+        return interactions != null;
+    }
 }

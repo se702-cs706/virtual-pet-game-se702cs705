@@ -4,7 +4,6 @@ using UnityEngine;
 public class InteractionUIPresenter : MonoBehaviour, IPresenter
 {
     [SerializeField] PlayerController playerController;
-
     [SerializeField] PromptController promptController;
     [SerializeField] RadialMenuController radialMenuController;
 
@@ -22,7 +21,7 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
             promptController.HideAll();
         } else
         {
-            if (IsSingleAction())
+            if (playerController.HasInteractions() && IsSingleAction())
             {
                 promptController.SetInteractVisible(true);
             } else
@@ -30,6 +29,8 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
                 promptController.SetSelectVisible(!IsMenuOpen());
             }
         }
+
+        promptController.SetThrowBallVisible(playerController.hasBall);
     }
 
     // FIXME: does this belong here?

@@ -61,4 +61,9 @@ public class CharacterPresenter : MonoBehaviour, IPresenter
     {
         characterController.ThrowBall();
     }
+
+    public bool HasInteractions()
+    {
+        return characterController.HasInteractions();
+    }
 }
