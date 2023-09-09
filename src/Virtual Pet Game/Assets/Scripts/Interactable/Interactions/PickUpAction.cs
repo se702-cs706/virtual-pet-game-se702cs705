@@ -7,7 +7,7 @@ namespace Interactable.Interactions
     {
         [Header("Name")]
         [SerializeField] 
-        string name;
+        new string name;
         [SerializeField] 
         Interaction<PlayerController> action;
         private GameObject _selfRef;

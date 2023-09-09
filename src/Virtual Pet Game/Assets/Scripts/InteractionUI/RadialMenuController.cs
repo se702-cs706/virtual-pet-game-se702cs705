@@ -8,12 +8,12 @@ using UnityEngine;
 public class RadialMenuController : MonoBehaviour, IInteractionUIElement
 {
 
-    private GameObject _selfRef;
+    private CanvasGroup canvasGroup;
     public bool isVisible { get; private set; }
 
     private void Awake()
     {
-        _selfRef = this.gameObject;
+        canvasGroup = GetComponent<CanvasGroup>();
     }
 
     // Start is called before the first frame update
@@ -35,7 +35,7 @@ public class RadialMenuController : MonoBehaviour, IInteractionUIElement
 
     public void SetVisible(bool isVisible)
     {
-        _selfRef.SetActive(isVisible);
+        canvasGroup.alpha = isVisible ? 1 : 0;
         this.isVisible = isVisible;
     }
 
