@@ -1,24 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using TMPro;
 using UnityEngine;
 
-public class InteractPromptController : MonoBehaviour, IInteractionUIElement
+public class TextUIElement : MonoBehaviour, IInteractionUIElement
 {
-
-    private GameObject _selfRef;
-
-
-    // Start is called before the first frame update
-    void Start()
+    GameObject _selfRef;
+    private void Awake()
     {
         _selfRef = this.gameObject;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void SetVisible(bool isVisible)
@@ -36,4 +25,3 @@ public class InteractPromptController : MonoBehaviour, IInteractionUIElement
         SetVisible(true);
     }
 }
-

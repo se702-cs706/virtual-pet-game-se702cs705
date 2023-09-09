@@ -5,7 +5,7 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
 {
     [SerializeField] PlayerController controller;
 
-    [SerializeField] InteractPromptController interactPromptController;
+    [SerializeField] PromptController promptController;
     [SerializeField] RadialMenuController radialMenuController;
 
     // Start is called before the first frame update
@@ -19,14 +19,18 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
         if (!controller.isTargetingInteractable)
         {
             // Default case
-            interactPromptController.Hide();
-            radialMenuController.Hide();
+            promptController.HideAll();
         } else
         {
             bool singleAction = controller.interactions.Count <= 1;
 
-            interactPromptController.SetVisible(singleAction);
-            radialMenuController.SetVisible(!singleAction);
+            if (singleAction)
+            {
+                promptController.ShowInteract();
+            } else
+            {
+                promptController.ShowSelect();
+            }
         }
     }
 
