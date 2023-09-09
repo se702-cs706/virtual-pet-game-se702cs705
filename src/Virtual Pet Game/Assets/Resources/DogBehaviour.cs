@@ -17,16 +17,17 @@ public class DogBehaviour : MonoBehaviour
     private double targetPosY;
     private double targetPosZ;
     private int moveSpeed = 2;
-    private float[] target = {0f, 0f, 0f};
+    private Vector3 target = new Vector3(0f, 0f, 0f);
     private targetBehaviours targetType = targetBehaviours.Sniff;
     private Vector3 position;
-    private float targetTime;
+    private float targetTime = -1f;
+    private Boolean toyThrow = false;
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Start");
-        throwToy();
+        Debug.Log(GameObject.Find("Capsule Dog").transform.eulerAngles);
 
     }
 
@@ -36,7 +37,8 @@ public class DogBehaviour : MonoBehaviour
 
         position = GameObject.Find("Capsule Dog").transform.position;
 
-        if (( Math.Abs(target[0] - position[0]) > 0.2 || Math.Abs(target[2] - position[2]) > 0.2) && targetType == targetBehaviours.Sniff)
+        if (( Math.Abs(target[0] - position[0]) > 0.2 || Math.Abs(target[2] - position[2]) > 0.2) &&
+            (targetType == targetBehaviours.Sniff || targetType == targetBehaviours.Throw))
         {
 
             move();
@@ -55,8 +57,7 @@ public class DogBehaviour : MonoBehaviour
             if (targetTime - Time.time < 0.5f)
             {
 
-                pickTarget();
-                targetType = targetBehaviours.Sniff;
+                pickNewAction();
 
             }
 
@@ -67,6 +68,67 @@ public class DogBehaviour : MonoBehaviour
                     customNormalDist(320f, 1f, 1f, 1.8f, -15f, 0f, targetTime - Time.time), 0f, 0f);
 
             }
+
+        } else if (targetType == targetBehaviours.Throw)
+        {
+
+            if (targetTime < Time.time)
+            {
+
+                Debug.Log("THROW TOY");
+                targetTime = Time.time + 2.5f;
+
+            }
+
+            if (targetTime - Time.time < 0.5f)
+            {
+
+                pickNewAction();
+
+            }
+
+            if (targetTime - Time.time > 0.5)
+            {
+
+                transform.eulerAngles = new Vector3(customNormalDist(240f, 1f, 1f, 2f, -12.5f, 0f, targetTime - Time.time), 0f, 0f);
+
+            }
+
+            if (targetTime - Time.time < 1.9f && targetTime - Time.time > 1.8f && toyThrow == false)
+            {
+
+                throwToy();
+
+            }
+
+        }
+
+    }
+
+    void pickNewAction()
+    {
+
+        var action = UnityEngine.Random.Range(0f, 3f);
+
+        if (action < 1)
+        {
+
+            Debug.Log("Chosen Action: Sniffing");
+            pickTarget();
+            targetType = targetBehaviours.Sniff;
+
+
+        } else if (action < 4)
+        {
+
+            Debug.Log("Chosen Action: Throw Toy");
+            target = GameObject.Find("Capsule Toy").transform.position;
+            target[2] = target[2] + 1.5f;
+            targetType = targetBehaviours.Throw;
+            toyThrow = false;
+
+        } else
+        {
 
         }
 
@@ -85,6 +147,7 @@ public class DogBehaviour : MonoBehaviour
 
         Vector3 toyPos = GameObject.Find("Capsule Toy").transform.position;
         toy.AddForce(new Vector3(-toyPos[0], 7f, -toyPos[2]) * 1.5f, ForceMode.Impulse);
+        toyThrow = true;
 
     }
 
@@ -116,7 +179,7 @@ public class DogBehaviour : MonoBehaviour
             z = -20;
         }
 
-        float[] randomPosition = {x, position[1], z};
+        Vector3 randomPosition = new Vector3(x, position[1], z);
         Debug.Log("Random Position: " + randomPosition[0] + ", " + randomPosition[1] + ", " + randomPosition[2]);
         target = randomPosition;
 
