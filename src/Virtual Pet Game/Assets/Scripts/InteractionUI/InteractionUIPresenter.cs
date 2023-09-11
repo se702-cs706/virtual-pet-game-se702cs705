@@ -33,7 +33,6 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
         promptController.SetThrowBallVisible(playerController.hasBall);
     }
 
-    // FIXME: does this belong here?
     public bool IsSingleAction()
     {
         return playerController.interactions.Count <= 1;
@@ -51,7 +50,7 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
 
     public void onModelStateChanged()
     {
-        Debug.Log("Radial menu change to state: ");
+        Debug.Log("Radial menu change to state isVisible = " + radialMenuController.isVisible);
     }
 
     public void OpenMenu()
