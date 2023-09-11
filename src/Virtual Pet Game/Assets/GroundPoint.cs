@@ -11,13 +11,13 @@ public class GroundPoint : MonoBehaviour
 
     void FixedUpdate()
     {
-        FindGroundPoint(_modelBalancer._groundNormal);
+        FindGroundPoint(Vector3.up);
     }
     
     void FindGroundPoint(Vector3 groundNormal)
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, -groundNormal, out hit, raycastDistance, groundLayer))
+        if (Physics.Raycast(transform.position, -groundNormal, out hit, raycastDistance))
         {
             _groundPoint = hit.point;   
         }
