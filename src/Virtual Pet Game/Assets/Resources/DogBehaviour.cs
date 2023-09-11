@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.AI;
 
 public enum targetBehaviours
 {
@@ -16,18 +17,22 @@ public class DogBehaviour : MonoBehaviour
     private double targetPosX;
     private double targetPosY;
     private double targetPosZ;
-    private int moveSpeed = 2;
     private Vector3 target = new Vector3(0f, 0f, 0f);
     private targetBehaviours targetType = targetBehaviours.Sniff;
     private Vector3 position;
     private float targetTime = -1f;
     private Boolean toyThrow = false;
+    private Vector3 speed;
+    private Vector3 lastPos;
+    private NavMeshAgent agent;
 
     // Start is called before the first frame update
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         Debug.Log("Start");
-        Debug.Log(GameObject.Find("Capsule Dog").transform.eulerAngles);
+        agent.destination = target;
+        lastPos = GameObject.Find("Capsule Dog").transform.position;
 
     }
 
@@ -35,69 +40,74 @@ public class DogBehaviour : MonoBehaviour
     void Update()
     {
 
-        position = GameObject.Find("Capsule Dog").transform.position;
 
-        if (( Math.Abs(target[0] - position[0]) > 0.2 || Math.Abs(target[2] - position[2]) > 0.2) &&
+        position = GameObject.Find("Capsule Dog").transform.position;
+        speed = (position - lastPos) / Time.deltaTime;
+        lastPos = position;
+        Debug.Log(speed);
+
+        if ((Math.Abs(target[0] - position[0]) < 0.2 && Math.Abs(target[2] - position[2]) < 0.2) &&
             (targetType == targetBehaviours.Sniff || targetType == targetBehaviours.Throw))
         {
 
-            move();
-
-        } else if (targetType == targetBehaviours.Sniff)
-        {
-
-            if (targetTime < Time.time)
+            if (targetType == targetBehaviours.Sniff)
             {
 
-                Debug.Log("SNIFF SNIFF");
-                targetTime = Time.time + 3.5f;
+                if (targetTime < Time.time)
+                {
+
+                    Debug.Log("SNIFF SNIFF");
+                    targetTime = Time.time + 3.5f;
+
+                }
+
+                if (targetTime - Time.time < 0.5f)
+                {
+
+                    pickNewAction();
+
+                }
+
+                if (targetTime - Time.time > 0.5)
+                {
+
+                    transform.eulerAngles = new Vector3(customNormalDist(320f, 1f, 1f, 2.6f, -15f, 0f, targetTime - Time.time) +
+                        customNormalDist(320f, 1f, 1f, 1.8f, -15f, 0f, targetTime - Time.time), 0f, 0f);
+
+                }
 
             }
-
-            if (targetTime - Time.time < 0.5f)
+            else if (targetType == targetBehaviours.Throw)
             {
 
-                pickNewAction();
+                if (targetTime < Time.time)
+                {
 
-            }
+                    Debug.Log("THROW TOY");
+                    targetTime = Time.time + 2.5f;
 
-            if (targetTime - Time.time > 0.5)
-            {
+                }
 
-                transform.eulerAngles = new Vector3(customNormalDist(320f, 1f, 1f, 2.6f, -15f, 0f, targetTime - Time.time) +
-                    customNormalDist(320f, 1f, 1f, 1.8f, -15f, 0f, targetTime - Time.time), 0f, 0f);
+                if (targetTime - Time.time < 0.5f)
+                {
 
-            }
+                    pickNewAction();
 
-        } else if (targetType == targetBehaviours.Throw)
-        {
+                }
 
-            if (targetTime < Time.time)
-            {
+                if (targetTime - Time.time > 0.5)
+                {
 
-                Debug.Log("THROW TOY");
-                targetTime = Time.time + 2.5f;
+                    transform.eulerAngles = new Vector3(customNormalDist(240f, 1f, 1f, 2f, -12.5f, 0f, targetTime - Time.time), 0f, 0f);
 
-            }
+                }
 
-            if (targetTime - Time.time < 0.5f)
-            {
+                if (targetTime - Time.time < 1.9f && targetTime - Time.time > 1.8f && toyThrow == false)
+                {
 
-                pickNewAction();
+                    throwToy();
 
-            }
-
-            if (targetTime - Time.time > 0.5)
-            {
-
-                transform.eulerAngles = new Vector3(customNormalDist(240f, 1f, 1f, 2f, -12.5f, 0f, targetTime - Time.time), 0f, 0f);
-
-            }
-
-            if (targetTime - Time.time < 1.9f && targetTime - Time.time > 1.8f && toyThrow == false)
-            {
-
-                throwToy();
+                }
 
             }
 
@@ -116,6 +126,7 @@ public class DogBehaviour : MonoBehaviour
             Debug.Log("Chosen Action: Sniffing");
             pickTarget();
             targetType = targetBehaviours.Sniff;
+            agent.destination = target;
 
 
         } else if (action < 4)
@@ -126,18 +137,12 @@ public class DogBehaviour : MonoBehaviour
             target[2] = target[2] + 1.5f;
             targetType = targetBehaviours.Throw;
             toyThrow = false;
+            agent.destination = target;
 
         } else
         {
 
         }
-
-    }
-
-    void move()
-    {
-
-        transform.Translate(new Vector3(moveFunc(target[0], position[0]), 0, moveFunc(target[2], position[2])) * moveSpeed * Time.deltaTime);
 
     }
 
