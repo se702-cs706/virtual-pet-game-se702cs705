@@ -11,7 +11,6 @@ public class ModelBalancer : MonoBehaviour
     [SerializeField] private GroundPoint _groundPointFront;
     [SerializeField] private GroundPoint _groundPointBack;
     
-
     public Vector3 GroundNormal { get; private set; } = Vector3.up;
 
     // Update is called once per frame
