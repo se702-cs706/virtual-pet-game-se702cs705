@@ -24,7 +24,11 @@ public class ModelBalancer : MonoBehaviour
 
     Vector3 getGroundNormal()
     {
-        var bodyDirection = _groundPointBack._groundPoint - _groundPointFront._groundPoint;
+        var bodyDirection = -IKObject.transform.forward;
+        if (_groundPointBack._groundPoint != Vector3.negativeInfinity && _groundPointFront._groundPoint != Vector3.negativeInfinity)
+        {
+            bodyDirection = _groundPointBack._groundPoint - _groundPointFront._groundPoint;
+        }
         Debug.Log(bodyDirection);
         var normal = Vector3.Cross(IKObject.transform.right,bodyDirection);
         return normal;
@@ -37,7 +41,13 @@ public class ModelBalancer : MonoBehaviour
 
     void shift()
     {
-        var groundZero = (_groundPointBack._groundPoint.y + _groundPointFront._groundPoint.y) / 2;
-        IKObject.transform.Translate(0,groundZero - IKObject.transform.position.y,0 );
+        float groundZero = 0;
+        if (_groundPointBack._groundPoint != Vector3.negativeInfinity && _groundPointFront._groundPoint != Vector3.negativeInfinity)
+        {
+            groundZero = (_groundPointBack._groundPoint.y + _groundPointFront._groundPoint.y) / 2;
+        }
+        var IKpos = IKObject.transform.position;
+        var pos = transform.position;
+        IKObject.transform.Translate(0,groundZero - IKpos.y,0);
     }
 }
