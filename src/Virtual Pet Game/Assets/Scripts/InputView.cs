@@ -36,14 +36,6 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.JumpKeyPressed();
         }
-
-        if (Input.GetKeyDown(keyBindings.KeyCloseMenu))
-        {
-            if (interactionUIPresenter.IsMenuOpen())
-            {
-                ExitMenuMode();
-            }
-        }
         
         // interact key pressed
         if (Input.GetKeyDown(keyBindings.KeyInteract))
@@ -67,6 +59,15 @@ public class InputView : MonoBehaviour
                         EnterMenuMode();
                     }
                 }
+            }
+        }
+
+        if (Input.GetKeyUp(keyBindings.KeyInteract))
+        {
+            // Close menu when no longer holding interact button
+            if (interactionUIPresenter.IsMenuOpen())
+            {
+                ExitMenuMode();
             }
         }
 

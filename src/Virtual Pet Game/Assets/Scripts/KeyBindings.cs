@@ -12,5 +12,4 @@ public class KeyBindings : MonoBehaviour
     [Header("Interaction")]
     public KeyCode KeyInteract;
     public KeyCode KeyThrowBall;
-    public KeyCode KeyCloseMenu;
 }
