@@ -10,12 +10,14 @@ public class ModelBalancer : MonoBehaviour
     [Header("Ground Points")]
     [SerializeField] private GroundPoint _groundPointFront;
     [SerializeField] private GroundPoint _groundPointBack;
+    
 
     public Vector3 GroundNormal { get; private set; } = Vector3.up;
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        shift();
         GroundNormal = getGroundNormal();
         rotate(GroundNormal);
     }
@@ -31,5 +33,11 @@ public class ModelBalancer : MonoBehaviour
     void rotate(Vector3 normal)
     {
         IKObject.rotation = Quaternion.FromToRotation (IKObject.transform.up, normal) * IKObject.rotation;
+    }
+
+    void shift()
+    {
+        var groundZero = (_groundPointBack._groundPoint.y + _groundPointFront._groundPoint.y) / 2;
+        IKObject.transform.Translate(0,groundZero - IKObject.transform.position.y,0 );
     }
 }
