@@ -17,4 +17,9 @@ public class AnimatorController : MonoBehaviour
         _animator.SetFloat("Speed", Speed);
         _animator.SetInteger("State", (int) State);
     }
+
+    public void setSpeed(float speed)
+    {
+        this.Speed = speed;
+    }
 }
