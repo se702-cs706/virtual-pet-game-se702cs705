@@ -22,7 +22,16 @@ public class ModelPresenter : MonoBehaviour
     {
         var lookPos = agent.transform.position + agent.velocity * predictionRate;
         var direction = new Vector3(lookPos.x - transform.position.x, transform.forward.y, lookPos.z - transform.position.z);
+        var angle = Vector3.SignedAngle(transform.forward, direction, Vector3.up);
         model.setLook(direction);
+        if (angle > 20 || angle < -20)
+        {
+            view.setDrift(angle / 30);
+        }
+        else
+        {
+            view.setDrift(0);
+        }
         view.setSpeed(Math.Min(multiplier * direction.magnitude, maxSpeed));
     }
 }

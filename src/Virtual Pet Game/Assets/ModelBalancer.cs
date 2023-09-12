@@ -13,6 +13,8 @@ public class ModelBalancer : MonoBehaviour
 
     [Header("Direction")] 
     [SerializeField] private Vector3 lookDirection;
+
+    [SerializeField] private float rotationDamper;
     
     public Vector3 GroundNormal { get; private set; } = Vector3.up;
 
@@ -41,7 +43,8 @@ public class ModelBalancer : MonoBehaviour
         //rotate slope
         IKObject.rotation = Quaternion.FromToRotation (IKObject.transform.up, normal) * IKObject.rotation;
         //rotate look
-        IKObject.rotation = Quaternion.FromToRotation (IKObject.forward,lookDirection) * IKObject.rotation;
+        var desRot = Quaternion.FromToRotation (IKObject.forward,lookDirection) * IKObject.rotation;
+        IKObject.rotation = Quaternion.Lerp(transform.rotation, desRot, Time.deltaTime * rotationDamper);
     }
 
     public void setLook(Vector3 lookDirection)
