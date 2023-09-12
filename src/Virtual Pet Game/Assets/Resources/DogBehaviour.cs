@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.AI;
 
-public enum targetBehaviours
+enum targetBehaviours
 {
     None = 0,
     Move = 1,
