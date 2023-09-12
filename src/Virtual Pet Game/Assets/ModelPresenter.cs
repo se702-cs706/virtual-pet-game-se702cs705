@@ -12,6 +12,7 @@ public class ModelPresenter : MonoBehaviour
     [SerializeField] private ModelBalancer model;
 
     [SerializeField] private float maxSpeed = 1.3f;
+    [SerializeField] private float rotationCullDist = 0.3f;
 
     [SerializeField] private float multiplier;
     [SerializeField] private float predictionRate;
@@ -23,13 +24,19 @@ public class ModelPresenter : MonoBehaviour
         // calculate values
         var lookPos = agent.transform.position + agent.velocity * predictionRate;
         var direction = new Vector3(lookPos.x - transform.position.x, transform.forward.y, lookPos.z - transform.position.z);
-        if (direction.magnitude < 0.1f)
+        
+        var speed = Math.Min(multiplier * direction.magnitude, maxSpeed);
+        if (direction.magnitude < rotationCullDist)
         {
             direction = transform.forward;
+            speed = 0;
         }
-        var angle = Vector3.SignedAngle(transform.forward, direction, Vector3.up);
         
         // set all values
+        model.setLook(direction);
+        view.setSpeed(speed);
+        var angle = Vector3.SignedAngle(transform.forward, direction, Vector3.up);
+        
         if (angle > 30 || angle < -30)
         {
             view.setDrift(angle / 30);
@@ -39,8 +46,5 @@ public class ModelPresenter : MonoBehaviour
             view.setDrift(0);
         }
 
-        model.setLook(direction);
-        var speed = Math.Min(multiplier * direction.magnitude, maxSpeed);
-        view.setSpeed(speed);
     }
 }
