@@ -9,12 +9,26 @@ public class AnimatorController : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     [SerializeField] float Speed = 0;
+    [SerializeField] private float runSpeedMultiplier;
     [SerializeField] private DogState State = 0;
+    [SerializeField] private float drift = 0;
 
     // Update is called once per frame
     void Update()
     {
         _animator.SetFloat("Speed", Speed);
+        _animator.SetFloat("runSpeed", Speed * runSpeedMultiplier);
         _animator.SetInteger("State", (int) State);
+        _animator.SetFloat("Drift", drift);
+    }
+
+    public void setSpeed(float speed)
+    {
+        this.Speed = speed;
+    }
+    
+    public void setDrift(float drift)
+    {
+        this.drift = drift;
     }
 }

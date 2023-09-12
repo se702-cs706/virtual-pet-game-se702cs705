@@ -10,6 +10,11 @@ public class ModelBalancer : MonoBehaviour
     [Header("Ground Points")]
     [SerializeField] private GroundPoint _groundPointFront;
     [SerializeField] private GroundPoint _groundPointBack;
+
+    [Header("Direction")] 
+    [SerializeField] private Vector3 lookDirection;
+
+    [SerializeField] private float rotationDamper;
     
     public Vector3 GroundNormal { get; private set; } = Vector3.up;
 
@@ -35,7 +40,16 @@ public class ModelBalancer : MonoBehaviour
 
     void rotate(Vector3 normal)
     {
+        //rotate slope
         IKObject.rotation = Quaternion.FromToRotation (IKObject.transform.up, normal) * IKObject.rotation;
+        //rotate look
+        var desRot = Quaternion.FromToRotation (IKObject.forward,lookDirection) * IKObject.rotation;
+        IKObject.rotation = Quaternion.Lerp(transform.rotation, desRot, Time.deltaTime * rotationDamper);
+    }
+
+    public void setLook(Vector3 lookDirection)
+    {
+        this.lookDirection = lookDirection;
     }
 
     void shift()

@@ -17,7 +17,7 @@ public class GroundPoint : MonoBehaviour
     void FindGroundPoint(Vector3 groundNormal)
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, -groundNormal, out hit, raycastDistance))
+        if (Physics.Raycast(transform.position, -groundNormal, out hit, raycastDistance, groundLayer))
         {
             _groundPoint = hit.point;   
         }
