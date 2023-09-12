@@ -20,11 +20,17 @@ public class ModelPresenter : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // calculate values
         var lookPos = agent.transform.position + agent.velocity * predictionRate;
         var direction = new Vector3(lookPos.x - transform.position.x, transform.forward.y, lookPos.z - transform.position.z);
+        if (direction.magnitude < 0.1f)
+        {
+            direction = transform.forward;
+        }
         var angle = Vector3.SignedAngle(transform.forward, direction, Vector3.up);
-        model.setLook(direction);
-        if (angle > 20 || angle < -20)
+        
+        // set all values
+        if (angle > 30 || angle < -30)
         {
             view.setDrift(angle / 30);
         }
@@ -32,6 +38,9 @@ public class ModelPresenter : MonoBehaviour
         {
             view.setDrift(0);
         }
-        view.setSpeed(Math.Min(multiplier * direction.magnitude, maxSpeed));
+
+        model.setLook(direction);
+        var speed = Math.Min(multiplier * direction.magnitude, maxSpeed);
+        view.setSpeed(speed);
     }
 }
