@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -8,29 +6,25 @@ using UnityEngine;
 /// </summary>
 public class InputView : MonoBehaviour
 {
-    [Header("Movement")]
-    public KeyCode KeyForward;
-    public KeyCode KeyBackward;
-    public KeyCode KeyLeft;
-    public KeyCode KeyRight;
-    public KeyCode KeyJump;
+    public KeyBindings keyBindings;
 
-    [Header("Presenter")]
+    [Header("Presenters")]
     public CharacterPresenter characterPresenter;
+    public InteractionUIPresenter interactionUIPresenter;
 
     public void Update()
     {
         // key press action
-        if(Input.GetKey(KeyForward) ||
-            Input.GetKey(KeyBackward) || 
-            Input.GetKey(KeyLeft) ||
-            Input.GetKey(KeyRight))
+        if(Input.GetKey(keyBindings.KeyForward) ||
+            Input.GetKey(keyBindings.KeyBackward) || 
+            Input.GetKey(keyBindings.KeyLeft) ||
+            Input.GetKey(keyBindings.KeyRight))
         {
             characterPresenter.MovementKeyPressed(
-                        Input.GetKey(KeyForward), 
-                        Input.GetKey(KeyBackward), 
-                        Input.GetKey(KeyLeft), 
-                        Input.GetKey(KeyRight));
+                        Input.GetKey(keyBindings.KeyForward), 
+                        Input.GetKey(keyBindings.KeyBackward), 
+                        Input.GetKey(keyBindings.KeyLeft), 
+                        Input.GetKey(keyBindings.KeyRight));
         }
         else
         {
@@ -38,9 +32,63 @@ public class InputView : MonoBehaviour
         }
         
         // jump key pressed
-        if(Input.GetKeyDown(KeyJump))
+        if(Input.GetKeyDown(keyBindings.KeyJump))
         {
             characterPresenter.JumpKeyPressed();
         }
+        
+        // interact key pressed
+        if (Input.GetKeyDown(keyBindings.KeyInteract))
+        {
+            if (characterPresenter.HasInteractions())
+            {
+                if (interactionUIPresenter.IsSingleAction())
+                {
+                    characterPresenter.InteractKeyPressed(0);
+                }
+                else
+                {
+                    if (interactionUIPresenter.IsMenuOpen())
+                    {
+                        // Allow click to select interaction index
+                        int index = interactionUIPresenter.GetInteractionIndex();
+                        characterPresenter.InteractKeyPressed(index);
+                    }
+                    else
+                    {
+                        EnterMenuMode();
+                    }
+                }
+            }
+        }
+
+        if (Input.GetKeyUp(keyBindings.KeyInteract))
+        {
+            // Close menu when no longer holding interact button
+            if (interactionUIPresenter.IsMenuOpen())
+            {
+                ExitMenuMode();
+            }
+        }
+
+        // throw ball key pressed
+        if (Input.GetKeyDown(keyBindings.KeyThrowBall))
+        {
+            characterPresenter.ThrowBallKeyPressed();
+        }
+    }
+
+    private void EnterMenuMode()
+    {
+        interactionUIPresenter.OpenMenu();
+        // TODO: Lock camera
+        Cursor.visible = true;
+    }
+
+    private void ExitMenuMode()
+    {
+        interactionUIPresenter.CloseMenu();
+        // TODO: Unlock camera
+        Cursor.visible = false;
     }
 }

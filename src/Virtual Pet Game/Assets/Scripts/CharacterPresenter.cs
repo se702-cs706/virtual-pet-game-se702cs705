@@ -51,4 +51,19 @@ public class CharacterPresenter : MonoBehaviour, IPresenter
         var state = characterController.playerState;
         Debug.Log("CharacterPresenter: Player state changed to: " + state.ToString());
     }
+
+    public void InteractKeyPressed(int i)
+    {
+        characterController.Interact(i);
+    }
+
+    public void ThrowBallKeyPressed()
+    {
+        characterController.ThrowBall();
+    }
+
+    public bool HasInteractions()
+    {
+        return characterController.HasInteractions();
+    }
 }
