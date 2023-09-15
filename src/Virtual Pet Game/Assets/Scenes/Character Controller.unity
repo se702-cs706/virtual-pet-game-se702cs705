@@ -706,7 +706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 288892111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f31df0469adc6b438c6078cb7a43d26, type: 3}
+  m_Script: {fileID: 11500000, guid: 5806e60a33d4349858fffcd94615aca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 1056356339}
@@ -1667,7 +1667,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1078525937}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7feaae278dee7c9409b0e52d9ac5d94b, type: 3}
+  m_Script: {fileID: 11500000, guid: a86db6dda1c844c5b9b12d63a9b14368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensX: 1000
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1327119585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e34f5a48d7792740b336e7b1063eab1, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bcd813704fc449548ae288af11e043d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -2108,7 +2108,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1327119585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0796157b73ec5124d9d48786adb83e28, type: 3}
+  m_Script: {fileID: 11500000, guid: 945049d0e0a8642c1b766f02a47a781b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterController: {fileID: 1327119588}
@@ -2538,7 +2538,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1981894371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b946996d91dc94cbc9456701bde98736, type: 3}
+  m_Script: {fileID: 11500000, guid: a1ef829ca318b450f824d3c4aaca18e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1078525941}
