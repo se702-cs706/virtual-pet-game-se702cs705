@@ -11,6 +11,7 @@ public class InputView : MonoBehaviour
     [Header("Presenters")]
     public CharacterPresenter characterPresenter;
     public InteractionUIPresenter interactionUIPresenter;
+    public CameraPresenter cameraPresenter;
 
     public void Update()
     {
@@ -81,14 +82,12 @@ public class InputView : MonoBehaviour
     private void EnterMenuMode()
     {
         interactionUIPresenter.OpenMenu();
-        // TODO: Lock camera
-        Cursor.visible = true;
+        cameraPresenter.SetLocked(true);
     }
 
     private void ExitMenuMode()
     {
         interactionUIPresenter.CloseMenu();
-        // TODO: Unlock camera
-        Cursor.visible = false;
+        cameraPresenter.SetLocked(false);
     }
 }
