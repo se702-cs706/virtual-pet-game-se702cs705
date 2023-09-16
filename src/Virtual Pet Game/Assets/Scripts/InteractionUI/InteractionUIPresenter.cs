@@ -56,6 +56,33 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
     public void OpenMenu()
     {
         radialMenuController.Show();
+
+        // Update items in menu
+
+        // TODO: check if menu items have changed, else don't clear and re-update
+
+        radialMenuController.ClearSectors();
+
+        int numSectors = playerController.interactions.Count;
+        float deltaAngle = Mathf.PI * 2 / numSectors;
+
+        Debug.Log(numSectors);
+
+        for (int i = 0; i < numSectors; i++)
+        {
+            string text = playerController.interactions[i].GetName();
+            float minAngle = deltaAngle * i;
+            float maxAngle = deltaAngle * (i + 1);
+
+            GameObject obj = new();
+            obj.AddComponent<RadialMenuSector>();
+
+            RadialMenuSector sector = obj.GetComponent<RadialMenuSector>();
+            sector.Init(i, text, minAngle, maxAngle);
+
+            radialMenuController.AddSector(sector);
+            Debug.Log($"add {text} with range: {minAngle} - {maxAngle}");
+        }
     }
 
     public void CloseMenu()

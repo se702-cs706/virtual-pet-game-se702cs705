@@ -49,16 +49,7 @@ public class InputView : MonoBehaviour
                 }
                 else
                 {
-                    if (interactionUIPresenter.IsMenuOpen())
-                    {
-                        // Allow click to select interaction index
-                        int index = interactionUIPresenter.GetInteractionIndex();
-                        characterPresenter.InteractKeyPressed(index);
-                    }
-                    else
-                    {
-                        EnterMenuMode();
-                    }
+                    if (!interactionUIPresenter.IsMenuOpen()) EnterMenuMode();
                 }
             }
         }
@@ -68,6 +59,10 @@ public class InputView : MonoBehaviour
             // Close menu when no longer holding interact button
             if (interactionUIPresenter.IsMenuOpen())
             {
+                // Allow click to select interaction index
+                int index = interactionUIPresenter.GetInteractionIndex();
+                characterPresenter.InteractKeyPressed(index);
+
                 ExitMenuMode();
             }
         }
