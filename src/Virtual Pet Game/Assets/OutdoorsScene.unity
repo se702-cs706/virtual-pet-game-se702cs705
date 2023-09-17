@@ -456,7 +456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3139710794382689018, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: runSpeedMultiplier
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3377792388606552627, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: m_Enabled
@@ -614,7 +614,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385536594}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1289,10 +1289,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 385536601}
   model: {fileID: 1382384745}
-  maxSpeed: 1.3
-  rotationCullDist: 0.3
+  maxSpeed: 1.4
+  rotationCullDist: 0.2
   multiplier: 0.3
-  predictionRate: 0.8
+  predictionRate: 0.9
   view: {fileID: 1890715858}
 --- !u!1 &2013410473
 GameObject:
