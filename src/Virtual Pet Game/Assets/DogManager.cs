@@ -5,13 +5,13 @@ using UnityEngine.Serialization;
 /// <summary>
 /// State pattern manager for the dog
 /// </summary>
-public class DogManager : MonoBehaviour
+public class DogManager : MonoBehaviour, IStateActions
 {
     private IState _currentState;
     private float _time;
     [SerializeField] private DogState _state;
-    public float lastActionTime { get; private set; }
-    public Transform lookAt { get; private set; }
+    public float lastActionTime;
+    public Transform lookAt;
 
     [FormerlySerializedAs("_controller")]
     [Header("Deps")] 
@@ -79,7 +79,12 @@ public class DogManager : MonoBehaviour
     {
         lastActionTime = 0;
     }
-    
+
+    public float getActionTime()
+    {
+        return lastActionTime;
+    }
+
     public void startStateAction(DogState state, float time)
     {
         _state = state;

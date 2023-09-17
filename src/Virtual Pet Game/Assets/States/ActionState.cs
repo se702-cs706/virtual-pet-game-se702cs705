@@ -5,11 +5,11 @@ using Random = UnityEngine.Random;
 public class ActionState : IState
 {
     private AgentController _controller;
-    private DogManager _manager;
+    private IStateActions _manager;
     private DogState _state;
     private float _time;
 
-    public ActionState(DogState state, AgentController controller, DogManager manager, float? time = null)
+    public ActionState(DogState state, AgentController controller, IStateActions manager, float? time = null)
     {
         _state = state;
         _controller = controller;

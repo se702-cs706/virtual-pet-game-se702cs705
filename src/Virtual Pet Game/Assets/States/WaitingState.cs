@@ -8,11 +8,11 @@ using Random = System.Random;
 public class WaitingState : IState
 {
     private AgentController _controller;
-    private DogManager _manager;
+    private IStateActions _manager;
 
     [CanBeNull] private Transform _lookAt;
 
-    public WaitingState([CanBeNull] Transform lookAt, AgentController controller, DogManager manager)
+    public WaitingState([CanBeNull] Transform lookAt, AgentController controller, IStateActions manager)
     {
         _controller = controller;
         _manager = manager;
@@ -34,7 +34,7 @@ public class WaitingState : IState
         
         if (_manager.getState() != DogState.Idle)
         {
-            return new ActionState(_manager.getState(), _controller, _manager, _manager.lastActionTime);
+            return new ActionState(_manager.getState(), _controller, _manager, _manager.getActionTime());
         }
 
         return null;

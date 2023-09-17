@@ -5,11 +5,11 @@ using UnityEngine;
 public class RunningToState : IState
 {
     private AgentController _controller;
-    private DogManager _manager;
+    private IStateActions _manager;
     private float _maxSpeed;
     private Transform _target;
 
-    public RunningToState(float maxSpeed, Transform target, AgentController controller, DogManager manager)
+    public RunningToState(float maxSpeed, Transform target, AgentController controller, IStateActions manager)
     {
         _target = target;
         _maxSpeed = maxSpeed;
