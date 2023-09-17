@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 /// <summary>
@@ -10,12 +11,21 @@ public class DogManager : MonoBehaviour
 {
     private IState _currentState;
     private float time;
+    [Header("Deps")] 
+    [SerializeField] private AgentController _controller;
+
+    [SerializeField] private Transform _transform;
     [Header("Params")] 
     [SerializeField] private float Energy = 10;
     [SerializeField] private float Excitement = 10;
     [SerializeField] private float EnergyDropRatePS = 0.01f;
     [SerializeField] private float ExcitementDropRatePS = 1f;
-    
+
+    public void Start()
+    {
+        _currentState = new RunningToState(1f, _transform, _controller);
+    }
+
     private void Update()
     {
         var newState = _currentState.onStateUpdate();

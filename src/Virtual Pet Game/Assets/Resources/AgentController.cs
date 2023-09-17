@@ -9,7 +9,7 @@ using UnityEngine.AI;
 public class AgentController : MonoBehaviour
 {
     public Transform target { private get; set; }
-    public bool isMovingToTarget { private get; set; }
+    public bool isMovingToTarget { get; set; }
     public float maxSpeed { private get; set; }
     private NavMeshAgent _agent;
 
@@ -26,11 +26,11 @@ public class AgentController : MonoBehaviour
         
         if (isMovingToTarget)
         {
+            if (_agent.destination == target.position)
+            {
+                isMovingToTarget = false;
+            }
             _agent.destination = target.position;
-        }
-        else
-        {
-            _agent.destination = transform.position;
         }
     }
 }
