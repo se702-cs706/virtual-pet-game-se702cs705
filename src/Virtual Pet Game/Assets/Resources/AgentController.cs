@@ -29,7 +29,7 @@ public class AgentController : MonoBehaviour
         
         if (isMovingToTarget)
         {
-            if (_agent.destination == target)
+            if (transform.position.x - target.x < 0.05f && transform.position.z - target.z < 0.05f)
             {
                 isMovingToTarget = false;
             }

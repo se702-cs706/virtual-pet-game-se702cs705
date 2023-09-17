@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// State pattern manager for the dog
@@ -7,9 +8,10 @@ using UnityEngine;
 public class DogManager : MonoBehaviour
 {
     private IState _currentState;
-    private float time;
+    private float _time;
+    [FormerlySerializedAs("_controller")]
     [Header("Deps")] 
-    [SerializeField] private AgentController _controller;
+    [SerializeField] private AgentController controller;
 
     [SerializeField] private Transform _transform;
     [Header("Params")] 
@@ -21,7 +23,7 @@ public class DogManager : MonoBehaviour
     public void Start()
     {
 
-        _currentState = new RunningToState(1f, _transform, _controller);
+        _currentState = new RunningToState(1f, _transform, controller);
         _currentState.onStateEnter();
     }
 
@@ -35,21 +37,21 @@ public class DogManager : MonoBehaviour
             _currentState.onStateEnter();
         }
 
-        time -= Time.deltaTime;
-        if (time < 0)
+        _time -= Time.deltaTime;
+        if (_time < 0)
         {
-            time += 1;
+            _time += 1;
             Energy = Math.Max(0,Energy - EnergyDropRatePS);
             Excitement = Math.Max(0,Excitement - ExcitementDropRatePS);
         }
     }
 
-    public float getEnergy()
+    public float GetEnergy()
     {
         return Energy;
     }
     
-    public float getExcitement()
+    public float GetExcitement()
     {
         return Excitement;
     }
