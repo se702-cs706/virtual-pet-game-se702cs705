@@ -37,17 +37,12 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.JumpKeyPressed();
         }
-        
-        // interact key pressed
-        if (Input.GetKeyDown(keyBindings.KeyInteract1))
+
+        if (characterPresenter.HasInteractions())
         {
-            if (characterPresenter.HasInteractions())
-            {
-                if (interactionUIPresenter.IsSingleAction())
-                {
-                    characterPresenter.InteractKeyPressed(0);
-                }
-            }
+            if (Input.GetKeyDown(keyBindings.KeyInteract1)) characterPresenter.InteractKeyPressed(1);
+            if (Input.GetKeyDown(keyBindings.KeyInteract2)) characterPresenter.InteractKeyPressed(2);
+            if (Input.GetKeyDown(keyBindings.KeyInteract3)) characterPresenter.InteractKeyPressed(3);
         }
 
         // throw ball key pressed

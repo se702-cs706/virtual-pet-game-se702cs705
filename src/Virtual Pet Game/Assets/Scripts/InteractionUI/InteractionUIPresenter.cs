@@ -20,21 +20,26 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
             promptController.HideAll();
         } else
         {
-            if (playerController.HasInteractions() && IsSingleAction())
+            if (playerController.HasInteractions())
             {
-                promptController.SetInteractVisible(true);
-            } else
-            {
-                //promptController.SetSelectVisible(!IsMenuOpen());
+
+                // TODO: Render according to what interaction is mapped to what key
+
+                switch (playerController.interactions.Count)
+                {
+                    case 1:
+                        promptController.SetInteractVisible(1, true);
+                        break;
+                    case 2:
+                        promptController.SetInteractVisible(1, true);
+                        promptController.SetInteractVisible(2, true);
+                        break;
+                }
+
             }
         }
 
         promptController.SetThrowBallVisible(playerController.hasBall);
-    }
-
-    public bool IsSingleAction()
-    {
-        return playerController.interactions.Count <= 1;
     }
 
     public int GetInteractionIndex()
