@@ -10,6 +10,10 @@ public class KeyBindings : MonoBehaviour
     public KeyCode KeyJump;
 
     [Header("Interaction")]
-    public KeyCode KeyInteract;
+    public KeyCode KeyInteract1;
+    public KeyCode KeyInteract2;
+    public KeyCode KeyInteract3;
+
+    [Header("Special")]
     public KeyCode KeyThrowBall;
 }

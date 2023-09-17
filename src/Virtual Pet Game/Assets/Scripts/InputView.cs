@@ -39,7 +39,7 @@ public class InputView : MonoBehaviour
         }
         
         // interact key pressed
-        if (Input.GetKeyDown(keyBindings.KeyInteract))
+        if (Input.GetKeyDown(keyBindings.KeyInteract1))
         {
             if (characterPresenter.HasInteractions())
             {
@@ -47,23 +47,6 @@ public class InputView : MonoBehaviour
                 {
                     characterPresenter.InteractKeyPressed(0);
                 }
-                else
-                {
-                    if (!interactionUIPresenter.IsMenuOpen()) EnterMenuMode();
-                }
-            }
-        }
-
-        if (Input.GetKeyUp(keyBindings.KeyInteract))
-        {
-            // Close menu when no longer holding interact button
-            if (interactionUIPresenter.IsMenuOpen())
-            {
-                // Allow click to select interaction index
-                int index = interactionUIPresenter.GetInteractionIndex();
-                characterPresenter.InteractKeyPressed(index);
-
-                ExitMenuMode();
             }
         }
 
@@ -72,17 +55,5 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.ThrowBallKeyPressed();
         }
-    }
-
-    private void EnterMenuMode()
-    {
-        interactionUIPresenter.OpenMenu();
-        cameraPresenter.SetLocked(true);
-    }
-
-    private void ExitMenuMode()
-    {
-        interactionUIPresenter.CloseMenu();
-        cameraPresenter.SetLocked(false);
     }
 }
