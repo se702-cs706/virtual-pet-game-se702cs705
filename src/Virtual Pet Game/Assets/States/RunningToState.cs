@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class RunningToState : IState
@@ -8,13 +9,15 @@ public class RunningToState : IState
     private IStateActions _manager;
     private float _maxSpeed;
     private Transform _target;
+    private IState _nextState;
 
-    public RunningToState(float maxSpeed, Transform target, AgentController controller, IStateActions manager)
+    public RunningToState(float maxSpeed, Transform target, AgentController controller, IStateActions manager, [CanBeNull] IState nextState = null)
     {
         _target = target;
         _maxSpeed = maxSpeed;
         _controller = controller;
         _manager = manager;
+        _nextState = nextState;
     }
     
     public void onStateEnter()
@@ -31,12 +34,14 @@ public class RunningToState : IState
 
         if (!_controller.isMovingToTarget)
         {
+            if (_nextState != null)
+            {
+                return _nextState;
+            }
             return new WaitingState(null, _controller, _manager);
         }
-        else
-        {
-            return null;
-        }
+        
+        return null;
     }
 
     public void onStateExit()

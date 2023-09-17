@@ -5,7 +5,7 @@
 /// </summary>
 public interface IStateActions
 {
-    public Transform PointOfInterest { get; set; }
+    public PointOfInterest PointOfInterest { get; set; }
     public void setState(DogState state);
     public void resetTime();
     public float getActionTime();

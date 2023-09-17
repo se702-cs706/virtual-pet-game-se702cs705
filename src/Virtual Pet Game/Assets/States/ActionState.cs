@@ -34,7 +34,6 @@ public class ActionState : IState
         if (_time < 0)
         {
             return new WaitingState(null,  _controller, _manager);
-            
         }
         
         return null;

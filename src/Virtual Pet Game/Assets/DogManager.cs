@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -12,13 +13,11 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] private DogState _state;
     public float lastActionTime;
     public Transform lookAt;
-    public Transform PointOfInterest { get; set; }
 
     [FormerlySerializedAs("_controller")]
     [Header("Deps")] 
     [SerializeField] private AgentController controller;
 
-    [SerializeField] private Transform _transform;
     [Header("Params")] 
     [SerializeField] private float Energy = 10;
     [SerializeField] private float Excitement = 10;
@@ -29,19 +28,25 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] ModelPresenter presenter;
     
     [Header("POIs")]
-    [SerializeField] private Transform[] _pointsOfInterest;
+    [SerializeField] List<PointOfInterest> pointsOfInterest;
+    public PointOfInterest PointOfInterest { get; set; }
 
     public void Start()
     {
-
-        _currentState = new RunningToState(3, _transform, controller, this);
+        _currentState = new WaitingState(null, controller, this, 2);
         _currentState.onStateEnter();
     }
 
     private void Update()
     {
         Debug.Log(_currentState.GetType()+ " -> State");
-        
+        HandleState();
+        DropParams();
+        UpdatePointOfInterest();
+    }
+
+    private void HandleState()
+    {
         var newState = _currentState.onStateUpdate();
         if (newState != null)
         {
@@ -49,7 +54,10 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
             _currentState = newState;
             _currentState.onStateEnter();
         }
-
+    }
+    
+    private void DropParams()
+    {
         _time -= Time.deltaTime;
         if (_time < 0)
         {
@@ -59,6 +67,48 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         }
     }
 
+    private void UpdatePointOfInterest()
+    {
+        if (pointsOfInterest.Count == 0)
+        {
+            PointOfInterest = null;
+            return;
+        }
+        if (pointsOfInterest.Count == 1)
+        {
+            PointOfInterest = pointsOfInterest[0];
+            return;
+        }
+        
+        var position = transform.position;
+        var mostInterestPoi = null as PointOfInterest;
+        foreach (var poi in pointsOfInterest)
+        {
+            if (!poi.canBeUsed)
+            {
+                continue;
+            }
+
+            if (poi.canBeUsed && mostInterestPoi == null)
+            {
+                mostInterestPoi = poi;
+            }
+            
+            if (poi.InterestType == InterestType.food)
+            {
+                poi.InterestLevel = poi.InheritInterestLevel + 10 - Energy;
+            }
+            
+            if ((poi.transform.position - position).magnitude < poi.InterestRadius
+                && poi.InterestLevel > mostInterestPoi.InterestLevel)
+            {
+                mostInterestPoi = poi;
+            }
+        }
+        
+        PointOfInterest = mostInterestPoi;
+    }
+    
     public float GetEnergy()
     {
         return Energy;
