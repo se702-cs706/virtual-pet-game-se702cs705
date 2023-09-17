@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// The interface the state calls internally within the state manager
+/// </summary>
 public interface IStateActions
 {
     public Transform PointOfInterest { get; set; }
