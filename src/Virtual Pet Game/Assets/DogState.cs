@@ -9,4 +9,6 @@ public enum DogState
     Crouch = 2,
     Sit = 3,
     Pet = 4,
+    Eat = 5,
+    Rest = 6,
 }

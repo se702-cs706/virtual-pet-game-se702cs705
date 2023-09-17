@@ -52,7 +52,7 @@ public class WaitingState : IState
             IState next = null;
             if (_manager.PointOfInterest.InterestType == InterestType.food)
             {
-                next = new ActionState(DogState.Sit, _controller, _manager, _manager.PointOfInterest.InterestTime);
+                next = new ActionState(DogState.Eat, _controller, _manager, _manager.PointOfInterest.InterestTime);
             }
             else if (_manager.PointOfInterest.InterestType == InterestType.play)
             {
@@ -60,7 +60,7 @@ public class WaitingState : IState
             }
             else if (_manager.PointOfInterest.InterestType == InterestType.rest)
             {
-                next = new ActionState(DogState.Crouch, _controller, _manager, _manager.PointOfInterest.InterestTime);
+                next = new ActionState(DogState.Rest, _controller, _manager, _manager.PointOfInterest.InterestTime);
             }
             
             _manager.PointOfInterest.canBeUsed = false;
