@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Kick Box
+  key: 1
 --- !u!114 &952036152556749914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,3 +150,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Tap Box
+  key: 0

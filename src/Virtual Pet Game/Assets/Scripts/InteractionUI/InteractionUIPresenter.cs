@@ -6,6 +6,8 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
     [SerializeField] PlayerController playerController;
     [SerializeField] PromptController promptController;
 
+    public KeyBindings keyBindings;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,19 +25,17 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
             if (playerController.HasInteractions())
             {
 
-                // TODO: Render according to what interaction is mapped to what key
+                // Render according to what interaction is mapped to what key
 
-                switch (playerController.interactions.Count)
+                foreach (Interactable.Interaction<PlayerController> interaction in playerController.interactions)
                 {
-                    case 1:
-                        promptController.SetInteractVisible(1, true);
-                        break;
-                    case 2:
-                        promptController.SetInteractVisible(1, true);
-                        promptController.SetInteractVisible(2, true);
-                        break;
-                }
+                    promptController.SetInteractVisible(interaction.GetInteractKey(), true);
 
+                    KeyCode key = keyBindings.GetInteractKeyCode(interaction.GetInteractKey());
+                    string promptText = $"{interaction.GetName()} ({key})";
+
+                    promptController.SetInteractText(interaction.GetInteractKey(), promptText);
+                }
             }
         }
 

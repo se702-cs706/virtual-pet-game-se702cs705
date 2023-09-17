@@ -13,6 +13,11 @@ public class InputView : MonoBehaviour
     public InteractionUIPresenter interactionUIPresenter;
     public CameraPresenter cameraPresenter;
 
+    private void Start()
+    {
+        interactionUIPresenter.keyBindings = keyBindings;
+    }
+
     public void Update()
     {
         // key press action

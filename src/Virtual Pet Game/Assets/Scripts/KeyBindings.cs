@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+
+// TODO: Use singleton instead?
 public class KeyBindings : MonoBehaviour
 {
     [Header("Movement")]
@@ -16,4 +19,21 @@ public class KeyBindings : MonoBehaviour
 
     [Header("Special")]
     public KeyCode KeyThrowBall;
+
+    public KeyCode GetInteractKeyCode(InteractKey interactKey)
+    {
+        // FIXME: is there a better way to do this?
+        return interactKey switch
+        {
+            InteractKey.Interact1 => KeyInteract1,
+            InteractKey.Interact2 => KeyInteract2,
+            InteractKey.Interact3 => KeyInteract3,
+            _ => KeyCode.None,
+        };
+    }
+}
+
+public enum InteractKey
+{
+    Interact1, Interact2, Interact3
 }

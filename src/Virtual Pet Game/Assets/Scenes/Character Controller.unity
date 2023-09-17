@@ -535,6 +535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 952036152556749914, guid: b8df38c9c447949cb805ea301b637936, type: 3}
+      propertyPath: interactKey
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4208684329222543181, guid: b8df38c9c447949cb805ea301b637936, type: 3}
       propertyPath: _interactions.Array.size
       value: 2
@@ -2303,6 +2307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 1327119588}
   promptController: {fileID: 1181898912}
+  keyBindings: {fileID: 0}
 --- !u!1 &1897323347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +2715,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 287041392694396093, guid: 2076ac7b0d1ee0c41bad251743ab596c, type: 3}
+      propertyPath: key
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4475690328113459074, guid: 2076ac7b0d1ee0c41bad251743ab596c, type: 3}
       propertyPath: m_Name
       value: InteractableBall

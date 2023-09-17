@@ -7,6 +7,12 @@ namespace Interactable.Interactions
     {
         [Header("Name")]
         [SerializeField] new string name;
+        [SerializeField] InteractKey interactKey;
+
+        public override InteractKey GetInteractKey()
+        {
+            return interactKey;
+        }
 
         public override string GetName()
         {
