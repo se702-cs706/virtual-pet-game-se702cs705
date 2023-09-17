@@ -8,9 +8,9 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class AgentController : MonoBehaviour
 {
-    public Transform target { private get; set; }
+    public Vector3 target { get; set; }
     public bool isMovingToTarget { get; set; }
-    public float maxSpeed { private get; set; }
+    public float maxSpeed { get; set; }
     private NavMeshAgent _agent;
 
     // Start is called before the first frame update
@@ -23,14 +23,17 @@ public class AgentController : MonoBehaviour
     void Update()
     {
         _agent.speed = maxSpeed;
+        Debug.Log("Target: " + target);
+        Debug.Log("MaxSpeed: " + maxSpeed);
+        Debug.Log("Is moving to target: " + isMovingToTarget);
         
         if (isMovingToTarget)
         {
-            if (_agent.destination == target.position)
+            if (_agent.destination == target)
             {
                 isMovingToTarget = false;
             }
-            _agent.destination = target.position;
+            _agent.destination = target;
         }
     }
 }

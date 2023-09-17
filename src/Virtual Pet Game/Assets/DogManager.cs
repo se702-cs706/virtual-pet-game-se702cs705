@@ -14,7 +14,7 @@ public class DogManager : MonoBehaviour
     [Header("Deps")] 
     [SerializeField] private AgentController _controller;
 
-    [SerializeField] private Transform _transform;
+    [SerializeField] private Vector3 _transform;
     [Header("Params")] 
     [SerializeField] private float Energy = 10;
     [SerializeField] private float Excitement = 10;
@@ -23,7 +23,9 @@ public class DogManager : MonoBehaviour
 
     public void Start()
     {
+
         _currentState = new RunningToState(1f, _transform, _controller);
+        _currentState.onStateEnter();
     }
 
     private void Update()

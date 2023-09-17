@@ -33,7 +33,7 @@ public class ModelBalancer : MonoBehaviour
         {
             bodyDirection = _groundPointBack._groundPoint - _groundPointFront._groundPoint;
         }
-        Debug.Log(bodyDirection);
+        //Debug.Log(bodyDirection);
         var normal = Vector3.Cross(IKObject.transform.right,bodyDirection);
         return normal;
     }
