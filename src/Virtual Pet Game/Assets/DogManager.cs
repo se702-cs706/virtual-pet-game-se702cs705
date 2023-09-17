@@ -5,13 +5,14 @@ using UnityEngine.Serialization;
 /// <summary>
 /// State pattern manager for the dog
 /// </summary>
-public class DogManager : MonoBehaviour, IStateActions
+public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 {
     private IState _currentState;
     private float _time;
     [SerializeField] private DogState _state;
     public float lastActionTime;
     public Transform lookAt;
+    public Transform PointOfInterest { get; set; }
 
     [FormerlySerializedAs("_controller")]
     [Header("Deps")] 
@@ -26,11 +27,14 @@ public class DogManager : MonoBehaviour, IStateActions
     
     [Header("Presenter")]
     [SerializeField] ModelPresenter presenter;
+    
+    [Header("POIs")]
+    [SerializeField] private Transform[] _pointsOfInterest;
 
     public void Start()
     {
 
-        _currentState = new RunningToState(1f, _transform, controller, this);
+        _currentState = new RunningToState(3, _transform, controller, this);
         _currentState.onStateEnter();
     }
 
@@ -64,7 +68,8 @@ public class DogManager : MonoBehaviour, IStateActions
     {
         return Excitement;
     }
-    
+
+
     /// <summary>
     /// called by the state to start an action
     /// </summary>

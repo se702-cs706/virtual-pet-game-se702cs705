@@ -36,6 +36,10 @@ public class WaitingState : IState
         {
             return new ActionState(_manager.getState(), _controller, _manager, _manager.getActionTime());
         }
+        if (_manager.PointOfInterest != null)
+        {
+            return new RunningToState(_controller.maxSpeed, _manager.PointOfInterest, _controller, _manager);
+        }
 
         return null;
     }

@@ -1,7 +1,5 @@
-﻿namespace DefaultNamespace
+﻿
+public interface IManagerModel
 {
-    public interface IManagerModel
-    {
-        public void startStateAction(DogState state, float time);
-    }
+    public void startStateAction(DogState state, float time);
 }
