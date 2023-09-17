@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 385536600}
   - component: {fileID: 385536601}
   m_Layer: 0
-  m_Name: Capsule Dog
+  m_Name: Agent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,6 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197d3797e4c86e448d850c6f3d99aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedLeniency: 0.05
 --- !u!54 &385536600
 Rigidbody:
   m_ObjectHideFlags: 0
