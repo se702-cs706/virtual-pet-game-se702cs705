@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 /// <summary>
@@ -14,7 +11,7 @@ public class DogManager : MonoBehaviour
     [Header("Deps")] 
     [SerializeField] private AgentController _controller;
 
-    [SerializeField] private Vector3 _transform;
+    [SerializeField] private Transform _transform;
     [Header("Params")] 
     [SerializeField] private float Energy = 10;
     [SerializeField] private float Excitement = 10;

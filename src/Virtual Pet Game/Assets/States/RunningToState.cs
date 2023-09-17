@@ -6,9 +6,9 @@ public class RunningToState : IState
 {
     private AgentController _controller;
     private float _maxSpeed;
-    private Vector3 _target;
+    private Transform _target;
 
-    public RunningToState(float maxSpeed, Vector3 target, AgentController controller)
+    public RunningToState(float maxSpeed, Transform target, AgentController controller)
     {
         _target = target;
         _maxSpeed = maxSpeed;
@@ -18,13 +18,14 @@ public class RunningToState : IState
     public void onStateEnter()
     {
         _controller.maxSpeed = _maxSpeed;
-        _controller.target = _target;
+        _controller.target = _target.position;
         _controller.isMovingToTarget = true;
 
     }
 
     public IState onStateUpdate()
     {
+        _controller.target = _target.position;
 
         if (!_controller.isMovingToTarget)
         {
