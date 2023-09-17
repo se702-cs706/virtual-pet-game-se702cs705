@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Animator))]
 public class AnimatorController : MonoBehaviour
@@ -10,7 +11,7 @@ public class AnimatorController : MonoBehaviour
 
     [SerializeField] float Speed = 0;
     [SerializeField] private float runSpeedMultiplier;
-    [SerializeField] private DogState State = 0;
+    [FormerlySerializedAs("State")] [SerializeField] private DogState state = 0;
     [SerializeField] private float drift = 0;
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class AnimatorController : MonoBehaviour
     {
         _animator.SetFloat("Speed", Speed);
         _animator.SetFloat("runSpeed", Speed * runSpeedMultiplier);
-        _animator.SetInteger("State", (int) State);
+        _animator.SetInteger("State", (int) state);
         _animator.SetFloat("Drift", drift);
     }
 
@@ -30,5 +31,10 @@ public class AnimatorController : MonoBehaviour
     public void setDrift(float drift)
     {
         this.drift = drift;
+    }
+
+    public void setState(DogState state)
+    {
+        this.state = state;
     }
 }

@@ -11,7 +11,7 @@ public class AgentController : MonoBehaviour
     public Vector3 target { get; set; }
     public bool isMovingToTarget { get; set; }
     public float maxSpeed { get; set; }
-    private NavMeshAgent _agent;
+    public NavMeshAgent _agent { get; private set; }
 
     // Start is called before the first frame update
     void Start()

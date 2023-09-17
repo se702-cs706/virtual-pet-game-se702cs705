@@ -42,4 +42,9 @@ public class ModelPresenter : MonoBehaviour
         }
 
     }
+
+    public void startAction(DogState state)
+    {
+        view.setState(state);
+    }
 }

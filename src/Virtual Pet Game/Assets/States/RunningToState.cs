@@ -5,14 +5,16 @@ using UnityEngine;
 public class RunningToState : IState
 {
     private AgentController _controller;
+    private DogManager _manager;
     private float _maxSpeed;
     private Transform _target;
 
-    public RunningToState(float maxSpeed, Transform target, AgentController controller)
+    public RunningToState(float maxSpeed, Transform target, AgentController controller, DogManager manager)
     {
         _target = target;
         _maxSpeed = maxSpeed;
         _controller = controller;
+        _manager = manager;
     }
     
     public void onStateEnter()
@@ -29,7 +31,7 @@ public class RunningToState : IState
 
         if (!_controller.isMovingToTarget)
         {
-            return new WaitingState();
+            return new WaitingState(null, _controller, _manager);
         }
         else
         {

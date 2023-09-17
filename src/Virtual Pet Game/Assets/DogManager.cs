@@ -9,6 +9,10 @@ public class DogManager : MonoBehaviour
 {
     private IState _currentState;
     private float _time;
+    [SerializeField] private DogState _state;
+    public float lastActionTime { get; private set; }
+    public Transform lookAt { get; private set; }
+
     [FormerlySerializedAs("_controller")]
     [Header("Deps")] 
     [SerializeField] private AgentController controller;
@@ -19,16 +23,21 @@ public class DogManager : MonoBehaviour
     [SerializeField] private float Excitement = 10;
     [SerializeField] private float EnergyDropRatePS = 0.01f;
     [SerializeField] private float ExcitementDropRatePS = 1f;
+    
+    [Header("Presenter")]
+    [SerializeField] ModelPresenter presenter;
 
     public void Start()
     {
 
-        _currentState = new RunningToState(1f, _transform, controller);
+        _currentState = new RunningToState(1f, _transform, controller, this);
         _currentState.onStateEnter();
     }
 
     private void Update()
     {
+        Debug.Log(_currentState.GetType()+ " -> State");
+        
         var newState = _currentState.onStateUpdate();
         if (newState != null)
         {
@@ -41,7 +50,7 @@ public class DogManager : MonoBehaviour
         if (_time < 0)
         {
             _time += 1;
-            Energy = Math.Max(0,Energy - EnergyDropRatePS);
+            Energy = Math.Max(0,Energy - EnergyDropRatePS * controller._agent.velocity.magnitude);
             Excitement = Math.Max(0,Excitement - ExcitementDropRatePS);
         }
     }
@@ -54,5 +63,36 @@ public class DogManager : MonoBehaviour
     public float GetExcitement()
     {
         return Excitement;
+    }
+    
+    /// <summary>
+    /// called by the state to start an action
+    /// </summary>
+    /// <param name="state"></param>
+    public void setState(DogState state)
+    {
+        _state = state;
+        presenter.startAction(state);
+    }
+
+    public void resetTime()
+    {
+        lastActionTime = 0;
+    }
+    
+    public void startStateAction(DogState state, float time)
+    {
+        _state = state;
+        lastActionTime = time;
+    }
+
+    public DogState getState()
+    {
+        return _state;
+    }
+    
+    public void setLookAt(Transform lookAt)
+    {
+        //TODO implement sub
     }
 }
