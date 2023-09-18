@@ -5,48 +5,38 @@ using JetBrains.Annotations;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class WaitingState : IState
+public class WaitingState : TimedState
 {
-    private AgentController _controller;
-    private IStateActions _manager;
-    private float _time;
-    private IState _nextState;
-
     [CanBeNull] private Transform _lookAt;
 
-    public WaitingState([CanBeNull] Transform lookAt, AgentController controller, IStateActions manager, float? time = 10, [CanBeNull] IState nextState = null)
+    public WaitingState(
+        float time, AgentController controller, IStateActions manager, 
+        [CanBeNull] IState next = null, [CanBeNull] Transform lookAt = null) : 
+        base(DogState.Idle, time, controller, manager, next)
     {
-        _controller = controller;
-        _manager = manager;
         _lookAt = lookAt;
-        _time = time ?? 10;
-        _nextState = nextState;
     }
 
-    public void onStateEnter()
+    public override void onStateEnter()
     {
-        _manager.setState(DogState.Idle);
-        
         if (_lookAt != null)
         {
             _manager.setLookAt(_lookAt);
         }
     }
 
-    public IState onStateUpdate()
+    public override IState onStateDuringUpdate()
     {
-        
         if (_manager.getState() != DogState.Idle)
         {
             return new ActionState(_manager.getState(), _manager.getActionTime(),_controller, _manager);
         }
-        
-        if (_time > 0)
-        {
-            _time -= Time.deltaTime;
-            return null;
-        }
-        
+
+        return null;
+    }
+
+    public override IState onGoalReached()
+    {
         if (_manager.PointOfInterest != null)
         {
             IState next = null;
@@ -67,11 +57,12 @@ public class WaitingState : IState
             return new RunningToState(5, _manager.PointOfInterest.transform, _controller, _manager, next);
         }
 
-        return null;
+        return new WanderingState(3, 10, _controller, _manager);
     }
 
-    public void onStateExit()
+    public override void onStateExit()
     {
         _manager.setLookAt(null);
     }
+
 }

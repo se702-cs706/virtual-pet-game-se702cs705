@@ -28,7 +28,7 @@ public class WanderingState : TimedState
 
         if (_manager.getState() == DogState.Idle)
         {
-            return new WaitingState(null, _controller, _manager);
+            return new WaitingState(5, _controller, _manager);
         }
 
         return null;
@@ -56,7 +56,7 @@ public class WanderingState : TimedState
             return new RunningToState(5, _manager.PointOfInterest.transform, _controller, _manager, next);
         }
 
-        return new WaitingState(null, _controller,_manager, 3);
+        return new WaitingState(5, _controller,_manager);
     }
 
     public override void onStateExit()

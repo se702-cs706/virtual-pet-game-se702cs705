@@ -28,7 +28,7 @@ public class RunningToState : GoalState
 
     public override IState onStateDuringUpdate()
     {
-        throw new System.NotImplementedException();
+        return null;
     }
 
     public override bool goalCondition()
@@ -42,7 +42,7 @@ public class RunningToState : GoalState
         {
             return _next;
         }
-        return new WaitingState(null, _controller, _manager);
+        return new WaitingState(5, _controller, _manager);
     }
 
     public override void onStateExit()

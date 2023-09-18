@@ -33,7 +33,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 
     public void Start()
     {
-        _currentState = new WaitingState(null, controller, this, 2);
+        _currentState = new WaitingState(2, controller, this);
         _currentState.onStateEnter();
     }
 

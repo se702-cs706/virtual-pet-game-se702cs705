@@ -42,7 +42,7 @@ public class ActionState : TimedState
         {
             return new WanderingState(7, 14,_controller, _manager);
         }
-        return new WaitingState(null,  _controller, _manager);
+        return new WaitingState(5,  _controller, _manager);
     }
 
     public override void onStateExit()
