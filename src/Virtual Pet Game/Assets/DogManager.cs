@@ -40,7 +40,12 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 
     private void Update()
     {
-        Debug.Log(_currentState.GetType()+ " -> State");
+        //Debug.Log(_currentState.GetType()+ " -> State");
+
+        if(controller.isOnNavMeshLink)
+        {
+            //Debug.Log(controller.jump);
+        }
         
         var newState = _currentState.onStateUpdate();
         if (newState != null)
