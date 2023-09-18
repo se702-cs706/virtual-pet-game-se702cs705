@@ -5,7 +5,8 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
 {
     [SerializeField] PlayerController playerController;
     [SerializeField] PromptController promptController;
-    [SerializeField] RadialMenuController radialMenuController;
+
+    public KeyBindings keyBindings;
 
     // Start is called before the first frame update
     void Start()
@@ -21,50 +22,34 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
             promptController.HideAll();
         } else
         {
-            if (playerController.HasInteractions() && IsSingleAction())
+            if (playerController.HasInteractions())
             {
-                promptController.SetInteractVisible(true);
-            } else
-            {
-                promptController.SetSelectVisible(!IsMenuOpen());
+
+                // Render according to what interaction is mapped to what key
+
+                foreach (Interactable.Interaction<PlayerController> interaction in playerController.interactions)
+                {
+                    promptController.SetInteractVisible(interaction.GetInteractKey(), true);
+
+                    KeyCode key = keyBindings.GetInteractKeyCode(interaction.GetInteractKey());
+                    string promptText = $"{interaction.GetName()} ({key})";
+
+                    promptController.SetInteractText(interaction.GetInteractKey(), promptText);
+                }
             }
         }
 
         promptController.SetThrowBallVisible(playerController.hasBall);
     }
 
-    public bool IsSingleAction()
-    {
-        return playerController.interactions.Count <= 1;
-    }
-
     public int GetInteractionIndex()
     {
-        if (radialMenuController.isVisible)
-        {
-            return radialMenuController.GetInteractionIndex();
-        }
         // Default case: first interaction
         return 0;
     }
 
     public void onModelStateChanged()
     {
-        Debug.Log("Radial menu change to state isVisible = " + radialMenuController.isVisible);
-    }
-
-    public void OpenMenu()
-    {
-        radialMenuController.Show();
-    }
-
-    public void CloseMenu()
-    {
-        radialMenuController.Hide();
-    }
-
-    public bool IsMenuOpen()
-    {
-        return radialMenuController.isVisible;
+        
     }
 }

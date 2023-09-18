@@ -11,6 +11,12 @@ public class InputView : MonoBehaviour
     [Header("Presenters")]
     public CharacterPresenter characterPresenter;
     public InteractionUIPresenter interactionUIPresenter;
+    public CameraPresenter cameraPresenter;
+
+    private void Start()
+    {
+        interactionUIPresenter.keyBindings = keyBindings;
+    }
 
     public void Update()
     {
@@ -36,39 +42,12 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.JumpKeyPressed();
         }
-        
-        // interact key pressed
-        if (Input.GetKeyDown(keyBindings.KeyInteract))
-        {
-            if (characterPresenter.HasInteractions())
-            {
-                if (interactionUIPresenter.IsSingleAction())
-                {
-                    characterPresenter.InteractKeyPressed(0);
-                }
-                else
-                {
-                    if (interactionUIPresenter.IsMenuOpen())
-                    {
-                        // Allow click to select interaction index
-                        int index = interactionUIPresenter.GetInteractionIndex();
-                        characterPresenter.InteractKeyPressed(index);
-                    }
-                    else
-                    {
-                        EnterMenuMode();
-                    }
-                }
-            }
-        }
 
-        if (Input.GetKeyUp(keyBindings.KeyInteract))
+        if (characterPresenter.HasInteractions())
         {
-            // Close menu when no longer holding interact button
-            if (interactionUIPresenter.IsMenuOpen())
-            {
-                ExitMenuMode();
-            }
+            if (Input.GetKeyDown(keyBindings.KeyInteract1)) characterPresenter.InteractKeyPressed(1);
+            if (Input.GetKeyDown(keyBindings.KeyInteract2)) characterPresenter.InteractKeyPressed(2);
+            if (Input.GetKeyDown(keyBindings.KeyInteract3)) characterPresenter.InteractKeyPressed(3);
         }
 
         // throw ball key pressed
@@ -76,19 +55,5 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.ThrowBallKeyPressed();
         }
-    }
-
-    private void EnterMenuMode()
-    {
-        interactionUIPresenter.OpenMenu();
-        // TODO: Lock camera
-        Cursor.visible = true;
-    }
-
-    private void ExitMenuMode()
-    {
-        interactionUIPresenter.CloseMenu();
-        // TODO: Unlock camera
-        Cursor.visible = false;
     }
 }

@@ -9,11 +9,18 @@ public class TextUIElement : MonoBehaviour, IInteractionUIElement
     private void Awake()
     {
         _selfRef = this.gameObject;
+
+        TextMeshProUGUI tmp = _selfRef.GetComponent<TextMeshProUGUI>();
+
+        if (tmp == null)
+        {
+            _selfRef.AddComponent<TextMeshProUGUI>();
+        }
     }
 
     public void SetText(string text)
     {
-        _selfRef.GetComponent<TextMeshPro>().SetText(text);
+        _selfRef.GetComponent<TextMeshProUGUI>().SetText(text);
     }
 
     public void SetVisible(bool isVisible)
