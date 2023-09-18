@@ -12,41 +12,37 @@ public class PromptController : MonoBehaviour
     [SerializeField] TextUIElement interact3Prompt;
 
     [SerializeField] TextUIElement throwBallPrompt;
-
-    TextUIElement[] interactPrompts;
+    Dictionary<InteractKey, TextUIElement> interactPrompts;
 
     private void Start()
     {
-        interactPrompts = new TextUIElement[] { interact1Prompt, interact2Prompt, interact3Prompt };
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        interactPrompts = new Dictionary<InteractKey, TextUIElement>
+        {
+            { InteractKey.Interact1, interact1Prompt },
+            { InteractKey.Interact2, interact2Prompt },
+            { InteractKey.Interact3, interact3Prompt }
+        };
     }
 
     public void HideAll()
     {
-        foreach (TextUIElement prompt in interactPrompts) prompt.Hide();
+        foreach (TextUIElement prompt in interactPrompts.Values) prompt.Hide();
 
         throwBallPrompt.Hide();
     }
 
-    public void SetInteractText(int keyNumber, string text)
+    public void SetInteractText(InteractKey key, string text)
     {
-        CheckValidKeyNumber(keyNumber);
+        interactPrompts.TryGetValue(key, out TextUIElement prompt);
 
-        interactPrompts[keyNumber - 1].SetText(text);
-
+        prompt.SetText(text);
     }
 
-    public void SetInteractVisible(int keyNumber, bool isVisible)
+    public void SetInteractVisible(InteractKey key, bool isVisible)
     {
-        CheckValidKeyNumber(keyNumber);
+        interactPrompts.TryGetValue(key, out TextUIElement prompt);
 
-        interactPrompts[keyNumber - 1].SetVisible(isVisible);
+        prompt.SetVisible(isVisible);
     }
 
     public void SetThrowBallVisible(bool isVisible)
@@ -54,12 +50,9 @@ public class PromptController : MonoBehaviour
         throwBallPrompt.SetVisible(isVisible);
     }
 
-    private void CheckValidKeyNumber(int keyNumber)
+    public void SetThrowBallKey(KeyCode key)
     {
-        if (keyNumber < 1 || keyNumber > 3)
-        {
-            throw new Exception($"Key number {keyNumber} is not between 1 and 3.");
-        }
+        throwBallPrompt.SetText($"Throw Ball ({key})");
     }
 }
 

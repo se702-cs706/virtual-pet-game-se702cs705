@@ -336,10 +336,10 @@ MonoBehaviour:
   KeyLeft: 97
   KeyRight: 100
   KeyJump: 32
-  KeyInteract1: 324
-  KeyInteract2: 325
-  KeyInteract3: 326
-  KeyThrowBall: 101
+  KeyInteract1: 323
+  KeyInteract2: 324
+  KeyInteract3: 325
+  KeyThrowBall: 113
 --- !u!1 &60655118
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 60655121}
   - component: {fileID: 60655120}
   m_Layer: 5
-  m_Name: Interact 2 Text
+  m_Name: Interact 1 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interact 2 (KEY)
+  m_text: Interact 1 (KEY)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -534,6 +534,10 @@ PrefabInstance:
     - target: {fileID: 346777740993980314, guid: b8df38c9c447949cb805ea301b637936, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952036152556749914, guid: b8df38c9c447949cb805ea301b637936, type: 3}
+      propertyPath: interactKey
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4208684329222543181, guid: b8df38c9c447949cb805ea301b637936, type: 3}
       propertyPath: _interactions.Array.size
@@ -1326,7 +1330,7 @@ GameObject:
   - component: {fileID: 1034067418}
   - component: {fileID: 1034067420}
   m_Layer: 5
-  m_Name: Interact 1 Text
+  m_Name: Interact 2 Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1371,7 +1375,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interact 1 (KEY)
+  m_text: Interact 2 (KEY)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1771,8 +1775,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1034067417}
   - {fileID: 60655119}
+  - {fileID: 1034067417}
   - {fileID: 22773865}
   - {fileID: 1897323348}
   m_Father: {fileID: 599059243}
@@ -1794,8 +1798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44b16d9b73f64ce5b2cc0cce3c821e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact1Prompt: {fileID: 1034067420}
-  interact2Prompt: {fileID: 60655120}
+  interact1Prompt: {fileID: 60655120}
+  interact2Prompt: {fileID: 1034067420}
   interact3Prompt: {fileID: 22773866}
   throwBallPrompt: {fileID: 1897323349}
 --- !u!1 &1187093741
@@ -2303,6 +2307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 1327119588}
   promptController: {fileID: 1181898912}
+  keyBindings: {fileID: 0}
 --- !u!1 &1897323347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,6 +2715,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 287041392694396093, guid: 2076ac7b0d1ee0c41bad251743ab596c, type: 3}
+      propertyPath: key
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4475690328113459074, guid: 2076ac7b0d1ee0c41bad251743ab596c, type: 3}
       propertyPath: m_Name
       value: InteractableBall
