@@ -1,35 +1,54 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-public class WaitingState : TimedState
+public class WanderingState : TimedState
 {
-    [CanBeNull] private Transform _lookAt;
-
-    public WaitingState(
-        float time, AgentController controller, IStateActions manager, 
-        [CanBeNull] IState next = null, [CanBeNull] Transform lookAt = null) : 
-        base(DogState.Idle, time, controller, manager, next)
+    private float _maxSpeed;
+    
+    public WanderingState(float maxSpeed, float time, AgentController controller, IStateActions manager) : 
+        base(DogState.Moving, time, controller, manager)
     {
-        _lookAt = lookAt;
+        _maxSpeed = maxSpeed;
     }
-
+    
     public override void onStateEnterChild()
     {
-        if (_lookAt != null)
-        {
-            _manager.setLookAt(_lookAt);
-        }
+        _controller.maxSpeed = _maxSpeed;
     }
 
     public override IState onStateDuringUpdate()
     {
-        if (_manager.getState() != DogState.Idle)
+        if (!_controller.isMovingToTarget)
         {
-            return new ActionState(_manager.getState(), _manager.getActionTime(),_controller, _manager);
+            var randPos = new Vector3(Random.Range(-5, 5), _controller._agent.transform.position.y, Random.Range(-5, 5)) + _controller._agent.transform.position;
+            if (randPos.x > 15)
+            {
+                randPos.x = 15;
+            }
+
+            if (randPos.x < -15)
+            {
+                randPos.x = -15;
+            }
+
+            if (randPos.z > 10)
+            {
+                randPos.x = 10;
+            }
+
+            if (randPos.z < -20)
+            {
+                randPos.z = -20;
+            }
+            _controller.target = randPos;
+            _controller.isMovingToTarget = true;
+            Debug.Log(_controller.target);
+        }
+
+        if (_manager.getState() == DogState.Idle)
+        {
+            return new WaitingState(5, _controller, _manager);
         }
 
         return null;
@@ -54,16 +73,15 @@ public class WaitingState : TimedState
             }
             
             _manager.PointOfInterest.canBeUsed = false;
-            //return new RunningToState(5, GameObject.Find("Cube Target (1)").transform.position, _controller, _manager, next);
             return new RunningToState(5, _manager.PointOfInterest.transform.position, _controller, _manager, next);
         }
 
-        return new WanderingState(3, 10, _controller, _manager);
+        return new WaitingState(5, _controller,_manager);
     }
 
     public override void onStateExit()
     {
-        _manager.setLookAt(null);
     }
 
+   
 }

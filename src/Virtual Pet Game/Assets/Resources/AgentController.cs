@@ -8,7 +8,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class AgentController : MonoBehaviour
 {
-    public Transform target { get; set; }
+    public Vector3 target { get; set; }
     public bool isMovingToTarget { get; set; }
     public float maxSpeed { get; set; }
     public NavMeshAgent _agent { get; private set; }
@@ -33,11 +33,11 @@ public class AgentController : MonoBehaviour
         
         if (isMovingToTarget)
         {
-            if (Math.Abs(transform.position.x - target.position.x) < 0.05f && Math.Abs(transform.position.z - target.position.z) < 0.05f)
+            if (Math.Abs(transform.position.x - target.x) < 0.05f && Math.Abs(transform.position.z - target.z) < 0.05f)
             {
                 isMovingToTarget = false;
             }
-            _agent.destination = target.position;
+            _agent.destination = target;
         }
 
         isOnNavMeshLink = _agent.isOnOffMeshLink;
