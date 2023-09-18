@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
@@ -5,7 +6,8 @@ public abstract class TimedState : BaseState
 {
     private float _time;
     
-    protected TimedState(float time, AgentController controller, IStateActions manager) : base(controller, manager)
+    protected TimedState(float time, AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
+        base(controller, manager, next)
     {
         _time = time;
     }
