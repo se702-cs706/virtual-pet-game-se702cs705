@@ -45,9 +45,9 @@ public class InputView : MonoBehaviour
 
         if (characterPresenter.HasInteractions())
         {
-            if (Input.GetKeyDown(keyBindings.KeyInteract1)) characterPresenter.InteractKeyPressed(1);
-            if (Input.GetKeyDown(keyBindings.KeyInteract2)) characterPresenter.InteractKeyPressed(2);
-            if (Input.GetKeyDown(keyBindings.KeyInteract3)) characterPresenter.InteractKeyPressed(3);
+            if (Input.GetKeyDown(keyBindings.KeyInteract1)) characterPresenter.Pressed(InteractKey.Interact1);
+            if (Input.GetKeyDown(keyBindings.KeyInteract2)) characterPresenter.Pressed(InteractKey.Interact2);
+            if (Input.GetKeyDown(keyBindings.KeyInteract3)) characterPresenter.Pressed(InteractKey.Interact3);
         }
 
         // throw ball key pressed

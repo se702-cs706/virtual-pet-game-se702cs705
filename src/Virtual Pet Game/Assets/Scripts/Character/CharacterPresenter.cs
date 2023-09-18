@@ -52,10 +52,10 @@ public class CharacterPresenter : MonoBehaviour, IPresenter
         Debug.Log("CharacterPresenter: Player state changed to: " + state.ToString());
     }
 
-    public void InteractKeyPressed(int keyNumber)
+    public void Pressed(InteractKey key)
     {
-        // keyNumber - 1 as Interact1 is index 0
-        characterController.Interact(keyNumber - 1);
+        // e.g.: InteractKey.Interact1 = 0 (first interaction)
+        characterController.Interact((int) key);
     }
 
     public void ThrowBallKeyPressed()

@@ -10,7 +10,8 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+        promptController.SetThrowBallKey(keyBindings.KeyThrowBall);
     }
 
     // Update is called once per frame
@@ -29,23 +30,16 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
 
                 foreach (Interactable.Interaction<PlayerController> interaction in playerController.interactions)
                 {
-                    promptController.SetInteractVisible(interaction.GetInteractKey(), true);
-
                     KeyCode key = keyBindings.GetInteractKeyCode(interaction.GetInteractKey());
                     string promptText = $"{interaction.GetName()} ({key})";
 
+                    promptController.SetInteractVisible(interaction.GetInteractKey(), true);
                     promptController.SetInteractText(interaction.GetInteractKey(), promptText);
                 }
             }
         }
 
         promptController.SetThrowBallVisible(playerController.hasBall);
-    }
-
-    public int GetInteractionIndex()
-    {
-        // Default case: first interaction
-        return 0;
     }
 
     public void onModelStateChanged()
