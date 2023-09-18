@@ -3,50 +3,51 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class RunningToState : IState
+public class RunningToState : GoalState
 {
-    private AgentController _controller;
-    private IStateActions _manager;
     private float _maxSpeed;
     private Transform _target;
-    private IState _nextState;
 
-    public RunningToState(float maxSpeed, Transform target, AgentController controller, IStateActions manager, [CanBeNull] IState nextState = null)
+    public RunningToState(
+        float maxSpeed, 
+        Transform target, 
+        AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
+        base(DogState.Moving, controller, manager, next)
     {
-        _target = target;
         _maxSpeed = maxSpeed;
-        _controller = controller;
-        _manager = manager;
-        _nextState = nextState;
+        _target = target;
     }
     
-    public void onStateEnter()
+    public override void onStateEnter()
     {
-        _manager.setState(DogState.Moving);
         _controller.maxSpeed = _maxSpeed;
         _controller.target = _target.position;
         _controller.isMovingToTarget = true;
 
     }
 
-    public IState onStateUpdate()
+    public override IState onStateDuringUpdate()
     {
-        _controller.target = _target.position;
+        throw new System.NotImplementedException();
+    }
 
-        if (!_controller.isMovingToTarget)
+    public override bool goalCondition()
+    {
+        return !_controller.isMovingToTarget;
+    }
+
+    public override IState onGoalReached()
+    {
+        if (_next != null)
         {
-            if (_nextState != null)
-            {
-                return _nextState;
-            }
-            return new WaitingState(null, _controller, _manager);
+            return _next;
         }
-        
-        return null;
+        return new WaitingState(null, _controller, _manager);
     }
 
-    public void onStateExit()
+    public override void onStateExit()
     {
         
     }
+
 }
