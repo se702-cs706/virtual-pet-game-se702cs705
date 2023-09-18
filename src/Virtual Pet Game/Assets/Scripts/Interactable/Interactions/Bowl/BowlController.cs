@@ -26,4 +26,7 @@ public class BowlController : MonoBehaviour
     {
         bowlState = newState;
     }
+
+    // TODO: bowlState will change how the bowl looks (filled, empty)
+    // Also will change to point of interest for dog?
 }
