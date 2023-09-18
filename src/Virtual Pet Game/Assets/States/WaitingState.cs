@@ -38,7 +38,7 @@ public class WaitingState : IState
         
         if (_manager.getState() != DogState.Idle)
         {
-            return new ActionState(_manager.getState(), _controller, _manager, _manager.getActionTime());
+            return new ActionState(_manager.getState(), _manager.getActionTime(),_controller, _manager);
         }
         
         if (_time > 0)
@@ -52,7 +52,7 @@ public class WaitingState : IState
             IState next = null;
             if (_manager.PointOfInterest.InterestType == InterestType.food)
             {
-                next = new ActionState(DogState.Eat, _controller, _manager, _manager.PointOfInterest.InterestTime);
+                next = new ActionState(DogState.Eat, _manager.PointOfInterest.InterestTime, _controller, _manager);
             }
             else if (_manager.PointOfInterest.InterestType == InterestType.play)
             {
@@ -60,7 +60,7 @@ public class WaitingState : IState
             }
             else if (_manager.PointOfInterest.InterestType == InterestType.rest)
             {
-                next = new ActionState(DogState.Rest, _controller, _manager, _manager.PointOfInterest.InterestTime);
+                next = new ActionState(DogState.Rest, _manager.PointOfInterest.InterestTime, _controller, _manager);
             }
             
             _manager.PointOfInterest.canBeUsed = false;

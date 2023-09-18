@@ -6,18 +6,18 @@ public class WanderingState : TimedState
 {
     private float _maxSpeed;
     
-    public WanderingState(float maxSpeed, float time, AgentController controller, IStateActions manager) : base(time, controller, manager)
+    public WanderingState(float maxSpeed, float time, AgentController controller, IStateActions manager) : 
+        base(DogState.Moving, time, controller, manager)
     {
         _maxSpeed = maxSpeed;
     }
     
     public override void onStateEnter()
     {
-        _manager.setState(DogState.Moving);
         _controller.maxSpeed = _maxSpeed;
     }
 
-    public override IState onTimeRunningUpdate()
+    public override IState onStateDuringUpdate()
     {
         if (!_controller.isMovingToTarget)
         {
@@ -34,14 +34,14 @@ public class WanderingState : TimedState
         return null;
     }
 
-    public override IState onTimeExpireUpdate()
+    public override IState onGoalReached()
     {
         if (_manager.PointOfInterest != null)
         {
             IState next = null;
             if (_manager.PointOfInterest.InterestType == InterestType.food)
             {
-                next = new ActionState(DogState.Eat, _controller, _manager, _manager.PointOfInterest.InterestTime);
+                next = new ActionState(DogState.Eat, _manager.PointOfInterest.InterestTime, _controller, _manager);
             }
             else if (_manager.PointOfInterest.InterestType == InterestType.play)
             {
@@ -49,7 +49,7 @@ public class WanderingState : TimedState
             }
             else if (_manager.PointOfInterest.InterestType == InterestType.rest)
             {
-                next = new ActionState(DogState.Rest, _controller, _manager, _manager.PointOfInterest.InterestTime);
+                next = new ActionState(DogState.Rest, _manager.PointOfInterest.InterestTime, _controller, _manager);
             }
             
             _manager.PointOfInterest.canBeUsed = false;

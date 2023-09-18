@@ -2,19 +2,22 @@ using JetBrains.Annotations;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
-public abstract class TimedState : BaseState
+/// <summary>
+/// State where the goal to exit is running the time to zero.
+/// </summary>
+public abstract class TimedState : GoalState
 {
-    private float _time;
+    protected float _time;
     
-    protected TimedState(float time, AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
-        base(controller, manager, next)
+    protected TimedState(DogState state, float time, AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
+        base(state, controller, manager, next)
     {
         _time = time;
     }
 
     public override IState onStateUpdate()
     {
-        var res = onTimeRunningUpdate();
+        var res = onStateDuringUpdate();
         if (res != null)
         {
             return res;
@@ -22,16 +25,17 @@ public abstract class TimedState : BaseState
         else
         {
             _time -= Time.deltaTime;
-            if (_time <= 0)
+            if (goalCondition())
             {
-                return onTimeExpireUpdate();
+                return onGoalReached();
             }
 
             return null;
         }
     }
 
-    public abstract IState onTimeRunningUpdate();
-
-    public abstract IState onTimeExpireUpdate();
+    public override bool goalCondition()
+    {
+        return _time <= 0;
+    }
 }
