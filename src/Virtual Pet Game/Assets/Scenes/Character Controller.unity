@@ -336,9 +336,9 @@ MonoBehaviour:
   KeyLeft: 97
   KeyRight: 100
   KeyJump: 32
-  KeyInteract1: 101
-  KeyInteract2: 102
-  KeyInteract3: 114
+  KeyInteract1: 323
+  KeyInteract2: 324
+  KeyInteract3: 325
   KeyThrowBall: 113
 --- !u!1 &60655118
 GameObject:
