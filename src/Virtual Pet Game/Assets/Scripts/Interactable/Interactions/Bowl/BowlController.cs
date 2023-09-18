@@ -25,6 +25,7 @@ public class BowlController : MonoBehaviour
     public void ChangeState(BowlState newState)
     {
         bowlState = newState;
+        // Debug.Log("FILLED");
     }
 
     // TODO: bowlState will change how the bowl looks (filled, empty)

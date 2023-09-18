@@ -8,10 +8,10 @@ namespace Interactable.Interactions
         [Header("Name")]
         [SerializeField] new string name;
         [SerializeField] InteractKey interactKey;
-        
+
         [SerializeField] Interaction<PlayerController> action;
+        [SerializeField] BowlController bowlController;
         private GameObject _selfRef;
-        private BowlController bowlController;
         void Awake()
         {
             _selfRef = this.gameObject;
@@ -30,9 +30,6 @@ namespace Interactable.Interactions
         public override void Invoke(PlayerController controller)
         {
             bowlController.ChangeState(BowlState.Filled);
-            
-            //remove self
-            Destroy(_selfRef);
         }
     }
 }
