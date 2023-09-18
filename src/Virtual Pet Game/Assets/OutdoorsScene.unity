@@ -1382,7 +1382,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 385536601}
   model: {fileID: 1382384745}
-  maxSpeed: 1.4
+  maxSpeed: 1.5
+  minSpeed: 0.2
+  stopRange: 0.2
+  acceleration: 5
   multiplier: 0.3
   predictionRate: 0.9
   view: {fileID: 1890715858}

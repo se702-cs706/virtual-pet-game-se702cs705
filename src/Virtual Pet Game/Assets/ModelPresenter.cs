@@ -12,6 +12,10 @@ public class ModelPresenter : MonoBehaviour
     [SerializeField] private ModelBalancer model;
 
     [SerializeField] private float maxSpeed = 1.3f;
+    [SerializeField] private float minSpeed = 1.3f;
+    [SerializeField] private float stopRange = 0.2f;
+    [SerializeField] private float acceleration = 0.3f;
+    private float speed = 0;
 
     [SerializeField] private float multiplier;
     [SerializeField] private float predictionRate;
@@ -23,8 +27,17 @@ public class ModelPresenter : MonoBehaviour
         // calculate values
         var lookPos = agent.transform.position + agent.velocity * predictionRate;
         var direction = new Vector3(lookPos.x - transform.position.x, transform.forward.y, lookPos.z - transform.position.z);
-        
-        var speed = Math.Min(multiplier * direction.magnitude, maxSpeed);
+
+        var tCappedSpeed = Math.Min(direction.magnitude * multiplier, maxSpeed);
+        var ltCappedSpeed = Math.Max(tCappedSpeed, minSpeed);
+        if (direction.magnitude < stopRange)
+        {
+            speed = Mathf.Lerp(speed, 0, Time.fixedDeltaTime * acceleration);
+        }
+        else
+        {
+            speed = Mathf.Lerp(speed, ltCappedSpeed, Time.fixedDeltaTime * acceleration);
+        }
         
         // set all values
         model.setLook(direction);
