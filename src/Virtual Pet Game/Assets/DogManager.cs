@@ -126,6 +126,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     /// <param name="state"></param>
     public void setState(DogState state)
     {
+        Debug.Log("state set -> " + state);
         _state = state;
         presenter.startAction(state);
     }

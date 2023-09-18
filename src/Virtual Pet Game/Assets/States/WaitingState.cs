@@ -17,7 +17,7 @@ public class WaitingState : TimedState
         _lookAt = lookAt;
     }
 
-    public override void onStateEnter()
+    public override void onStateEnterChild()
     {
         if (_lookAt != null)
         {

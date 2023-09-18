@@ -14,11 +14,16 @@ public abstract class BaseState : IState
         _manager = manager;
         _next = next;
         _state = state;
-        _manager.setState(state);
     }
 
 
-    public abstract void onStateEnter();
+    public void onStateEnter()
+    {
+        _manager.setState(_state);
+        onStateEnterChild();
+    }
+
+    public abstract void onStateEnterChild();
 
     public abstract IState onStateUpdate();
 

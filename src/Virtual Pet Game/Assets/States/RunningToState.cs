@@ -18,7 +18,7 @@ public class RunningToState : GoalState
         _target = target;
     }
     
-    public override void onStateEnter()
+    public override void onStateEnterChild()
     {
         _controller.maxSpeed = _maxSpeed;
         _controller.target = _target.position;

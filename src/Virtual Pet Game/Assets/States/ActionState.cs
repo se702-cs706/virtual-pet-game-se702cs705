@@ -13,7 +13,7 @@ public class ActionState : TimedState
     {
     }
     
-    public override void onStateEnter()
+    public override void onStateEnterChild()
     {
         sTime = 1;
         

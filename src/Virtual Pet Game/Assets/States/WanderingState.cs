@@ -12,7 +12,7 @@ public class WanderingState : TimedState
         _maxSpeed = maxSpeed;
     }
     
-    public override void onStateEnter()
+    public override void onStateEnterChild()
     {
         _controller.maxSpeed = _maxSpeed;
     }
