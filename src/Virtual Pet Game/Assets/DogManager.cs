@@ -155,4 +155,26 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         //TODO implement sub
     }
+
+    public float getEnergy()
+    {
+        return Energy;
+    }
+
+    public void RestoreEnergy(float energy)
+    {
+        Energy += energy;
+        Energy = Math.Max(Energy, 10);
+    }
+
+    public float getExcitement()
+    {
+        return Excitement;
+    }
+
+    public void RaiseExcitement(float excitement)
+    {
+        Excitement += excitement;
+        Excitement = Math.Max(Excitement, 10);
+    }
 }

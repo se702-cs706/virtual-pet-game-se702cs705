@@ -11,4 +11,8 @@ public interface IStateActions
     public float getActionTime();
     public DogState getState();
     public void setLookAt(Transform lookAt);
+    public float getEnergy();
+    public void RestoreEnergy(float energy);
+    public float getExcitement();
+    public void RaiseExcitement(float excitement);
 }

@@ -22,6 +22,7 @@ public class RunningToState : IState
     
     public void onStateEnter()
     {
+        _manager.setState(DogState.Moving);
         _controller.maxSpeed = _maxSpeed;
         _controller.target = _target.position;
         _controller.isMovingToTarget = true;
