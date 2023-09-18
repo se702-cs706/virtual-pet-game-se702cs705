@@ -12,7 +12,6 @@ public class PromptController : MonoBehaviour
     [SerializeField] TextUIElement interact3Prompt;
 
     [SerializeField] TextUIElement throwBallPrompt;
-
     Dictionary<InteractKey, TextUIElement> interactPrompts;
 
     private void Start()
