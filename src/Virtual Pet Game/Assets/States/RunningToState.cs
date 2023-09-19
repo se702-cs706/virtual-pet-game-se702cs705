@@ -1,21 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using States;
 using UnityEngine;
 
-public class RunningToState : GoalState
+public class RunningToState : GoalState, InitializableState<RunningToStateParams>
 {
     private float _maxSpeed;
     private Vector3 _target;
-
-    public RunningToState(
-        float maxSpeed, 
-        Vector3 target, 
-        AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
-        base(DogState.Moving, controller, manager, next)
+    
+    public void OnStateBuild(RunningToStateParams param, DogManager manager, AgentController controller)
     {
-        _maxSpeed = maxSpeed;
-        _target = target;
+        _maxSpeed = param._maxSpeed;
+        _target = param._target;
+        _state = DogState.Moving;
+        base.OnStateBuild(param, manager, controller);
     }
     
     public override void onStateEnterChild()
@@ -28,64 +27,7 @@ public class RunningToState : GoalState
 
     public override IState onStateDuringUpdate()
     {
-        _controller.target = _target;
-
-        if (!_controller.isMovingToTarget)
-        {
-            if (_target == GameObject.Find("Cube Target").transform.position)
-            {
-
-                Debug.Log(GameObject.Find("Cube Target (1)").transform);
-                return new RunningToState(_maxSpeed, GameObject.Find("Cube Target (1)").transform.position, _controller, _manager);
-
-            }
-            else if (_target == GameObject.Find("Cube Target (1)").transform.position)
-            {
-
-                Debug.Log(GameObject.Find("Cube Target (4)").transform);
-                return new RunningToState(_maxSpeed, GameObject.Find("Cube Target (4)").transform.position, _controller, _manager);
-
-            }
-            else if (_target == GameObject.Find("Cube Target (4)").transform.position)
-            {
-
-                Debug.Log(GameObject.Find("Cube Target (2)").transform);
-                return new RunningToState(_maxSpeed, GameObject.Find("Cube Target (2)").transform.position, _controller, _manager);
-
-            }
-            else if (_target == GameObject.Find("Cube Target (2)").transform.position)
-            {
-
-                Debug.Log(GameObject.Find("Cube Target (3)").transform);
-                return new RunningToState(_maxSpeed, GameObject.Find("Cube Target (3)").transform.position, _controller, _manager);
-
-            }
-            else if (_target == GameObject.Find("Cube Target (3)").transform.position)
-            {
-
-                Debug.Log(GameObject.Find("Cube Target (5)").transform);
-                return new RunningToState(_maxSpeed, GameObject.Find("Cube Target (5)").transform.position, _controller, _manager);
-
-            }
-            else if (_target == GameObject.Find("Cube Target (5)").transform.position)
-            {
-
-                Debug.Log(GameObject.Find("Cube Target (6)").transform);
-                return new RunningToState(_maxSpeed, GameObject.Find("Cube Target (6)").transform.position, _controller, _manager);
-
-            }
-            else
-            {
-                Debug.Log("Null Chicken");
-                return new WaitingState(4f, _controller, _manager);
-            }
-        }
-        else
-        {
-
-            return null;
-
-        }
+        return null;
     }
 
     public override bool goalCondition()
@@ -99,7 +41,10 @@ public class RunningToState : GoalState
         {
             return _next;
         }
-        return new WaitingState(5, _controller, _manager);
+        return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+        {
+            _time = 3,
+        });
     }
 
     public override void onStateExit()

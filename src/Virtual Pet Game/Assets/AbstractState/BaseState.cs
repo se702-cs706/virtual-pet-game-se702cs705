@@ -1,24 +1,28 @@
 
 using JetBrains.Annotations;
+using States;
+using Unity.VisualScripting;
+using UnityEngine;
 
-public abstract class BaseState : IState
+public abstract class BaseState : IState, InitializableState<BaseStateParams>
 {
     protected AgentController _controller;
     protected IStateActions _manager;
     protected IState _next;
     protected DogState _state;
-
-    public BaseState(DogState state, AgentController controller, IStateActions manager, [CanBeNull] IState next = null)
+    protected StateFactory _stateFactory;
+    
+    public void OnStateBuild(BaseStateParams param, DogManager manager, AgentController controller)
     {
         _controller = controller;
         _manager = manager;
-        _next = next;
-        _state = state;
+        _next = param._next;
+        _stateFactory = StateFactory.getInstance();
     }
-
 
     public void onStateEnter()
     {
+        Debug.Log("Entered -> " + GetType() + ", with next being: " + _next?.GetType());
         _manager.setState(_state);
         onStateEnterChild();
     }

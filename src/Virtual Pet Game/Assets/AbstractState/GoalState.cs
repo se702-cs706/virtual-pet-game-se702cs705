@@ -6,11 +6,7 @@ using JetBrains.Annotations;
 /// </summary>
 public abstract class GoalState : BaseState
 {
-    protected GoalState(DogState state, AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
-        base(state, controller, manager, next)
-    {
-    }
-
+    
     public override IState onStateUpdate()
     {
         var res = onStateDuringUpdate();

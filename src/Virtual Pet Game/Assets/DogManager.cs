@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using States;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -33,7 +34,12 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 
     public void Start()
     {
-        _currentState = new WaitingState(2, controller, this);
+        StateFactory.Initiate(this,controller);
+        var stateFactory = StateFactory.getInstance();
+        _currentState = stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+        {
+            _time = 2,
+        });
         _currentState.onStateEnter();
     }
 
@@ -132,7 +138,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     /// <param name="state"></param>
     public void setState(DogState state)
     {
-        Debug.Log("state set -> " + state);
+        //Debug.Log("state set -> " + state);
         _state = state;
         presenter.startAction(state);
     }

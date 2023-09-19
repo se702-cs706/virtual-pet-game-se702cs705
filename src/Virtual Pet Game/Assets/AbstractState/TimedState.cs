@@ -1,20 +1,21 @@
 using JetBrains.Annotations;
+using States;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
 /// <summary>
 /// State where the goal to exit is running the time to zero.
 /// </summary>
-public abstract class TimedState : GoalState
+public abstract class TimedState : GoalState, InitializableState<TimedStateParams>
 {
     protected float _time;
     
-    protected TimedState(DogState state, float time, AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
-        base(state, controller, manager, next)
+    public void OnStateBuild(TimedStateParams param, DogManager manager, AgentController controller)
     {
-        _time = time;
+        _time = param._time;
+        base.OnStateBuild(param, manager, controller);
     }
-
+    
     public override IState onStateUpdate()
     {
         var res = onStateDuringUpdate();
@@ -36,6 +37,7 @@ public abstract class TimedState : GoalState
 
     public override bool goalCondition()
     {
+        Debug.Log("condition met");
         return _time <= 0;
     }
 }
