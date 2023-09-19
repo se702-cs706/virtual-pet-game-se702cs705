@@ -858,7 +858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392545815809508833, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: rotationDamper
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8216556651617058290, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: raycastDistance
@@ -6445,7 +6445,7 @@ MonoBehaviour:
   model: {fileID: 1382384745}
   maxSpeed: 1.6
   minSpeed: 0.4
-  stopRange: 0.3
+  stopRange: 0.4
   acceleration: 5
   multiplier: 0.3
   predictionRate: 0.8

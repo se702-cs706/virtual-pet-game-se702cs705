@@ -65,7 +65,7 @@ namespace States
             });;
         }
         
-        public static IState GetIdleState(StateFactory _stateFactory, Transform _lookAt)
+        public static IState GetIdleState(StateFactory _stateFactory)
         {
             return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {

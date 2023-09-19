@@ -42,16 +42,10 @@ public class ActionState : TimedState, InitializableState<TimedStateParams>
     {
         if (_manager.getEnergy() > 8)
         {
-            return _stateFactory.BuildState<WanderingState, WanderingStateParams>(new WanderingStateParams()
-            {
-                _time = 14,
-                _maxSpeed = 7,
-            });
+            return StatesHelper.GetZoomiesState(_stateFactory);
         }
-        return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
-        {
-            _time = 3,
-        });
+
+        return StatesHelper.GetIdleState(_stateFactory);
     }
 
     public override void onStateExit()
