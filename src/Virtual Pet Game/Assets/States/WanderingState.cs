@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using States;
 using UnityEngine;
 
-public class WanderingState : TimedState
+public class WanderingState : TimedState, InitializableState<WanderingStateParams>
 {
     private float _maxSpeed;
     
-    public WanderingState(float maxSpeed, float time, AgentController controller, IStateActions manager) : 
-        base(DogState.Moving, time, controller, manager)
+    public void OnStateBuild(WanderingStateParams param, DogManager manager, AgentController controller)
     {
-        _maxSpeed = maxSpeed;
+        _maxSpeed = param._maxSpeed;
+        _state = DogState.Moving;
+        base.OnStateBuild(param, manager, controller);
     }
-    
+
     public override void onStateEnterChild()
     {
         _controller.maxSpeed = _maxSpeed;
@@ -48,7 +50,10 @@ public class WanderingState : TimedState
 
         if (_manager.getState() == DogState.Idle)
         {
-            return new WaitingState(5, _controller, _manager);
+            return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+            {
+                _time = 10,
+            });
         }
 
         return null;
@@ -56,32 +61,12 @@ public class WanderingState : TimedState
 
     public override IState onGoalReached()
     {
-        if (_manager.PointOfInterest != null)
-        {
-            IState next = null;
-            if (_manager.PointOfInterest.InterestType == InterestType.food)
-            {
-                next = new ActionState(DogState.Eat, _manager.PointOfInterest.InterestTime, _controller, _manager);
-            }
-            else if (_manager.PointOfInterest.InterestType == InterestType.play)
-            {
-                next = null;
-            }
-            else if (_manager.PointOfInterest.InterestType == InterestType.rest)
-            {
-                next = new ActionState(DogState.Rest, _manager.PointOfInterest.InterestTime, _controller, _manager);
-            }
-            
-            _manager.PointOfInterest.canBeUsed = false;
-            return new RunningToState(5, _manager.PointOfInterest.transform.position, _controller, _manager, next);
-        }
-
-        return new WaitingState(5, _controller,_manager);
+        return StatesHelper.GetPOIActionStates( _manager, _stateFactory);
     }
 
     public override void onStateExit()
     {
     }
 
-   
+
 }

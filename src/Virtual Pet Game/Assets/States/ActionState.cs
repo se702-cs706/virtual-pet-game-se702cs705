@@ -1,16 +1,18 @@
 using System.Text;
 using JetBrains.Annotations;
+using States;
 using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class ActionState : TimedState
+public class ActionState : TimedState, InitializableState<TimedStateParams>
 {
     private float sTime;
     
-    public ActionState(DogState state, float time, AgentController controller, IStateActions manager, [CanBeNull] IState next = null) : 
-        base(state, time, controller, manager, next)
+    public void OnStateBuild(TimedStateParams param, DogManager manager, AgentController controller)
     {
+        _state = param._state;
+        base.OnStateBuild(param,manager, controller);
     }
     
     public override void onStateEnterChild()
@@ -40,9 +42,10 @@ public class ActionState : TimedState
     {
         if (_manager.getEnergy() > 8)
         {
-            return new WanderingState(7, 14,_controller, _manager);
+            return StatesHelper.GetZoomiesState(_stateFactory);
         }
-        return new WaitingState(5,  _controller, _manager);
+
+        return StatesHelper.GetIdleState(_stateFactory);
     }
 
     public override void onStateExit()

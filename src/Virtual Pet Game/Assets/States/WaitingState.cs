@@ -2,19 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using States;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class WaitingState : TimedState
+public class WaitingState : TimedState, InitializableState<WaitingStateParams>
 {
     [CanBeNull] private Transform _lookAt;
-
-    public WaitingState(
-        float time, AgentController controller, IStateActions manager, 
-        [CanBeNull] IState next = null, [CanBeNull] Transform lookAt = null) : 
-        base(DogState.Idle, time, controller, manager, next)
+    
+    public void OnStateBuild(WaitingStateParams param, DogManager manager, AgentController controller)
     {
-        _lookAt = lookAt;
+        _lookAt = param._lookAt;
+        _state = DogState.Idle;
+        base.OnStateBuild(param, manager, controller);
     }
 
     public override void onStateEnterChild()
@@ -29,7 +29,11 @@ public class WaitingState : TimedState
     {
         if (_manager.getState() != DogState.Idle)
         {
-            return new ActionState(_manager.getState(), _manager.getActionTime(),_controller, _manager);
+            return _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
+            {
+                _state = _manager.getState(),
+                _time = _manager.getActionTime()
+            });
         }
 
         return null;
@@ -37,28 +41,7 @@ public class WaitingState : TimedState
 
     public override IState onGoalReached()
     {
-        if (_manager.PointOfInterest != null)
-        {
-            IState next = null;
-            if (_manager.PointOfInterest.InterestType == InterestType.food)
-            {
-                next = new ActionState(DogState.Eat, _manager.PointOfInterest.InterestTime, _controller, _manager);
-            }
-            else if (_manager.PointOfInterest.InterestType == InterestType.play)
-            {
-                next = null;
-            }
-            else if (_manager.PointOfInterest.InterestType == InterestType.rest)
-            {
-                next = new ActionState(DogState.Rest, _manager.PointOfInterest.InterestTime, _controller, _manager);
-            }
-            
-            _manager.PointOfInterest.canBeUsed = false;
-            //return new RunningToState(5, GameObject.Find("Cube Target (1)").transform.position, _controller, _manager, next);
-            return new RunningToState(5, _manager.PointOfInterest.transform.position, _controller, _manager, next);
-        }
-
-        return new WanderingState(3, 10, _controller, _manager);
+        return StatesHelper.GetPOIActionStates( _manager, _stateFactory);
     }
 
     public override void onStateExit()
