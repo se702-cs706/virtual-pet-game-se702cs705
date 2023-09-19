@@ -41,10 +41,8 @@ public class RunningToState : GoalState, InitializableState<RunningToStateParams
         {
             return _next;
         }
-        return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
-        {
-            _time = 3,
-        });
+
+        return StatesHelper.GetIdleState(_stateFactory);
     }
 
     public override void onStateExit()
