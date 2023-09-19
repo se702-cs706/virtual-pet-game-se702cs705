@@ -49,5 +49,10 @@ public class PromptController : MonoBehaviour
     {
         throwBallPrompt.SetVisible(isVisible);
     }
+
+    public void SetThrowBallKey(KeyCode key)
+    {
+        throwBallPrompt.SetText($"Throw Ball ({key})");
+    }
 }
 
