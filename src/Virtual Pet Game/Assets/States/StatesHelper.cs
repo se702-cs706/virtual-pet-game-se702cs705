@@ -1,8 +1,10 @@
+using UnityEngine;
+
 namespace States
 {
     public class StatesHelper
     {
-        public static IState GetPostWanderWaitingState(IStateActions _manager, StateFactory _stateFactory)
+        public static IState GetPOIActionStates(IStateActions _manager, StateFactory _stateFactory)
         {
             if (_manager.PointOfInterest != null)
             {
@@ -40,6 +42,34 @@ namespace States
             return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
                 _time = 5,
+            });;
+        }
+
+        public static IState GetZoomiesState(StateFactory _stateFactory)
+        {
+            var rand = Random.Range(7, 14);
+            
+            return _stateFactory.BuildState<WanderingState, WanderingStateParams>(new WanderingStateParams()
+            {
+                _time = rand,
+                _maxSpeed = 7,
+            });
+        }
+        
+        public static IState GetWaitingForPlayerActionState(StateFactory _stateFactory, Transform _lookAt)
+        {
+            return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+            {
+                _lookAt = _lookAt,
+                _time = 7,
+            });;
+        }
+        
+        public static IState GetIdleState(StateFactory _stateFactory, Transform _lookAt)
+        {
+            return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+            {
+                _time = 3,
             });;
         }
     }

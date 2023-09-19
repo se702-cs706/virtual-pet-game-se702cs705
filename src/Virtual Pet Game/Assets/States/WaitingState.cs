@@ -41,7 +41,7 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
 
     public override IState onGoalReached()
     {
-        return StatesHelper.GetPostWanderWaitingState( _manager, _stateFactory);
+        return StatesHelper.GetPOIActionStates( _manager, _stateFactory);
     }
 
     public override void onStateExit()
