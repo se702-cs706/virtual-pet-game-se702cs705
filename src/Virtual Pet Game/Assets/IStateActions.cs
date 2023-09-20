@@ -15,4 +15,7 @@ public interface IStateActions
     public void RestoreEnergy(float energy);
     public float getExcitement();
     public void RaiseExcitement(float excitement);
+    public float getWalkSpeed();
+    public float getRunSpeed();
+    public float getSprintSpeed();
 }

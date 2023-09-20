@@ -7,7 +7,7 @@ using UnityEngine;
 public class RunningToState : GoalState, InitializableState<RunningToStateParams>
 {
     private float _maxSpeed;
-    private Vector3 _target;
+    private Transform _target;
     
     public void OnStateBuild(RunningToStateParams param, DogManager manager, AgentController controller)
     {
@@ -20,7 +20,7 @@ public class RunningToState : GoalState, InitializableState<RunningToStateParams
     public override void onStateEnterChild()
     {
         _controller.maxSpeed = _maxSpeed;
-        _controller.target = _target;
+        _controller.target = _target.position;
         _controller.isMovingToTarget = true;
 
     }

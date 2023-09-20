@@ -23,16 +23,19 @@ public abstract class TimedState : GoalState, InitializableState<TimedStateParam
         {
             return res;
         }
-        else
-        {
-            _time -= Time.deltaTime;
-            if (goalCondition())
-            {
-                return onGoalReached();
-            }
 
-            return null;
+        _time -= Time.deltaTime;
+        if (goalCondition())
+        {
+            if (_next != null)
+            {
+                return _next;
+            }
+                
+            return onGoalReached();
         }
+
+        return null;
     }
 
     public override bool goalCondition()

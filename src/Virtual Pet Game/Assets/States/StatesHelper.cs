@@ -33,9 +33,9 @@ namespace States
                 _manager.PointOfInterest.canBeUsed = false;
                 return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
                 {
-                    _maxSpeed = 5,
+                    _maxSpeed = _manager.getRunSpeed(),
                     _next = next,
-                    _target = _manager.PointOfInterest.transform.position,
+                    _target = _manager.PointOfInterest.transform,
                 });
             }
 
@@ -45,14 +45,14 @@ namespace States
             });;
         }
 
-        public static IState GetZoomiesState(StateFactory _stateFactory)
+        public static IState GetZoomiesState(IStateActions _manager, StateFactory _stateFactory)
         {
             var rand = Random.Range(7, 14);
             
             return _stateFactory.BuildState<WanderingState, WanderingStateParams>(new WanderingStateParams()
             {
                 _time = rand,
-                _maxSpeed = 7,
+                _maxSpeed = _manager.getSprintSpeed(),
             });
         }
         
@@ -70,7 +70,33 @@ namespace States
             return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
                 _time = 3,
-            });;
+            });
+        }
+
+        public static IState GetActionState( StateFactory _stateFactory, DogState state, float time, IState next = null)
+        {
+            return _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
+            {
+                _state = state,
+                _time = time,
+                _next = next,
+            });
+        }
+        
+        public static IState GetRunToSequence(StateFactory _stateFactory, float maxSpeed, float waitingTime, Transform target, IState next = null)
+        {
+            var nextAction = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+            {
+                _time = waitingTime,
+                _next = next,
+            });
+            
+            return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
+            {
+                _maxSpeed = maxSpeed,
+                _target = target,
+                _next = nextAction,
+            });
         }
     }
 }

@@ -25,21 +25,26 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] private float EnergyDropRatePS = 0.01f;
     [SerializeField] private float ExcitementDropRatePS = 1f;
     
+    [Header("Speed Params")]
+    [SerializeField] private float walkSpeed = 1;
+    [SerializeField] private float runSpeed = 2;
+    [SerializeField] private float sprintSpeed = 3;
+    
     [Header("Presenter")]
     [SerializeField] ModelPresenter presenter;
     
     [Header("POIs")]
     [SerializeField] List<PointOfInterest> pointsOfInterest;
+
+    [SerializeField] private Transform playerTransform;
     public PointOfInterest PointOfInterest { get; set; }
 
     public void Start()
     {
         StateFactory.Initiate(this,controller);
         var stateFactory = StateFactory.getInstance();
-        _currentState = stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
-        {
-            _time = 2,
-        });
+        var next = StatesHelper.GetRunToSequence(stateFactory, runSpeed, 7, playerTransform);
+        _currentState = StatesHelper.GetActionState(stateFactory, DogState.Sit, 4, next);
         _currentState.onStateEnter();
     }
 
@@ -189,5 +194,20 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         Excitement += excitement;
         Excitement = Math.Max(Excitement, 10);
+    }
+
+    public float getWalkSpeed()
+    {
+        return walkSpeed;
+    }
+    
+    public float getRunSpeed()
+    {
+        return runSpeed;
+    }
+    
+    public float getSprintSpeed()
+    {
+        return sprintSpeed;
     }
 }

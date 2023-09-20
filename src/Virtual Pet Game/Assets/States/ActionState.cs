@@ -42,7 +42,7 @@ public class ActionState : TimedState, InitializableState<TimedStateParams>
     {
         if (_manager.getEnergy() > 8)
         {
-            return StatesHelper.GetZoomiesState(_stateFactory);
+            return StatesHelper.GetZoomiesState(_manager, _stateFactory);
         }
 
         return StatesHelper.GetIdleState(_stateFactory);
