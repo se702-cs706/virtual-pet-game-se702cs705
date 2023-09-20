@@ -8,11 +8,13 @@ public class RunningToState : GoalState, InitializableState<RunningToStateParams
 {
     private float _maxSpeed;
     private Transform _target;
+    private float _distance;
     
     public void OnStateBuild(RunningToStateParams param, DogManager manager, AgentController controller)
     {
         _maxSpeed = param._maxSpeed;
         _target = param._target;
+        _distance = param.distance;
         _state = DogState.Moving;
         base.OnStateBuild(param, manager, controller);
     }
@@ -20,13 +22,14 @@ public class RunningToState : GoalState, InitializableState<RunningToStateParams
     public override void onStateEnterChild()
     {
         _controller.maxSpeed = _maxSpeed;
-        _controller.target = _target.position;
+        _controller.target = _target.position + (_controller.transform.position - _target.position).normalized * _distance;
         _controller.isMovingToTarget = true;
 
     }
 
     public override IState onStateDuringUpdate()
     {
+        _controller.target = _target.position + (_controller.transform.position - _target.position).normalized * _distance;
         return null;
     }
 

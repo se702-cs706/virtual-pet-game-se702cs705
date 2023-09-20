@@ -43,7 +43,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         StateFactory.Initiate(this,controller);
         var stateFactory = StateFactory.getInstance();
-        var next = StatesHelper.GetRunToSequence(stateFactory, runSpeed, 7, playerTransform);
+        var next = StatesHelper.GetRunToSequence(stateFactory, runSpeed, 1f,7, playerTransform);
         _currentState = StatesHelper.GetActionState(stateFactory, DogState.Sit, 4, next);
         _currentState.onStateEnter();
     }

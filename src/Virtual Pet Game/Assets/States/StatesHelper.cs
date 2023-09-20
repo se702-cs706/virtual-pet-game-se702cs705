@@ -83,7 +83,7 @@ namespace States
             });
         }
         
-        public static IState GetRunToSequence(StateFactory _stateFactory, float maxSpeed, float waitingTime, Transform target, IState next = null)
+        public static IState GetRunToSequence(StateFactory _stateFactory, float maxSpeed, float distance, float waitingTime, Transform target, IState next = null)
         {
             var nextAction = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
@@ -94,6 +94,7 @@ namespace States
             return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
             {
                 _maxSpeed = maxSpeed,
+                distance = distance,
                 _target = target,
                 _next = nextAction,
             });
