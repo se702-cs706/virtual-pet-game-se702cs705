@@ -8,4 +8,7 @@ public enum DogState
     Moving = 1,
     Crouch = 2,
     Sit = 3,
+    Pet = 4,
+    Eat = 5,
+    Rest = 6,
 }
