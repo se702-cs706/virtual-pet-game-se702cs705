@@ -29,10 +29,12 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
     {
         if (_manager.getState() != DogState.Idle)
         {
+            var time = _manager.getActionTime();
+            Debug.Log(time + " -> IS THE FKIN TIME");
             return _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
             {
                 _state = _manager.getState(),
-                _time = _manager.getActionTime()
+                _time = time
             });
         }
 

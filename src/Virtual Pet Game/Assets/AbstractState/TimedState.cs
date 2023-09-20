@@ -40,7 +40,6 @@ public abstract class TimedState : GoalState, InitializableState<TimedStateParam
 
     public override bool goalCondition()
     {
-        Debug.Log("condition met");
         return _time <= 0;
     }
 }

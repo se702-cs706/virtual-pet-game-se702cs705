@@ -9,8 +9,6 @@ namespace Interactable.Interactions
         [SerializeField] new string name;
         [SerializeField] InteractKey interactKey;
 
-        [SerializeField] Interaction<PlayerController> action;
-
         private GameObject _selfRef;
 
         void Awake()
