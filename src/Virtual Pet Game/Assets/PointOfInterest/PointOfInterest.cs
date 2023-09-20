@@ -11,6 +11,7 @@ public class PointOfInterest : MonoBehaviour
     [SerializeField] public float InheritInterestLevel = 10;
     [SerializeField] public float InterestLevel;
     [SerializeField] public float InterestRadius = 5;
+    [SerializeField] public float InteractionDistance = 0;
     [SerializeField] public float InterestTime = 10;
     [SerializeField] public bool canBeUsed = true;
     [SerializeField] private float InheritInterestCooldown = 0;

@@ -35,6 +35,7 @@ namespace States
                 {
                     _maxSpeed = _manager.getRunSpeed(),
                     _next = next,
+                    distance = _manager.PointOfInterest.InteractionDistance,
                     _target = _manager.PointOfInterest.transform,
                 });
             }

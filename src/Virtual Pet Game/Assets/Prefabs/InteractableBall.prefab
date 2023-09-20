@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6560358866284387304}
   - component: {fileID: 287041392694396093}
   - component: {fileID: 3816677452508887750}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: InteractableBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Pick Up
+  interactKey: 0
   action: {fileID: 0}
 --- !u!114 &3816677452508887750
 MonoBehaviour:

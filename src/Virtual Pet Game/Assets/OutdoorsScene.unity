@@ -810,7 +810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6228388707402288543, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.73
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 6228388707402288543, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1151,7 +1151,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385536594}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1297,6 +1297,7 @@ MonoBehaviour:
   presenter: {fileID: 1890715861}
   pointsOfInterest:
   - {fileID: 1258464998}
+  playerTransform: {fileID: 2017654222}
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,7 +2566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041460355937951699, guid: b7a6b3107c54db440bee892353798744, type: 3}
       propertyPath: layerMask.m_Bits
-      value: 256
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 9041460355937951699, guid: b7a6b3107c54db440bee892353798744, type: 3}
       propertyPath: whatIsGround.m_Bits
@@ -2578,7 +2579,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419243448140306126, guid: b7a6b3107c54db440bee892353798744, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 2017654224}
   m_SourcePrefab: {fileID: 100100000, guid: b7a6b3107c54db440bee892353798744, type: 3}
 --- !u!1 &818664089
 GameObject:
@@ -4394,6 +4398,7 @@ MonoBehaviour:
   InheritInterestLevel: 10
   InterestLevel: 0
   InterestRadius: 10
+  InteractionDistance: 0
   InterestTime: 10
   canBeUsed: 1
   InheritInterestCooldown: 20
@@ -4418,6 +4423,7 @@ MonoBehaviour:
   InheritInterestLevel: 15
   InterestLevel: 0
   InterestRadius: 20
+  InteractionDistance: 0.3
   InterestTime: 10
   canBeUsed: 1
   InheritInterestCooldown: 40
@@ -5533,7 +5539,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3343187501624335603, guid: b7a6b3107c54db440bee892353798744, type: 3}
   m_PrefabInstance: {fileID: 790556464}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2017654221}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 945049d0e0a8642c1b766f02a47a781b, type: 3}
@@ -5544,7 +5550,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9041460355937951699, guid: b7a6b3107c54db440bee892353798744, type: 3}
   m_PrefabInstance: {fileID: 790556464}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2017654221}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bcd813704fc449548ae288af11e043d, type: 3}
@@ -6579,6 +6585,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2017654221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419243448140306126, guid: b7a6b3107c54db440bee892353798744, type: 3}
+  m_PrefabInstance: {fileID: 790556464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2017654222 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7595007953962745601, guid: b7a6b3107c54db440bee892353798744, type: 3}
+  m_PrefabInstance: {fileID: 790556464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2017654224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017654221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5cab190983f0b439c940f095582ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InheritInterestLevel: 5
+  InterestLevel: 0
+  InterestRadius: 10
+  InteractionDistance: 0
+  InterestTime: 10
+  canBeUsed: 1
+  InheritInterestCooldown: 0
+  InterestType: 2
 --- !u!1 &2071820136
 GameObject:
   m_ObjectHideFlags: 0
