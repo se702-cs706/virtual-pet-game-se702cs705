@@ -11,14 +11,9 @@ namespace States
             {
                 IState next = null;
                 if (_manager.PointOfInterest.interaction != null)
-                {
-                    var next2 = _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
-                    {
-                        _maxSpeed = _manager.getRunSpeed(),
-                        distance = 1,
-                        _target = _manager.getPlayerTransform(),
-                        _next = GetWaitingForPlayerActionState(_stateFactory, null),
-                    });
+                { 
+                    var next2 = 
+                    GetRunToSequence(_stateFactory, _manager.getRunSpeed(), 1f,7, _manager.getPlayerTransform());
                     Debug.Log(_manager.PointOfInterest.interaction);
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
                     new InteractionStateParams()
