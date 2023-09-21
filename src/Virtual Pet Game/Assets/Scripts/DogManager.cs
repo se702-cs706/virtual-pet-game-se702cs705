@@ -36,7 +36,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] ModelPresenter presenter;
     
     [Header("POIs")]
-    [SerializeField] public List<PointOfInterest> pointsOfInterest;
+    [SerializeField] private List<PointOfInterest> pointsOfInterest;
 
     [SerializeField] private Transform playerTransform;
     public PointOfInterest PointOfInterest { get; set; }

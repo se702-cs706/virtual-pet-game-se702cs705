@@ -16,7 +16,7 @@ namespace PointOfInterestCode
         [SerializeField] private float InheritInterestCooldown = 0;
         private float InterestCooldown = 0;
         [SerializeField] public InterestType InterestType;
-        [SerializeField] public IDogInteraction interaction;
+        [SerializeField] public DogInteraction interaction;
 
         private void Start()
         {

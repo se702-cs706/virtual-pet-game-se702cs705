@@ -40,6 +40,7 @@ public class ActionState : TimedState, InitializableState<TimedStateParams>
 
     public override IState onGoalReached()
     {
+        Debug.Log("Wtffff");
         if (_manager.getEnergy() > 8)
         {
             return StatesHelper.GetZoomiesState(_manager, _stateFactory);

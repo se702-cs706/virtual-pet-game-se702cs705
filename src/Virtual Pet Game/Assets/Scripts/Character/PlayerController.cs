@@ -266,7 +266,6 @@ public class PlayerController : MonoBehaviour
         BallObject.SetActive(true);
         BallObject.GetComponent<PointOfInterest>().InterestLevel = 200;
         BallObject.transform.position = headPosition.position + (headOrientation.forward * 0.2f);
-        _manager.pointsOfInterest.Add(BallObject.GetComponent<PointOfInterest>());
         BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
         hasBall = false;
         Debug.Log("thrown ball");

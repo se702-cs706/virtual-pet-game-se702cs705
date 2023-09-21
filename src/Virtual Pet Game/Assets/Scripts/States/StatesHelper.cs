@@ -17,38 +17,18 @@ namespace States
                         _maxSpeed = _manager.getRunSpeed(),
                         distance = 1,
                         _target = _manager.getPlayerTransform(),
-                        _next = GetIdleState(_stateFactory),
+                        _next = GetWaitingForPlayerActionState(_stateFactory, null),
                     });
+                    Debug.Log(_manager.PointOfInterest.interaction);
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
-                        new InteractionStateParams()
-                        {
-                            _next = next2,
-                            _interaction = _manager.PointOfInterest.interaction,
-                            _time = _manager.PointOfInterest.InterestTime,
-                        });
-                }
-                else if (_manager.PointOfInterest.InterestType == InterestType.food)
-                {
-                    next = _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
+                    new InteractionStateParams()
                     {
-                        _state = DogState.Eat,
+                        _next = next2,
+                        _interaction = _manager.PointOfInterest.interaction,
                         _time = _manager.PointOfInterest.InterestTime,
                     });
                 }
-                else if (_manager.PointOfInterest.InterestType == InterestType.play)
-                {
-                    GetRunToSequence(_stateFactory, _manager.getRunSpeed(), 1, 3, _manager.getPlayerTransform());
-                }
-                else if (_manager.PointOfInterest.InterestType == InterestType.rest)
-                {
-                    next = _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
-                    {
-                        _state = DogState.Rest,
-                        _time = _manager.PointOfInterest.InterestTime
-                    });;
-                }
-            
-                _manager.PointOfInterest.canBeUsed = false;
+                
                 return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
                 {
                     _maxSpeed = _manager.getRunSpeed(),

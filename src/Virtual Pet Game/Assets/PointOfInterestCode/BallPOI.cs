@@ -3,24 +3,25 @@ using UnityEngine;
 namespace PointOfInterestCode
 {
     [RequireComponent(typeof(PointOfInterest))]
-    public class BallPOI : MonoBehaviour, IDogInteraction
+    public class BallPOI : DogInteraction
     {
         private DogManager _manager;
         
-        public void InteractionStart(IStateActions manager)
+        public override void InteractionStart(IStateActions manager)
         {
+            Debug.Log("int started");
             manager.setHolding(gameObject);
-        }
-
-        public void InteractionDuring()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void InteractionEnd()
-        {
+            Debug.Log("SHOULDA DISSAPEARED BITCH");
             GetComponent<PointOfInterest>().InterestLevel = -100;
             gameObject.SetActive(false);
+        }
+
+        public override void InteractionDuring()
+        {
+        }
+
+        public override void InteractionEnd()
+        {
         }
     }
 }
