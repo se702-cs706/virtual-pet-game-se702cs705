@@ -35,6 +35,7 @@ public class ModelBalancer : MonoBehaviour
         }
         //Debug.Log(bodyDirection);
         var normal = Vector3.Cross(IKObject.transform.right,bodyDirection);
+        Debug.DrawLine(IKObject.transform.position,(IKObject.transform.position + normal).normalized * 20, Color.red);
         return normal;
     }
 

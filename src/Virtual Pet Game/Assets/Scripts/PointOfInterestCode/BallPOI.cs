@@ -9,9 +9,7 @@ namespace PointOfInterestCode
         
         public override void InteractionStart(IStateActions manager)
         {
-            Debug.Log("int started");
             manager.setHolding(gameObject);
-            Debug.Log("SHOULDA DISSAPEARED BITCH");
             GetComponent<PointOfInterest>().InterestLevel = -100;
             gameObject.SetActive(false);
         }

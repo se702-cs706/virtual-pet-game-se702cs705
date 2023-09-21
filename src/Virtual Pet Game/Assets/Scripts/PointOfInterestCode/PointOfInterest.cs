@@ -12,7 +12,7 @@ namespace PointOfInterestCode
         [SerializeField] public float InterestRadius = 5;
         [SerializeField] public float InteractionDistance = 0;
         [SerializeField] public float InterestTime = 10;
-        [SerializeField] public bool canBeUsed = true;
+        public bool canBeUsed { get; set; } = true;
         [SerializeField] private float InheritInterestCooldown = 0;
         private float InterestCooldown = 0;
         [SerializeField] public InterestType InterestType;

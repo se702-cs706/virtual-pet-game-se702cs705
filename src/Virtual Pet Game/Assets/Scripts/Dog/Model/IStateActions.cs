@@ -22,4 +22,5 @@ public interface IStateActions
     public Transform getPlayerTransform();
     public GameObject getHolding();
     public void setHolding(GameObject gameObject);
+    public void DropHolding();
 }

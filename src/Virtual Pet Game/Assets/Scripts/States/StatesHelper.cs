@@ -1,4 +1,5 @@
 using PointOfInterestCode;
+using States.ConcreteStates.DropHoldingState;
 using UnityEngine;
 
 namespace States
@@ -13,7 +14,7 @@ namespace States
                 if (_manager.PointOfInterest.interaction != null)
                 { 
                     var next2 = 
-                    GetRunToSequence(_stateFactory, _manager.getRunSpeed(), 1f,7, _manager.getPlayerTransform());
+                        GetRunToPlayerSequence(_stateFactory, _manager.getRunSpeed(), 1f,7, _manager.getPlayerTransform());
                     Debug.Log(_manager.PointOfInterest.interaction);
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
                     new InteractionStateParams()
@@ -91,6 +92,29 @@ namespace States
                 distance = distance,
                 _target = target,
                 _next = nextAction,
+            });
+        }
+        
+        public static IState GetRunToPlayerSequence(StateFactory _stateFactory, float maxSpeed, float distance, float waitingTime, Transform target, IState next = null)
+        {
+            var nextAction2 = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+            {
+                _time = waitingTime,
+                _next = next,
+            });
+
+            var nextAction1 = _stateFactory.BuildState<DropHoldingActionState, BaseStateParams>(new BaseStateParams()
+            {
+                _next = nextAction2,
+                _state = DogState.Idle,
+            });
+            
+            return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
+            {
+                _maxSpeed = maxSpeed,
+                distance = distance,
+                _target = target,
+                _next = nextAction1,
             });
         }
 

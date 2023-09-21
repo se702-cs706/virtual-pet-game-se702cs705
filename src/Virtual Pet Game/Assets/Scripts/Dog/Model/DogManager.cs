@@ -223,6 +223,13 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         return holding;
     }
 
+    public void DropHolding()
+    {
+        holding.SetActive(true);
+        holding.transform.position = transform.position + transform.forward * 0.2f;
+        holding.GetComponent<PointOfInterest>().InterestLevel = -10;
+    }
+
     public void setHolding(GameObject gameObject)
     {
         holding = gameObject;
