@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PointOfInterestCode;
+using UnityEngine;
 
 /// <summary>
 /// The interface the state calls internally within the state manager
@@ -18,4 +19,7 @@ public interface IStateActions
     public float getWalkSpeed();
     public float getRunSpeed();
     public float getSprintSpeed();
+    public Transform getPlayerTransform();
+    public GameObject getHolding();
+    public void setHolding(GameObject gameObject);
 }

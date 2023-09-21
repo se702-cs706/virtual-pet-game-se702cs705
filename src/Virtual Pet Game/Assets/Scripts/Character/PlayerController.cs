@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Interactable;
 using JetBrains.Annotations;
+using PointOfInterestCode;
 using Unity.VisualScripting;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
@@ -50,7 +51,8 @@ public class PlayerController : MonoBehaviour
     
     [Header("ThrowBall")]
     [Serialize] float throwForce;
-    [SerializeField] GameObject BallPrefab;
+    [SerializeField] GameObject BallObject;
+    [SerializeField] private DogManager _manager;
     public bool hasBall = false;
 
     public Vector3 getPlayerOrientation()
@@ -260,8 +262,12 @@ public class PlayerController : MonoBehaviour
             return;
         }
         
-        var ball = Instantiate(BallPrefab, headPosition.position + (headOrientation.forward * 0.2f), headOrientation.rotation);
-        ball.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
+        //Instantiate(BallPrefab, headPosition.position + (headOrientation.forward * 0.2f), headOrientation.rotation);
+        BallObject.SetActive(true);
+        BallObject.GetComponent<PointOfInterest>().InterestLevel = 200;
+        BallObject.transform.position = headPosition.position + (headOrientation.forward * 0.2f);
+        _manager.pointsOfInterest.Add(BallObject.GetComponent<PointOfInterest>());
+        BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
         hasBall = false;
         Debug.Log("thrown ball");
     }

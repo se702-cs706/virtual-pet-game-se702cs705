@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using PointOfInterestCode;
 using States;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -14,6 +15,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] private DogState _state;
     public float lastActionTime;
     public Transform lookAt;
+    private GameObject holding;
 
     [FormerlySerializedAs("_controller")]
     [Header("Deps")] 
@@ -34,7 +36,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] ModelPresenter presenter;
     
     [Header("POIs")]
-    [SerializeField] List<PointOfInterest> pointsOfInterest;
+    [SerializeField] public List<PointOfInterest> pointsOfInterest;
 
     [SerializeField] private Transform playerTransform;
     public PointOfInterest PointOfInterest { get; set; }
@@ -209,5 +211,20 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     public float getSprintSpeed()
     {
         return sprintSpeed;
+    }
+
+    public Transform getPlayerTransform()
+    {
+        return playerTransform;
+    }
+
+    public GameObject getHolding()
+    {
+        return holding;
+    }
+
+    public void setHolding(GameObject gameObject)
+    {
+        holding = gameObject;
     }
 }

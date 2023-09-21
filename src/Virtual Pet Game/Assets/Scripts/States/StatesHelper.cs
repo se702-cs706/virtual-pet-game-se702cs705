@@ -1,3 +1,4 @@
+using PointOfInterestCode;
 using UnityEngine;
 
 namespace States
@@ -9,7 +10,24 @@ namespace States
             if (_manager.PointOfInterest != null)
             {
                 IState next = null;
-                if (_manager.PointOfInterest.InterestType == InterestType.food)
+                if (_manager.PointOfInterest.interaction != null)
+                {
+                    var next2 = _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
+                    {
+                        _maxSpeed = _manager.getRunSpeed(),
+                        distance = 1,
+                        _target = _manager.getPlayerTransform(),
+                        _next = GetIdleState(_stateFactory),
+                    });
+                    next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
+                        new InteractionStateParams()
+                        {
+                            _next = next2,
+                            _interaction = _manager.PointOfInterest.interaction,
+                            _time = _manager.PointOfInterest.InterestTime,
+                        });
+                }
+                else if (_manager.PointOfInterest.InterestType == InterestType.food)
                 {
                     next = _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
                     {
@@ -19,7 +37,7 @@ namespace States
                 }
                 else if (_manager.PointOfInterest.InterestType == InterestType.play)
                 {
-                    next = null;
+                    GetRunToSequence(_stateFactory, _manager.getRunSpeed(), 1, 3, _manager.getPlayerTransform());
                 }
                 else if (_manager.PointOfInterest.InterestType == InterestType.rest)
                 {

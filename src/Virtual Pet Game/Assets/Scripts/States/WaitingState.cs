@@ -33,6 +33,11 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
             return StatesHelper.GetPlayerActionState(_stateFactory, _manager.getState(), time, 5);
         }
 
+        if (_manager.PointOfInterest.InterestLevel > 100)
+        {
+            return StatesHelper.GetPOIActionStates(_manager, _stateFactory);
+        }
+
         return null;
     }
 
