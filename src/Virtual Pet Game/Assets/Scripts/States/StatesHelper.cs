@@ -100,5 +100,19 @@ namespace States
                 _next = nextAction,
             });
         }
+
+        public static IState GetPlayerActionState(StateFactory _stateFactory, DogState state, float actionTime, float waitingTime)
+        {
+            var nextAction = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
+            {
+                _time = waitingTime,
+            });
+            
+            return _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
+            {
+                _time = actionTime,
+                _next = nextAction,
+            }); 
+        }
     }
 }
