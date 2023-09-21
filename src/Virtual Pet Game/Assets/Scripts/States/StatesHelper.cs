@@ -110,6 +110,7 @@ namespace States
             
             return _stateFactory.BuildState<ActionState, TimedStateParams>(new TimedStateParams()
             {
+                _state = state,
                 _time = actionTime,
                 _next = nextAction,
             }); 
