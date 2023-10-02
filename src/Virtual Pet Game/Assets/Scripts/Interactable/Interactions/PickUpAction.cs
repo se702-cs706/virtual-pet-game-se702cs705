@@ -1,3 +1,4 @@
+using PointOfInterestCode;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,8 +9,7 @@ namespace Interactable.Interactions
         [Header("Name")]
         [SerializeField] new string name;
         [SerializeField] InteractKey interactKey;
-
-        [SerializeField] Interaction<PlayerController> action;
+        [SerializeField] private PointOfInterest _pointOfInterest;
 
         private GameObject _selfRef;
 
@@ -31,8 +31,9 @@ namespace Interactable.Interactions
         public override void Invoke(PlayerController controller)
         {
             controller.hasBall = true;
+            _pointOfInterest.InterestLevel = -100;
             //remove self
-            Destroy(_selfRef);
+            _selfRef.SetActive(false);
         }
     }
 }
