@@ -8,10 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: c022b9ab592f36e4483fcc3219df44ac
-  - enabled: 0
-    path: Assets/Scenes/Model Select.unity
-    guid: 59c22c63d31a9414a8eb78ab8cc9c45b
-  - enabled: 1
-    path: Assets/Fantasy Forest Environment Free Sample/Scenes/demoScene_free.unity
-    guid: 7769f33fb4fa2e5458344a36556ad760
   m_configObjects: {}
