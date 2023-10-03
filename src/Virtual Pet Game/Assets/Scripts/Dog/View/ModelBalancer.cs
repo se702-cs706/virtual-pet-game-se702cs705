@@ -15,6 +15,7 @@ public class ModelBalancer : MonoBehaviour
     [SerializeField] private Vector3 lookDirection;
 
     [SerializeField] private float rotationDamper;
+    [SerializeField] private float tileDamper;
     
     public Vector3 GroundNormal { get; private set; } = Vector3.up;
 
@@ -28,24 +29,33 @@ public class ModelBalancer : MonoBehaviour
 
     Vector3 getGroundNormal()
     {
+        var groundNormal = Vector3.up;
+        if (_groundPointBack._groundPoint != Vector3.negativeInfinity && _groundPointFront._groundPoint != Vector3.negativeInfinity)
+        {
+            groundNormal = _groundPointFront._normal.normalized + _groundPointBack._normal.normalized;
+        }
+
+        var tilt = Vector3.Cross(IKObject.transform.forward, groundNormal);
+        
         var bodyDirection = -IKObject.transform.forward;
         if (_groundPointBack._groundPoint != Vector3.negativeInfinity && _groundPointFront._groundPoint != Vector3.negativeInfinity)
         {
             bodyDirection = _groundPointBack._groundPoint - _groundPointFront._groundPoint;
         }
         //Debug.Log(bodyDirection);
-        var normal = Vector3.Cross(IKObject.transform.right,bodyDirection);
-        Debug.DrawLine(IKObject.transform.position,(IKObject.transform.position + normal).normalized * 20, Color.red);
-        return normal;
+        var dogNormal = Vector3.Cross(-tilt,bodyDirection);
+        Debug.DrawLine(IKObject.transform.position,IKObject.transform.position + dogNormal, Color.red);
+        return dogNormal;
     }
 
     void rotate(Vector3 normal)
     {
-        //rotate slope
-        IKObject.rotation = Quaternion.FromToRotation (IKObject.transform.up, normal) * IKObject.rotation;
-        //rotate look
-        var desRot = Quaternion.FromToRotation (IKObject.forward,lookDirection) * IKObject.rotation;
-        IKObject.rotation = Quaternion.Lerp(transform.rotation, desRot, Time.deltaTime * rotationDamper);
+        //rotate tile and slope
+        var desiredTiltRotation = Quaternion.FromToRotation (IKObject.transform.up, normal) * IKObject.rotation;
+        IKObject.rotation = Quaternion.Lerp(transform.rotation, desiredTiltRotation, Time.deltaTime * tileDamper);
+        //rotate look direction
+        var desiredLookRotation = Quaternion.FromToRotation (IKObject.forward,lookDirection) * IKObject.rotation;
+        IKObject.rotation = Quaternion.Lerp(transform.rotation, desiredLookRotation, Time.deltaTime * rotationDamper);
     }
 
     public void setLook(Vector3 lookDirection)

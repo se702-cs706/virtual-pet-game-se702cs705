@@ -606,6 +606,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7392545815809508833, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
+      propertyPath: tileDamper
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392545815809508833, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: rotationDamper
       value: 5
       objectReference: {fileID: 0}
