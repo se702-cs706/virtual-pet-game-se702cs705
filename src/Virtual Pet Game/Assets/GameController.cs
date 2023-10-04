@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     public void RestartGame()
     {
         // Reload the current scene to restart the game
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
