@@ -15,15 +15,7 @@ public class MainMenu : MonoBehaviour
     {
         //SceneManager.LoadSceneAsync(1);
 
-        if (currentMode == 2)
-        {  
-            selectModel.SetActive(true);
-        }
-        else
-        {
-            GamePlay.SetActive(true);
-            MainSettings.SetActive(false);
-        }
+        selectModel.SetActive(true);
     }
 
     public void SetUserMode(int userInput)
