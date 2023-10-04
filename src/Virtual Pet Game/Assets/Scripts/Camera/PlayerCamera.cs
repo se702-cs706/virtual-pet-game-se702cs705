@@ -7,6 +7,7 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] float sensX;
     [SerializeField] float sensY;
     [SerializeField] Transform orientation;
+    private Camera cam;
     public bool isLocked { get; private set; }
 
     float xRotation;
@@ -14,6 +15,7 @@ public class PlayerCamera : MonoBehaviour
 
     private void Start()
     {
+        cam = GetComponent<Camera>();
         SetLocked(false);
         UpdateCursorMode();
     }
@@ -55,5 +57,28 @@ public class PlayerCamera : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
+
+        //Cursor.lockState = isLocked ? CursorLockMode.None : CursorLockMode.Locked;
+    }
+
+    public void setGoodDoggo(bool active)
+    {
+
+        if (!active)
+        {
+
+            //Makes camera not see capsule doggo, makes it see good doggo
+            cam.cullingMask |= 1 << LayerMask.NameToLayer("BetterDog");
+            cam.cullingMask &= ~(1 << LayerMask.NameToLayer("CapsuleDog"));
+
+        } else
+        {
+
+            //Makes camera not see good doggo, makes it see capsule doggo
+            cam.cullingMask |= 1 << LayerMask.NameToLayer("CapsuleDog");
+            cam.cullingMask &= ~(1 << LayerMask.NameToLayer("BetterDog"));
+
+        }
+
     }
 }
