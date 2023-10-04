@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 684517250104529995, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 684517250104529995, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3111005038484960323, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 3111005038484960323, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.z
@@ -189,23 +189,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6890445974974910001, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7269913056025096475, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8110878731042834886, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.79
+      value: 3.56
       objectReference: {fileID: 0}
     - target: {fileID: 8110878731042834886, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.15
+      value: 1.43
       objectReference: {fileID: 0}
     - target: {fileID: 8110878731042834886, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 45.67
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 8110878731042834886, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_LocalRotation.w
@@ -258,7 +258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &455510315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -363,7 +363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &485674609
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1486068163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -759,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!154 &2102205232
 TerrainCollider:
   m_ObjectHideFlags: 0

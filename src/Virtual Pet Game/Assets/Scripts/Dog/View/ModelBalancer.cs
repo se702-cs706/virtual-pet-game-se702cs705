@@ -54,7 +54,8 @@ public class ModelBalancer : MonoBehaviour
         var desiredTiltRotation = Quaternion.FromToRotation (IKObject.transform.up, normal) * IKObject.rotation;
         IKObject.rotation = Quaternion.Lerp(transform.rotation, desiredTiltRotation, Time.deltaTime * tileDamper);
         //rotate look direction
-        var desiredLookRotation = Quaternion.FromToRotation (IKObject.forward,lookDirection) * IKObject.rotation;
+        var flatForward = -Vector3.Cross(Vector3.up, IKObject.right);
+        var desiredLookRotation = Quaternion.FromToRotation (flatForward,new Vector3(lookDirection.x, flatForward.y,lookDirection.z)) * IKObject.rotation;
         IKObject.rotation = Quaternion.Lerp(transform.rotation, desiredLookRotation, Time.deltaTime * rotationDamper);
     }
 
