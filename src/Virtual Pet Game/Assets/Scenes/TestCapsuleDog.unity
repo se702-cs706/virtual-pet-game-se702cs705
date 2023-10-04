@@ -6645,7 +6645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1377207602127095390, guid: 5123602aac7977242a0408371836e8fe, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 4294967295
+      value: 1015
       objectReference: {fileID: 0}
     - target: {fileID: 4347563966646759981, guid: 5123602aac7977242a0408371836e8fe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7286,6 +7286,38 @@ PrefabInstance:
     - target: {fileID: 1991939503058577222, guid: 35c23843597b64f428f933e36770e343, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 283645298}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: setGoodDoggo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
+      value: PlayerCamera, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2166042719947028463, guid: 35c23843597b64f428f933e36770e343, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2418988102260837500, guid: 35c23843597b64f428f933e36770e343, type: 3}
       propertyPath: GamePlay
