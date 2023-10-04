@@ -8,20 +8,21 @@ namespace States
     {
         public static IState GetPOIActionStates(IStateActions _manager, StateFactory _stateFactory)
         {
-            if (_manager.PointOfInterest != null)
+            var poi = _manager.GetPointOfInterest();
+            
+            if (poi != null)
             {
                 IState next = null;
-                if (_manager.PointOfInterest.interaction != null)
+                if (poi.interaction != null)
                 { 
                     var next2 = 
                         GetRunToPlayerSequence(_stateFactory, _manager.getRunSpeed(), 1f,7, _manager.getPlayerTransform());
-                    Debug.Log(_manager.PointOfInterest.interaction);
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
                     new InteractionStateParams()
                     {
                         _next = next2,
-                        _interaction = _manager.PointOfInterest.interaction,
-                        _time = _manager.PointOfInterest.InterestTime,
+                        _interaction = poi.interaction,
+                        _time = poi.InterestTime,
                     });
                 }
                 
@@ -29,8 +30,8 @@ namespace States
                 {
                     _maxSpeed = _manager.getRunSpeed(),
                     _next = next,
-                    distance = _manager.PointOfInterest.InteractionDistance,
-                    _target = _manager.PointOfInterest.transform,
+                    distance = poi.InteractionDistance,
+                    _target = poi.transform,
                 });
             }
 

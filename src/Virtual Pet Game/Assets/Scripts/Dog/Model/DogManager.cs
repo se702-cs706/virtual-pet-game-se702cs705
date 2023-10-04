@@ -39,7 +39,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] private List<PointOfInterest> pointsOfInterest;
 
     [SerializeField] private Transform playerTransform;
-    public PointOfInterest PointOfInterest { get; set; }
 
     public void Start()
     {
@@ -61,7 +60,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 
         HandleState();
         DropParams();
-        UpdatePointOfInterest();
     }
 
     private void HandleState()
@@ -86,24 +84,18 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         }
     }
 
-    private void UpdatePointOfInterest()
+    public PointOfInterest GetPointOfInterest()
     {
-        if (pointsOfInterest.Count == 0)
-        {
-            PointOfInterest = null;
-            return;
-        }
         if (pointsOfInterest.Count == 1)
         {
-            PointOfInterest = pointsOfInterest[0];
-            return;
+            return pointsOfInterest[0];
         }
         
         var position = transform.position;
         var mostInterestPoi = null as PointOfInterest;
         foreach (var poi in pointsOfInterest)
         {
-            if (!poi.canBeUsed)
+            if (!poi.canBeUsed || poi.InterestLevel <= 0)
             {
                 continue;
             }
@@ -125,7 +117,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
             }
         }
         
-        PointOfInterest = mostInterestPoi;
+        return mostInterestPoi;
     }
     
     public float GetEnergy()
