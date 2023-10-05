@@ -40,6 +40,24 @@ namespace States
             });;
         }
 
+        public static IState GetRunToPOIActionSequence(IStateActions _manager, StateFactory _stateFactory, PointOfInterest pointOfInterest)
+        {
+            var next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
+                new InteractionStateParams()
+                {
+                    _interaction = pointOfInterest.interaction,
+                    _time = pointOfInterest.InterestTime,
+                });
+            
+            return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
+            {
+                _maxSpeed = _manager.getRunSpeed(),
+                _next = next,
+                distance = pointOfInterest.InteractionDistance,
+                _target = pointOfInterest.transform,
+            });
+        }
+
         public static IState GetZoomiesState(IStateActions _manager, StateFactory _stateFactory)
         {
             var rand = Random.Range(7, 14);
