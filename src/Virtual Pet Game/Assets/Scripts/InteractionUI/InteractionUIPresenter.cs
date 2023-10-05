@@ -10,8 +10,14 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
 
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        // Set keybinding text on Start, as this will never be changed.
         promptController.SetThrowBallKey(keyBindings.KeyThrowBall);
+        promptController.SetSitKey(keyBindings.KeySit);
+        promptController.SetComeBoyKey(keyBindings.KeyComeBoy);
+
+        // Set default visibility
+        promptController.SetVoiceCommandsVisible(false);
     }
 
     // Update is called once per frame
@@ -40,6 +46,11 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
         }
 
         promptController.SetThrowBallVisible(playerController.hasBall);
+    }
+
+    public void SetVoiceCommandsVisible(bool isVisible)
+    {
+        promptController.SetVoiceCommandsVisible(isVisible);
     }
 
     public void onModelStateChanged()

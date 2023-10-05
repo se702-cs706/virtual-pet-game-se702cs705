@@ -55,5 +55,15 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.ThrowBallKeyPressed();
         }
+
+        // Toggle voice command menu
+        if (Input.GetKeyDown(keyBindings.KeyShowVoiceCommands))
+        {
+            interactionUIPresenter.SetVoiceCommandsVisible(true);
+        }
+        if (Input.GetKeyUp(keyBindings.KeyShowVoiceCommands))
+        {
+            interactionUIPresenter.SetVoiceCommandsVisible(false);
+        }
     }
 }
