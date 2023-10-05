@@ -20,8 +20,8 @@ public class KeyBindings : MonoBehaviour
     [Header("Special")]
     public KeyCode KeyThrowBall;
     public KeyCode KeyShowVoiceCommands;
-    public KeyCode KeySit;
-    public KeyCode KeyComeBoy;
+    public KeyCode KeyDogSit;
+    public KeyCode KeyDogComeBoy;
 
     public KeyCode GetInteractKeyCode(InteractKey interactKey)
     {

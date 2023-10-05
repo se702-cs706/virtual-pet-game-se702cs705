@@ -81,13 +81,13 @@ public class InputView : MonoBehaviour
         }
 
         // Voice command inputs
-        if (Input.GetKeyDown(keyBindings.KeySit))
+        if (Input.GetKeyDown(keyBindings.KeyDogSit))
         {
-            Debug.Log("You: Sit!");
+            characterPresenter.DogSitKeyPressed();
         }
-        if (Input.GetKeyDown(keyBindings.KeyComeBoy))
+        if (Input.GetKeyDown(keyBindings.KeyDogComeBoy))
         {
-            Debug.Log("You: Come boy!");
+            characterPresenter.DogComeBoyKeyPressed();
         }
     }
 }

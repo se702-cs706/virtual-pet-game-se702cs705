@@ -71,8 +71,8 @@ MonoBehaviour:
   KeyInteract3: 325
   KeyThrowBall: 113
   KeyShowVoiceCommands: 118
-  KeySit: 49
-  KeyComeBoy: 50
+  KeyDogSit: 49
+  KeyDogComeBoy: 50
 --- !u!1 &1606129835575627923
 GameObject:
   m_ObjectHideFlags: 0

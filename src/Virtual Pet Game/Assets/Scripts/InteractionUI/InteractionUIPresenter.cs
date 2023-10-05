@@ -13,8 +13,8 @@ public class InteractionUIPresenter : MonoBehaviour, IPresenter
     {
         // Set keybinding text on Start, as this will never be changed.
         promptController.SetThrowBallKey(keyBindings.KeyThrowBall);
-        promptController.SetSitKey(keyBindings.KeySit);
-        promptController.SetComeBoyKey(keyBindings.KeyComeBoy);
+        promptController.SetSitKey(keyBindings.KeyDogSit);
+        promptController.SetComeBoyKey(keyBindings.KeyDogComeBoy);
 
         // Set default visibility
         promptController.SetVoiceCommandsVisible(false);
