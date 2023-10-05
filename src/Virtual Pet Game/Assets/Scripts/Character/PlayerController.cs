@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     // TODO: see if we can reference an interface instead.
     [Header("Deps")]
     [SerializeField] DogManager dogManager;
+    [SerializeField] private PointOfInterest pointOfInterest;
     [SerializeField] float sitTime = 10;
 
     [Header("Movement")]
@@ -295,9 +296,9 @@ public class PlayerController : MonoBehaviour
 
     public void CallDog()
     {
-        dogManager.GotoPlayer();
+        pointOfInterest.InterestLevel = 200;
     }
-
+    
     public void CommandDogToSit()
     {
         dogManager.startStateAction(DogState.Sit, sitTime);

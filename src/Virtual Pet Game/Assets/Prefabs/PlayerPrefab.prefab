@@ -250,6 +250,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd813704fc449548ae288af11e043d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dogManager: {fileID: 0}
+  pointOfInterest: {fileID: 6523894807892489845}
+  sitTime: 10
   moveSpeed: 5
   groundDrag: 5
   jumpForce: 4.5
@@ -266,6 +269,7 @@ MonoBehaviour:
   interactionRadius: 0.3
   interactionRange: 2.5
   isTargetingInteractable: 0
+  throwForce: 0
   BallObject: {fileID: 0}
   _manager: {fileID: 0}
   hasBall: 0
@@ -286,10 +290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InheritInterestLevel: 5
   InterestLevel: 0
-  InterestRadius: 10
-  InteractionDistance: 0
+  InterestRadius: 20
+  InteractionDistance: 1
   InterestTime: 10
-  canBeUsed: 1
   InheritInterestCooldown: 0
   InterestType: 2
   interaction: {fileID: 0}

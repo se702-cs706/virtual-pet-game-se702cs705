@@ -14,7 +14,7 @@ namespace States
                 if (_manager.PointOfInterest.interaction != null)
                 { 
                     var next2 = 
-                        GetRunToPlayerSequence(_stateFactory, _manager.getRunSpeed(), 1f,7, _manager.getPlayerTransform());
+                        GetRunToPlayerSequence(_stateFactory, _manager.getRunSpeed(), _manager.getPlayerPoi());
                     Debug.Log(_manager.PointOfInterest.interaction);
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
                     new InteractionStateParams()
@@ -113,11 +113,11 @@ namespace States
             });
         }
         
-        public static IState GetRunToPlayerSequence(StateFactory _stateFactory, float maxSpeed, float distance, float waitingTime, Transform target, IState next = null)
+        public static IState GetRunToPlayerSequence(StateFactory _stateFactory, float maxSpeed, PointOfInterest playerPointOfInterest, IState next = null)
         {
             var nextAction2 = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
-                _time = waitingTime,
+                _time = playerPointOfInterest.InterestTime,
                 _next = next,
             });
 
@@ -130,8 +130,8 @@ namespace States
             return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
             {
                 _maxSpeed = maxSpeed,
-                distance = distance,
-                _target = target,
+                distance = playerPointOfInterest.InteractionDistance,
+                _target = playerPointOfInterest.transform,
                 _next = nextAction1,
             });
         }
