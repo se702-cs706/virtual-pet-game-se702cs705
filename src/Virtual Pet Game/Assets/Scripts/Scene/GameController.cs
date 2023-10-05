@@ -10,13 +10,14 @@ public class GameController : MonoBehaviour
     public GameObject mainMenu;
     public bool isGamePaused = false;
 
+    /*
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) // Use your desired key
         {
             if (isGamePaused) ResumeGame(); else PauseGame();
         }
-    }
+    }*/
 
     public void RestartGame()
     {
@@ -45,13 +46,7 @@ public class GameController : MonoBehaviour
         Cursor.visible = false;
     }
 
-    public void ReturnToMainMenu()
-    {
-        gameScene.SetActive(false);
-        pauseMenu.SetActive(false);
-        mainMenu.SetActive(true);
-        // Any additional cleanup before returning to the main menu.
-    }
+
 
 
 }

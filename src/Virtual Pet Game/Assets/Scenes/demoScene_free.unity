@@ -6149,6 +6149,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 869527592}
     - target: {fileID: 3052339584870501159, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1958912252}
+    - target: {fileID: 3052339584870501159, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
       propertyPath: characterPresenter
       value: 
       objectReference: {fileID: 2111553744}
@@ -6196,12 +6200,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8236922256586906042, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: gameScene
+      value: 
+      objectReference: {fileID: 1958912250}
+    - target: {fileID: 8236922256586906042, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 477497464}
     - target: {fileID: 8891396131126145691, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
       propertyPath: camera
       value: 
       objectReference: {fileID: 283645298}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3035458220864207446, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
