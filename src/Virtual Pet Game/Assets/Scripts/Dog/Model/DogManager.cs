@@ -234,4 +234,17 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         holding = gameObject;
     }
+
+
+
+
+
+
+
+
+    // TODO: actually implement this
+    public void GotoPlayer()
+    {
+        Debug.Log("Going to dog");
+    }
 }

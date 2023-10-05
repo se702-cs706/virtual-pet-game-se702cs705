@@ -6829,6 +6829,14 @@ PrefabInstance:
       propertyPath: BallObject
       value: 
       objectReference: {fileID: 800965044}
+    - target: {fileID: 5167303902340316711, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: dogManager
+      value: 
+      objectReference: {fileID: 1399799343}
+    - target: {fileID: 5167303902340316711, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: throwForce
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
