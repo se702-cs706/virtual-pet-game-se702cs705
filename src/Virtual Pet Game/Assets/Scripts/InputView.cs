@@ -20,29 +20,40 @@ public class InputView : MonoBehaviour
 
     public void Update()
     {
+        CharacterMovement();
+        Interactions();
+        VoiceCommands();
+    }
+
+    private void CharacterMovement()
+    {
         // key press action
-        if(Input.GetKey(keyBindings.KeyForward) ||
-            Input.GetKey(keyBindings.KeyBackward) || 
+        if (Input.GetKey(keyBindings.KeyForward) ||
+            Input.GetKey(keyBindings.KeyBackward) ||
             Input.GetKey(keyBindings.KeyLeft) ||
             Input.GetKey(keyBindings.KeyRight))
         {
             characterPresenter.MovementKeyPressed(
-                        Input.GetKey(keyBindings.KeyForward), 
-                        Input.GetKey(keyBindings.KeyBackward), 
-                        Input.GetKey(keyBindings.KeyLeft), 
+                        Input.GetKey(keyBindings.KeyForward),
+                        Input.GetKey(keyBindings.KeyBackward),
+                        Input.GetKey(keyBindings.KeyLeft),
                         Input.GetKey(keyBindings.KeyRight));
         }
         else
         {
             characterPresenter.MovementKeyReleased();
         }
-        
+
         // jump key pressed
-        if(Input.GetKeyDown(keyBindings.KeyJump))
+        if (Input.GetKeyDown(keyBindings.KeyJump))
         {
             characterPresenter.JumpKeyPressed();
         }
+    }
 
+    private void Interactions()
+    {
+        // Interaction inputs
         if (characterPresenter.HasInteractions())
         {
             if (Input.GetKeyDown(keyBindings.KeyInteract1)) characterPresenter.Pressed(InteractKey.Interact1);
@@ -55,7 +66,10 @@ public class InputView : MonoBehaviour
         {
             characterPresenter.ThrowBallKeyPressed();
         }
+    }
 
+    private void VoiceCommands()
+    {
         // Toggle voice command menu
         if (Input.GetKeyDown(keyBindings.KeyShowVoiceCommands))
         {
@@ -64,6 +78,16 @@ public class InputView : MonoBehaviour
         if (Input.GetKeyUp(keyBindings.KeyShowVoiceCommands))
         {
             interactionUIPresenter.SetVoiceCommandsVisible(false);
+        }
+
+        // Voice command inputs
+        if (Input.GetKeyDown(keyBindings.KeySit))
+        {
+            Debug.Log("You: Sit!");
+        }
+        if (Input.GetKeyDown(keyBindings.KeyComeBoy))
+        {
+            Debug.Log("You: Come boy!");
         }
     }
 }
