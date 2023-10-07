@@ -33,7 +33,7 @@ public class AgentController : MonoBehaviour
         
         if (isMovingToTarget)
         {
-            if (Math.Abs(transform.position.x - target.x) < 0.05f && Math.Abs(transform.position.z - target.z) < 0.05f)
+            if (Math.Abs(transform.position.x - target.x) < 0.115f && Math.Abs(transform.position.z - target.z) < 0.115f)
             {
                 isMovingToTarget = false;
             }
