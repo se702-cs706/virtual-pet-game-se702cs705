@@ -14,16 +14,8 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         //SceneManager.LoadSceneAsync(1);
-
-        if (currentMode == 2)
-        {  
-            selectModel.SetActive(true);
-        }
-        else
-        {
-            GamePlay.SetActive(true);
-            MainSettings.SetActive(false);
-        }
+        Time.timeScale = 1f;
+        selectModel.SetActive(true);
     }
 
     public void SetUserMode(int userInput)
