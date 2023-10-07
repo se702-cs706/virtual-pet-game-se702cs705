@@ -287,9 +287,8 @@ MonoBehaviour:
   InheritInterestLevel: 5
   InterestLevel: 0
   InterestRadius: 10
-  InteractionDistance: 0
+  InteractionDistance: 0.6
   InterestTime: 10
-  canBeUsed: 1
   InheritInterestCooldown: 0
   InterestType: 2
   interaction: {fileID: 0}
