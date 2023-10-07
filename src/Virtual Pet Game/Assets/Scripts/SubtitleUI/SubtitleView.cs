@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SubtitleView : MonoBehaviour
 {
@@ -10,13 +11,14 @@ public class SubtitleView : MonoBehaviour
 
     public void ShowSubtitle(string text)
     {
-        subtitleTextUI.Show();
         subtitlePanel.SetActive(true);
 
         if (text != subtitleTextUI.text)
         {
             subtitleTextUI.SetText(text);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(subtitlePanel.GetComponent<RectTransform>());
         }
+        subtitleTextUI.Show();
     }
 
     public void HideSubtitle()

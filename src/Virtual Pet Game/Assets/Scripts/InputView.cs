@@ -82,12 +82,12 @@ public class InputView : MonoBehaviour
         }
 
         // Voice command inputs
-        if (Input.GetKeyDown(keyBindings.KeyDogSit))
+        if (Input.GetKeyDown(keyBindings.KeyDogSit) && !subtitlePresenter.isPlaying)
         {
             characterPresenter.DogSitKeyPressed();
             subtitlePresenter.PlaySubtitle("sit");
         }
-        if (Input.GetKeyDown(keyBindings.KeyDogComeBoy))
+        if (Input.GetKeyDown(keyBindings.KeyDogComeBoy) && !subtitlePresenter.isPlaying)
         {
             characterPresenter.DogComeBoyKeyPressed();
             subtitlePresenter.PlaySubtitle("come boy");

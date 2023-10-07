@@ -4961,6 +4961,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8132773087445783806, guid: 6f105a7997af2514d8aed22d8422d397, type: 3}
+      propertyPath: m_ChildScaleWidth
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8669492333957009547, guid: 6f105a7997af2514d8aed22d8422d397, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -4979,7 +4983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8669492333957009547, guid: 6f105a7997af2514d8aed22d8422d397, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 103.065
       objectReference: {fileID: 0}
     - target: {fileID: 8669492333957009547, guid: 6f105a7997af2514d8aed22d8422d397, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6876,6 +6880,34 @@ PrefabInstance:
     - target: {fileID: 6523894807892489845, guid: 5123602aac7977242a0408371836e8fe, type: 3}
       propertyPath: InteractionDistance
       value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.data[0].id
+      value: sit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.data[1].id
+      value: come boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.data[0].text
+      value: Sit, boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.data[1].text
+      value: Come here, boy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.data[0].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: subtitles.Array.data[1].duration
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

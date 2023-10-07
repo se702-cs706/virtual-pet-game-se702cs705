@@ -6,15 +6,13 @@ public class SubtitlePresenter : MonoBehaviour, IPresenter
     [SerializeField] SubtitleView view;
     [SerializeField] SubtitleController controller;
 
-    public bool hasText { get; private set; }
-    public string currentText { get; private set; }
+    public bool isPlaying { private set; get; }
 
     // Use this for initialization
     void Start()
     {
-        hasText = false;
-        currentText = "";
         view.HideSubtitle();
+        isPlaying = false;
     }
 
     // Update is called once per frame
@@ -31,10 +29,12 @@ public class SubtitlePresenter : MonoBehaviour, IPresenter
 
     IEnumerator TimeSubtitleVisibility(Subtitle subtitle)
     {
+        isPlaying = true;
         view.ShowSubtitle(subtitle.text);
 
         yield return new WaitForSeconds(subtitle.duration);
 
+        isPlaying = false;
         view.HideSubtitle();
     }
 

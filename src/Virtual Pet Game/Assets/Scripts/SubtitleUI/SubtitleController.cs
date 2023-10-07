@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class SubtitleController : MonoBehaviour
 {
-    [SerializeField] List<Subtitle> subtitles;
+    [SerializeField] List<Subtitle> subtitles = new();
 
     public Subtitle GetSubtitle(string id)
     {
@@ -11,7 +11,7 @@ public class SubtitleController : MonoBehaviour
 
         if (subtitle == null)
         {
-            throw new System.NullReferenceException("Couuld not find subtitle with id: " + id);
+            throw new System.NullReferenceException("Could not find subtitle with id: " + id);
         }
         return subtitle;
     }
