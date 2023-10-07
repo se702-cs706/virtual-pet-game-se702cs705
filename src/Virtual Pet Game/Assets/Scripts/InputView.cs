@@ -12,6 +12,7 @@ public class InputView : MonoBehaviour
     public CharacterPresenter characterPresenter;
     public InteractionUIPresenter interactionUIPresenter;
     public CameraPresenter cameraPresenter;
+    public SubtitlePresenter subtitlePresenter;
 
     private void Start()
     {
@@ -84,10 +85,12 @@ public class InputView : MonoBehaviour
         if (Input.GetKeyDown(keyBindings.KeyDogSit))
         {
             characterPresenter.DogSitKeyPressed();
+            subtitlePresenter.PlaySubtitle("sit");
         }
         if (Input.GetKeyDown(keyBindings.KeyDogComeBoy))
         {
             characterPresenter.DogComeBoyKeyPressed();
+            subtitlePresenter.PlaySubtitle("come boy");
         }
     }
 }
