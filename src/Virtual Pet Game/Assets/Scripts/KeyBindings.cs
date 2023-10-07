@@ -19,6 +19,7 @@ public class KeyBindings : MonoBehaviour
 
     [Header("Special")]
     public KeyCode KeyThrowBall;
+    public KeyCode pauseGame;
 
     public KeyCode GetInteractKeyCode(InteractKey interactKey)
     {
