@@ -218,7 +218,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6663015
@@ -293,6 +293,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -316,7 +344,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &16534551
@@ -348,7 +376,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &18219192
@@ -506,6 +534,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -629,7 +685,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &35145978
@@ -708,6 +764,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -847,7 +931,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &59472787
@@ -879,7 +963,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &60896380
@@ -1059,6 +1143,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1077,7 +1189,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &74296519
@@ -1197,7 +1309,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &96999654
@@ -1282,6 +1394,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2
@@ -1321,7 +1461,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &109081536
@@ -1358,7 +1498,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &122177199
@@ -1639,7 +1779,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &129313338
@@ -1671,7 +1811,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &129839254
@@ -1718,7 +1858,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &148614714
@@ -1750,7 +1890,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &149735946
@@ -1782,7 +1922,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &154852424
@@ -1962,6 +2102,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1980,7 +2148,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &158271544
@@ -2055,6 +2223,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2116,6 +2312,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2142,7 +2366,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 395342553235546000, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.633442
+      value: -5.31
       objectReference: {fileID: 0}
     - target: {fileID: 395342553235546000, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2184,6 +2408,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8600244830694261201, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600244830694261201, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2202,7 +2434,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &172712630
@@ -2234,7 +2466,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &182075912
@@ -2266,7 +2498,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &193660961
@@ -2303,7 +2535,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &198987373
@@ -2335,7 +2567,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &205069179
@@ -2543,7 +2775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &215951835
 Transform:
   m_ObjectHideFlags: 0
@@ -2592,9 +2824,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ladder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1133575617146964436, guid: a02f1718a5fcb5244b991cc84ec1f4be, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133575617146964436, guid: a02f1718a5fcb5244b991cc84ec1f4be, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7480127513643434316, guid: a02f1718a5fcb5244b991cc84ec1f4be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.507938
+      value: -14.34
       objectReference: {fileID: 0}
     - target: {fileID: 7480127513643434316, guid: a02f1718a5fcb5244b991cc84ec1f4be, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2709,6 +2949,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2
@@ -2724,6 +2984,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2880,6 +3148,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2908,7 +3204,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &252199828
@@ -2940,7 +3236,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &273865049
@@ -2972,7 +3268,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &276961656
@@ -3131,6 +3427,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -3159,6 +3483,14 @@ PrefabInstance:
     - target: {fileID: 1653430092756983819, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
       propertyPath: m_Name
       value: Doghouse_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653430092756983819, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653430092756983819, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2374860887546413261, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
       propertyPath: m_LocalScale.x
@@ -3245,7 +3577,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &316557706
@@ -3335,6 +3667,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -3361,7 +3721,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &339332589
@@ -3398,7 +3758,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &350614606
@@ -3461,7 +3821,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &353973392
@@ -3493,7 +3853,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &358615896
@@ -3535,7 +3895,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &370230906
@@ -3609,6 +3969,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3772,6 +4160,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.4
@@ -3787,6 +4195,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.057003796
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3959,6 +4375,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3977,7 +4421,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &391732294
@@ -4023,7 +4467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2601670983972683359, guid: 84ab4d4bdebff6b4eb809250890511b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.960609
+      value: -10.45
       objectReference: {fileID: 0}
     - target: {fileID: 2601670983972683359, guid: 84ab4d4bdebff6b4eb809250890511b8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4031,7 +4475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2601670983972683359, guid: 84ab4d4bdebff6b4eb809250890511b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 68.95653
+      value: 62.95
       objectReference: {fileID: 0}
     - target: {fileID: 2601670983972683359, guid: 84ab4d4bdebff6b4eb809250890511b8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4065,6 +4509,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_dog
       objectReference: {fileID: 0}
+    - target: {fileID: 7539213772642048396, guid: 84ab4d4bdebff6b4eb809250890511b8, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539213772642048396, guid: 84ab4d4bdebff6b4eb809250890511b8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4093,7 +4545,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &421722646
@@ -4123,6 +4575,14 @@ PrefabInstance:
     - target: {fileID: 1653430092756983819, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
       propertyPath: m_Name
       value: Doghouse_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653430092756983819, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653430092756983819, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2374860887546413261, guid: 6e60f573caea98544ae7aca94240663f, type: 3}
       propertyPath: m_LocalScale.x
@@ -4236,6 +4696,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4404,7 +4892,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &439804462
@@ -4479,6 +4967,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4497,7 +5013,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &445058586
@@ -4529,7 +5045,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &448666408
@@ -4566,7 +5082,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &460323927
@@ -4673,6 +5189,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.000008047558
@@ -4713,6 +5249,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.5
@@ -4747,7 +5291,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &462217967
@@ -4784,7 +5328,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &468052655
@@ -5047,6 +5591,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5065,7 +5637,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &490140836
@@ -5097,7 +5669,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &492587546
@@ -5172,6 +5744,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5190,7 +5790,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &499878167
@@ -5232,7 +5832,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &506816493
@@ -5438,6 +6038,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5765,7 +6393,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &539553931
@@ -5907,7 +6535,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &543076084
@@ -6036,7 +6664,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &543996327
@@ -6068,7 +6696,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &549127405
@@ -6143,6 +6771,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6204,6 +6860,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6222,7 +6906,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &552740500
@@ -6254,7 +6938,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &554031876
@@ -6533,7 +7217,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &578360604
@@ -6775,7 +7459,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &590531107
@@ -6807,7 +7491,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &594654801
@@ -6844,7 +7528,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &600694487
@@ -6876,7 +7560,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &610637508
@@ -6912,9 +7596,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6159643744242209329, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159643744242209329, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7349030917501253568, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.2106094
+      value: -5.887169
       objectReference: {fileID: 0}
     - target: {fileID: 7349030917501253568, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6970,7 +7662,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &614351469
@@ -7007,7 +7699,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &620752908
@@ -7082,6 +7774,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7142,6 +7862,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7253,7 +8001,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &632301217
@@ -7328,6 +8076,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7346,7 +8122,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &635008359
@@ -7378,7 +8154,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &640716606
@@ -7594,7 +8370,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &671529319
@@ -7626,7 +8402,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &674886869
@@ -7663,7 +8439,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &692885273
@@ -7695,7 +8471,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &700281484
@@ -7727,7 +8503,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &703282016
@@ -8017,6 +8793,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8078,6 +8882,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8093,7 +8925,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 282905032559285643, guid: d6921701f6c5c214da913bba56d72537, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3687134
+      value: -0.5352707
       objectReference: {fileID: 0}
     - target: {fileID: 282905032559285643, guid: d6921701f6c5c214da913bba56d72537, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8134,6 +8966,14 @@ PrefabInstance:
     - target: {fileID: 4937720641006579988, guid: d6921701f6c5c214da913bba56d72537, type: 3}
       propertyPath: m_Name
       value: Barrier_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937720641006579988, guid: d6921701f6c5c214da913bba56d72537, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937720641006579988, guid: d6921701f6c5c214da913bba56d72537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8201,6 +9041,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8261,6 +9129,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8390,7 +9286,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &765609550
@@ -8422,7 +9318,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &785849454
@@ -8454,7 +9350,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &792375484
@@ -8630,7 +9526,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &794249382
@@ -8704,6 +9600,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8806,6 +9730,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.3
@@ -8849,6 +9793,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.425003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8978,7 +9930,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &821728033
@@ -9053,7 +10005,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &829689787
@@ -9128,6 +10080,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9151,7 +10131,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &844452139
@@ -9242,6 +10222,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.4
@@ -9257,6 +10257,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9276,7 +10284,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &852309458
@@ -9351,6 +10359,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9420,6 +10456,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Doghouse_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7383801103150362725, guid: 89d295824ef4ced43aac1342e395dec5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7383801103150362725, guid: 89d295824ef4ced43aac1342e395dec5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9438,7 +10482,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &870989917
@@ -9513,6 +10557,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9531,7 +10603,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &879195604
@@ -9623,6 +10695,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2
@@ -9638,6 +10730,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.131
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9657,7 +10757,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &890131228
@@ -9694,7 +10794,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &900869138
@@ -9778,6 +10878,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9885,6 +11013,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2
@@ -9929,6 +11077,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -9.904999
       objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9947,7 +11103,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &917448293
@@ -9979,7 +11135,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &918656220
@@ -10125,7 +11281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4650233345607511341, guid: 0dd325f50bac47941b588b2a86a31aeb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75.61875
+      value: 76.08
       objectReference: {fileID: 0}
     - target: {fileID: 4650233345607511341, guid: 0dd325f50bac47941b588b2a86a31aeb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10159,6 +11315,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bin
       objectReference: {fileID: 0}
+    - target: {fileID: 8612273025731912568, guid: 0dd325f50bac47941b588b2a86a31aeb, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8612273025731912568, guid: 0dd325f50bac47941b588b2a86a31aeb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10177,7 +11341,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &951348974
@@ -10209,7 +11373,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &951789088
@@ -10241,7 +11405,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &954764275
@@ -10351,6 +11515,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10411,6 +11603,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10965,6 +12185,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10988,7 +12236,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &992726029
@@ -11030,7 +12278,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1007350179
@@ -11105,6 +12353,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11128,7 +12404,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1015027408
@@ -11440,6 +12716,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11458,7 +12762,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1021865905
@@ -11495,7 +12799,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1032954559
@@ -11527,7 +12831,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1054295467
@@ -11564,7 +12868,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1059335513
@@ -11639,6 +12943,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11657,7 +12989,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1063599920
@@ -11694,7 +13026,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1086401679
@@ -11913,6 +13245,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11931,7 +13291,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1110053376
@@ -11960,7 +13320,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 395342553235546000, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1134415
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: 395342553235546000, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12001,6 +13361,14 @@ PrefabInstance:
     - target: {fileID: 8600244830694261201, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
       propertyPath: m_Name
       value: Barrier_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600244830694261201, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600244830694261201, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12062,6 +13430,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12175,7 +13571,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1148678775
@@ -12212,7 +13608,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1163048013
@@ -12287,6 +13683,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12347,6 +13771,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12446,6 +13898,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.00000667572
@@ -12486,6 +13958,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2
@@ -12520,7 +14000,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1186940862
@@ -12595,6 +14075,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12649,7 +14157,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1191619123
@@ -12735,6 +14243,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12810,6 +14346,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13028,6 +14592,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.3
@@ -13206,7 +14798,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1242249338
@@ -13343,7 +14935,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1255692450
@@ -13380,7 +14972,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1258884099
@@ -13455,6 +15047,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13473,7 +15093,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1262626774
@@ -13547,7 +15167,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1273625564
@@ -13654,6 +15274,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13672,7 +15320,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1296164044
@@ -13704,7 +15352,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1298809427
@@ -13736,7 +15384,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1298887983
@@ -13768,7 +15416,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1304001347
@@ -13800,7 +15448,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1307161766
@@ -13832,7 +15480,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1307312894
@@ -13928,7 +15576,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1329962878
@@ -14043,6 +15691,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.3
@@ -14087,6 +15755,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 15.5890045
       objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14105,7 +15781,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1333118855
@@ -14217,6 +15893,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0001373291
@@ -14256,6 +15952,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
@@ -14406,7 +16110,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1363499264
@@ -14438,7 +16142,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1363708480
@@ -14480,7 +16184,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1377383327
@@ -14555,6 +16259,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14573,7 +16305,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1388007376
@@ -14605,7 +16337,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1391177758
@@ -14637,7 +16369,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1397573455
@@ -14702,7 +16434,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 282905032559285643, guid: d6921701f6c5c214da913bba56d72537, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.888714
+      value: -5.5652733
       objectReference: {fileID: 0}
     - target: {fileID: 282905032559285643, guid: d6921701f6c5c214da913bba56d72537, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14743,6 +16475,14 @@ PrefabInstance:
     - target: {fileID: 4937720641006579988, guid: d6921701f6c5c214da913bba56d72537, type: 3}
       propertyPath: m_Name
       value: Barrier_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937720641006579988, guid: d6921701f6c5c214da913bba56d72537, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937720641006579988, guid: d6921701f6c5c214da913bba56d72537, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14856,7 +16596,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1420264214
@@ -14885,7 +16625,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 248451792658098694, guid: a886a317587c91048aed87f453a2c74f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.8806095
+      value: -11.23
       objectReference: {fileID: 0}
     - target: {fileID: 248451792658098694, guid: a886a317587c91048aed87f453a2c74f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14893,7 +16633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 248451792658098694, guid: a886a317587c91048aed87f453a2c74f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 56.446526
+      value: 53.97
       objectReference: {fileID: 0}
     - target: {fileID: 248451792658098694, guid: a886a317587c91048aed87f453a2c74f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14927,6 +16667,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge
       objectReference: {fileID: 0}
+    - target: {fileID: 8647938481593140724, guid: a886a317587c91048aed87f453a2c74f, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8647938481593140724, guid: a886a317587c91048aed87f453a2c74f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14945,7 +16693,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1430482318
@@ -15020,6 +16768,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15087,7 +16863,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1441855533
@@ -15223,9 +16999,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier_3
       objectReference: {fileID: 0}
+    - target: {fileID: 6159643744242209329, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159643744242209329, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7349030917501253568, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.690609
+      value: -0.8571663
       objectReference: {fileID: 0}
     - target: {fileID: 7349030917501253568, guid: 29305f5cb71950d4d9203fc8033df0ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15281,7 +17065,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1451844317
@@ -15488,6 +17272,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15549,6 +17361,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15567,7 +17407,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1461568266
@@ -15599,7 +17439,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1464012208
@@ -15636,7 +17476,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1469264584
@@ -15668,7 +17508,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1471009603
@@ -15705,7 +17545,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1474638488
@@ -15737,7 +17577,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1481993865
@@ -15856,6 +17696,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2
@@ -15899,6 +17759,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.0010070801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16160,6 +18028,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16183,7 +18079,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1522113008
@@ -16258,6 +18154,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16276,7 +18200,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1522291085
@@ -16372,6 +18296,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2
@@ -16387,6 +18331,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16473,6 +18425,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.3
@@ -16488,6 +18460,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16571,6 +18551,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16594,7 +18602,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1558241493
@@ -16631,7 +18639,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1560345566
@@ -16663,7 +18671,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1561886037
@@ -16844,7 +18852,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1572935876
@@ -16881,7 +18889,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1594798954
@@ -16973,7 +18981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.47061
+      value: -19.38
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16981,7 +18989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 58.416527
+      value: 57.97
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17015,6 +19023,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bench
       objectReference: {fileID: 0}
+    - target: {fileID: 7847907669640205081, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847907669640205081, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17033,7 +19049,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1622068741
@@ -17070,7 +19086,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1642436301
@@ -17107,7 +19123,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1649943032
@@ -17217,7 +19233,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1657851672
@@ -17397,6 +19413,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17454,6 +19498,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wheel
       objectReference: {fileID: 0}
+    - target: {fileID: 3057169412393257295, guid: a8792a8e38479954ca4ce11200a1f3ec, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3057169412393257295, guid: a8792a8e38479954ca4ce11200a1f3ec, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17472,7 +19524,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1687389112
@@ -17504,7 +19556,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1688674550
@@ -17615,6 +19667,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.012
@@ -17654,6 +19726,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1.0429993
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17830,6 +19910,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17890,6 +19998,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18062,6 +20198,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18080,7 +20244,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1717989480
@@ -18117,7 +20281,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1737383300
@@ -18192,6 +20356,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18253,6 +20445,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18313,6 +20533,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
@@ -18435,6 +20683,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2.2
@@ -18450,6 +20718,14 @@ PrefabInstance:
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18524,7 +20800,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1770163212
@@ -18557,7 +20833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.410608
+      value: -19.22
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18565,11 +20841,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.416527
+      value: 51.62
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7837595
+      value: 0.73178697
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalRotation.x
@@ -18577,7 +20853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.62106454
+      value: 0.6815335
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalRotation.z
@@ -18589,7 +20865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 76.788
+      value: 85.927
       objectReference: {fileID: 0}
     - target: {fileID: 2028638399001519694, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -18598,6 +20874,14 @@ PrefabInstance:
     - target: {fileID: 7847907669640205081, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
       propertyPath: m_Name
       value: Bench (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847907669640205081, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7847907669640205081, guid: 5f5180660ce2e824db40a39aa21a6494, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18665,6 +20949,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18683,7 +20995,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1777182832
@@ -18725,7 +21037,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1784459855
@@ -18757,7 +21069,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1785686800
@@ -18789,7 +21101,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1799929866
@@ -18826,7 +21138,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1803086273
@@ -18858,7 +21170,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1809651082
@@ -18890,7 +21202,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1815931120
@@ -18932,7 +21244,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1818895108
@@ -19051,6 +21363,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7062232527320352757, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 2
@@ -19095,6 +21427,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.805
       objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7405549215014256857, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2
@@ -19134,7 +21474,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1830330835
@@ -19171,7 +21511,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1845525274
@@ -19203,7 +21543,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1851507234
@@ -19411,7 +21751,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1874911570
@@ -19486,6 +21826,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19504,7 +21872,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1887093806
@@ -19759,6 +22127,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19777,7 +22173,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1900169938
@@ -19809,7 +22205,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1904559420
@@ -19841,7 +22237,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1906107069
@@ -19873,7 +22269,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1911007704
@@ -19947,6 +22343,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20094,6 +22518,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20112,7 +22564,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1918307848
@@ -20187,6 +22639,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20205,7 +22685,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1934154937
@@ -20422,7 +22902,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1949887302
@@ -20454,7 +22934,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1952893275
@@ -20496,7 +22976,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1969202935
@@ -20775,6 +23255,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20793,7 +23301,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1986637427
@@ -20868,6 +23376,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20891,7 +23427,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1992530067
@@ -20922,7 +23458,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1995684376
@@ -21136,6 +23672,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21154,7 +23718,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2022449820
@@ -21186,7 +23750,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2026128162
@@ -21223,7 +23787,7 @@ GameObject:
   m_Name: Fences
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2031866732
@@ -21353,7 +23917,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2034833141
@@ -21390,7 +23954,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2038922025
@@ -21422,7 +23986,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2040479548
@@ -21502,6 +24066,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21520,7 +24112,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2054777477
@@ -21552,7 +24144,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2056406110
@@ -21584,7 +24176,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2067245062
@@ -21659,6 +24251,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: FencePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21677,7 +24297,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2077500657
@@ -21709,7 +24329,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2078412799
@@ -21741,7 +24361,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2078951469
@@ -21778,7 +24398,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2087422663
@@ -21857,6 +24477,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21981,7 +24629,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2103210763
@@ -22013,7 +24661,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2106638768
@@ -22055,7 +24703,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2114728130
@@ -22166,7 +24814,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2132719847
@@ -22198,7 +24846,7 @@ GameObject:
   m_Name: Shear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2135175913
@@ -22230,7 +24878,7 @@ GameObject:
   m_Name: Shear2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2137946682
@@ -22303,6 +24951,34 @@ PrefabInstance:
     - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
       propertyPath: m_Name
       value: FencePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603720224944477701, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462576588782491214, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847334504778870619, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078074859013384489, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
