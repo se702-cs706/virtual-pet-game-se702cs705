@@ -7,6 +7,8 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] float sensX;
     [SerializeField] float sensY;
     [SerializeField] Transform orientation;
+    private Camera cam;
+    private bool goodDog = true;
     public bool isLocked { get; private set; }
 
     float xRotation;
@@ -14,8 +16,10 @@ public class PlayerCamera : MonoBehaviour
 
     private void Start()
     {
+        cam = GetComponent<Camera>();
         SetLocked(false);
         UpdateCursorMode();
+
     }
 
     private void Update()
@@ -34,7 +38,21 @@ public class PlayerCamera : MonoBehaviour
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
         }
-        
+
+        if (goodDog)
+        {
+
+            cam.cullingMask |= 1 << LayerMask.NameToLayer("BetterDog");
+            cam.cullingMask &= ~(1 << LayerMask.NameToLayer("CapsuleDog"));
+
+        } else
+        {
+
+            cam.cullingMask |= 1 << LayerMask.NameToLayer("CapsuleDog");
+            cam.cullingMask &= ~(1 << LayerMask.NameToLayer("BetterDog"));
+
+        }
+
     }
 
     public void SetLocked(bool isLocked)
@@ -55,5 +73,16 @@ public class PlayerCamera : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
         }
+
+        //Cursor.lockState = isLocked ? CursorLockMode.None : CursorLockMode.Locked;
+    }
+
+    public void setGoodDoggo(bool active)
+    {
+
+        goodDog = true;
+
+        goodDog = active;
+
     }
 }

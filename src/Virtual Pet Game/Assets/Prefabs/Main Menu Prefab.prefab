@@ -651,52 +651,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &2739082777469071760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 604474246053173632}
-  - component: {fileID: 8685602139210922000}
-  m_Layer: 0
-  m_Name: LevelLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &604474246053173632
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2739082777469071760}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.04339, y: 24.454243, z: -186.64664}
-  m_LocalScale: {x: 2.213692, y: 2.213692, z: 2.213692}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5616318774045629765}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8685602139210922000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2739082777469071760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86da057c69f2f974796be1b2121c9ef0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 922400577657310576}
-  slider: {fileID: 7604488597948300308}
 --- !u!1 &2846502785583983789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,7 +2441,6 @@ RectTransform:
   - {fileID: 6577662695169025420}
   - {fileID: 4390213739349080012}
   - {fileID: 4150076047527829888}
-  - {fileID: 604474246053173632}
   - {fileID: 32191884922273023}
   m_Father: {fileID: 1991939503058577222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

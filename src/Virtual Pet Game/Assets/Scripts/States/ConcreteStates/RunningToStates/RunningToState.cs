@@ -30,6 +30,7 @@ public class RunningToState : GoalState, InitializableState<RunningToStateParams
     public override IState onStateDuringUpdate()
     {
         _controller.target = _target.position + (_controller.transform.position - _target.position).normalized * _distance;
+
         return null;
     }
 
