@@ -63,7 +63,9 @@ public class MetricsController : MonoBehaviour
     {
         fileData = new FileData(currentUser, interactionEvents, playTimes, fixationTimes);
         string dataJSON = JsonUtility.ToJson(fileData, true);
-        System.IO.File.WriteAllText(Application.persistentDataPath + "/" + currentUser.id.ToString() + ".json", dataJSON);
+        string path = Application.persistentDataPath + "/" + currentUser.id.ToString() + ".json";
+        System.IO.File.WriteAllText(path, dataJSON);
+        Debug.Log("Writing log file to: " + path);
     }
 
     public void LogToDatabase()

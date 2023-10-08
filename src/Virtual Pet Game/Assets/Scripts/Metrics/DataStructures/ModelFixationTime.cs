@@ -10,7 +10,8 @@ public class ModelFixationTime
 
     public ModelFixationTime(string timestamp, string userId, DogModelType model)
     {
-        this.timestamp = DateTime.Now.ToString();
+        this.id = userId;
+        this.timestamp = timestamp;
         this.model = model;
     }
 
