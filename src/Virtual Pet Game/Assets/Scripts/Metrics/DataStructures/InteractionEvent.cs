@@ -9,4 +9,9 @@ public class InteractionEvent : DatabaseEntry
     {
         this.interactionName = interactionName;
     }
+
+    public override string ToString()
+    {
+        return $"[{timestamp}]: {interactionName}";
+    }
 }

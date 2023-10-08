@@ -23,6 +23,11 @@ public class MetricsController : MonoBehaviour
         currentUser = newUser;
     }
 
+    public void AddInteraction(InteractionEvent interactionEvent)
+    {
+        interactionEvents.Add(interactionEvent);
+    }
+
 
     public void AddPlayTime(ModelPlayTime playTime)
     {

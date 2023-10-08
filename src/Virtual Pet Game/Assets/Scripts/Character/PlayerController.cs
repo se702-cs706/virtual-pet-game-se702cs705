@@ -12,7 +12,7 @@ using UnityEngine;
 /// Provides the presenter the ability to control the player.
 /// Also holds the player's state;
 /// </summary>
-public class PlayerController : MonoBehaviour
+public class PlayerController : MetricsTracker
 {
     [Header("Presenter")]
     [SerializeField] IPresenter characterPresenter;
@@ -247,6 +247,10 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
+
+        // Log interaction metric
+        presenter.LogInteraction(interactions[i].GetName());
+
         // nullable 
         interactions?[i].Invoke(this);
         return true;

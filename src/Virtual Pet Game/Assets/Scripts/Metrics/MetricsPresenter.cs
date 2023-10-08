@@ -21,6 +21,15 @@ public class MetricsPresenter : MonoBehaviour
     }
 
 
+    public void LogInteraction(string interactionName)
+    {
+        InteractionEvent interactionEvent = new InteractionEvent(DateTime.Now, controller.currentUser.id, interactionName);
+
+        Debug.Log(interactionEvent);
+
+        controller.AddInteraction(interactionEvent);
+    }
+
 
     public void StartPlayTime()
     {
