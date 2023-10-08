@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.77242875, g: 0.9104208, b: 0.99592954, a: 1}
+  m_IndirectSpecularColor: {r: 0.77267134, g: 0.9104185, b: 0.9959926, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -5148,7 +5148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxYPosition: 0
   RestoreRate: 0
-  food: {fileID: 1126716946}
+  bowlController: {fileID: 695262930}
 --- !u!114 &695262929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5177,7 +5177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4b328195e58f3498c0ee323dd6f134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bowlState: 0
+  food: {fileID: 1126716946}
+  lower: 0.02
 --- !u!1 &701483941
 GameObject:
   m_ObjectHideFlags: 0
