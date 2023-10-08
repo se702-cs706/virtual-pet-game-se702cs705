@@ -92,7 +92,7 @@ public class InputView : MonoBehaviour
         if (Input.GetKeyDown(keyBindings.KeyDogSit) && !subtitlePresenter.isPlaying)
         {
             characterPresenter.DogSitKeyPressed();
-            subtitlePresenter.PlaySubtitle("sit");
+            subtitlePresenter.PlaySubtitle("sit boy");
         }
         if (Input.GetKeyDown(keyBindings.KeyDogComeBoy) && !subtitlePresenter.isPlaying)
         {

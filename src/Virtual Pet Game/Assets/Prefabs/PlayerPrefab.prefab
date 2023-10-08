@@ -44,6 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062ee98e98ea240aca5924167913f23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subtitles:
+  - id: come boy
+    text: Come, boy!
+    duration: 3
+  - id: sit boy
+    text: Sit, boy!
+    duration: 1
 --- !u!1 &1305853529277817625
 GameObject:
   m_ObjectHideFlags: 0

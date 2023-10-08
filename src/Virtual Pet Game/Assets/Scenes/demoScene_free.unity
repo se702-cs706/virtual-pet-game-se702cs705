@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: BallObject
       value: 
       objectReference: {fileID: 1552391213}
+    - target: {fileID: 5167303902340316711, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+      propertyPath: dogManager
+      value: 
+      objectReference: {fileID: 727361944}
     - target: {fileID: 8906187199060371721, guid: 5123602aac7977242a0408371836e8fe, type: 3}
       propertyPath: sensX
       value: 230
@@ -2421,6 +2425,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d73fa9b44554804cb57410994cd7a91, type: 3}
+--- !u!114 &170598925 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2591489893144815561, guid: 6f105a7997af2514d8aed22d8422d397, type: 3}
+  m_PrefabInstance: {fileID: 543266068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa36b5ba3aa1479a8405c4e1f9bfbf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &172712629
 GameObject:
   m_ObjectHideFlags: 0
@@ -8389,6 +8404,17 @@ Transform:
   - {fileID: 6663015}
   m_Father: {fileID: 2031866732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673451798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6523894807892489845, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+  m_PrefabInstance: {fileID: 1883263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5cab190983f0b439c940f095582ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &674886868
 GameObject:
   m_ObjectHideFlags: 0
@@ -11875,6 +11901,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5847079236885306816, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
+      propertyPath: playerPoi
+      value: 
+      objectReference: {fileID: 673451798}
+    - target: {fileID: 5847079236885306816, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: sprintSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -13485,6 +13515,14 @@ PrefabInstance:
       propertyPath: promptController
       value: 
       objectReference: {fileID: 1194926747}
+    - target: {fileID: 2015374473695569835, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: view
+      value: 
+      objectReference: {fileID: 170598925}
+    - target: {fileID: 2015374473695569835, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: 1951250896}
     - target: {fileID: 3052339584870501159, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
       propertyPath: characterPresenter
       value: 
@@ -13532,6 +13570,18 @@ PrefabInstance:
     - target: {fileID: 3696935023793265505, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469424579731795346, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: KeyDogSit
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469424579731795346, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: KeyDogComeBoy
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469424579731795346, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
+      propertyPath: KeyShowVoiceCommands
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 8236922256586906042, guid: 7531c73d8abfaec4888b8805928cc978, type: 3}
       propertyPath: mainMenu
@@ -22968,6 +23018,17 @@ Transform:
   - {fileID: 2026128162}
   m_Father: {fileID: 2031866732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1951250896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8124960028250769502, guid: 5123602aac7977242a0408371836e8fe, type: 3}
+  m_PrefabInstance: {fileID: 1883263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062ee98e98ea240aca5924167913f23f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1952893274
 GameObject:
   m_ObjectHideFlags: 0
