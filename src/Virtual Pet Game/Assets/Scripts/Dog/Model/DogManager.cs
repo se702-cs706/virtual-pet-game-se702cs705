@@ -44,7 +44,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         StateFactory.Initiate(this,controller);
         var stateFactory = StateFactory.getInstance();
-        var next = StatesHelper.GetRunToPlayerSequence(stateFactory,runSpeed, playerPoi);
+        var next = StatesHelper.GetRunToPlayerSequence(stateFactory,runSpeed, playerPoi, lookAt:playerPoi);
         _currentState = StatesHelper.GetActionState(stateFactory, DogState.Sit, 4, next);
         _currentState.onStateEnter();
     }
@@ -183,7 +183,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     public void RestoreEnergy(float energy)
     {
         Energy += energy;
-        Energy = Math.Max(Energy, 10);
+        Energy = Math.Min(Energy, 10);
     }
 
     public float getExcitement()

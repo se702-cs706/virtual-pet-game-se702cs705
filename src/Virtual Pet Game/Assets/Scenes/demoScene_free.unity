@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.77242875, g: 0.9104208, b: 0.99592954, a: 1}
+  m_IndirectSpecularColor: {r: 0.77267134, g: 0.9104185, b: 0.9959926, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -11913,6 +11913,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 576044025}
     - target: {fileID: 5847079236885306816, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
+      propertyPath: EnergyDropRatePS
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847079236885306816, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
+      propertyPath: pointsOfInterest.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847079236885306816, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: pointsOfInterest.Array.data[0]
       value: 
       objectReference: {fileID: 1233880061}
@@ -11920,6 +11928,10 @@ PrefabInstance:
       propertyPath: pointsOfInterest.Array.data[1]
       value: 
       objectReference: {fileID: 1552391221}
+    - target: {fileID: 5847079236885306816, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
+      propertyPath: pointsOfInterest.Array.data[2]
+      value: 
+      objectReference: {fileID: 673451798}
     - target: {fileID: 5890630332981982571, guid: 574c787731359e748b4ab58d780a8c25, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -14732,7 +14744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33128757e6334e2ab46e85b9c70c851d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RestoreRate: 0
+  RestoreRate: 3
   bowlController: {fileID: 1233880067}
 --- !u!4 &1233880066 stripped
 Transform:
@@ -17923,7 +17935,7 @@ PrefabInstance:
       objectReference: {fileID: 1233880062}
     - target: {fileID: 6724112495804536535, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
       propertyPath: InterestTime
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6724112495804536535, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
       propertyPath: InterestRadius

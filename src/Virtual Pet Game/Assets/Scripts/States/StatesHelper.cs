@@ -12,14 +12,10 @@ namespace States
             {
                 IState next = null;
                 if (_manager.PointOfInterest.interaction != null)
-                { 
-                    var next2 = 
-                        GetRunToPlayerSequence(_stateFactory, _manager.getRunSpeed(), _manager.getPlayerPoi());
-                    Debug.Log(_manager.PointOfInterest.interaction);
+                {
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
                     new InteractionStateParams()
                     {
-                        _next = next2,
                         _interaction = _manager.PointOfInterest.interaction,
                         _time = _manager.PointOfInterest.InterestTime,
                     });
@@ -69,7 +65,7 @@ namespace States
             });
         }
         
-        public static IState GetWaitingForPlayerActionState(StateFactory _stateFactory, Transform _lookAt)
+        public static IState GetWaitingForPlayerActionState(StateFactory _stateFactory, PointOfInterest _lookAt)
         {
             return _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
@@ -96,10 +92,12 @@ namespace States
             });
         }
         
-        public static IState GetRunToSequence(StateFactory _stateFactory, float maxSpeed, float distance, float waitingTime, Transform target, IState next = null)
+        public static IState GetRunToSequence(StateFactory _stateFactory, float maxSpeed, float distance, 
+            float waitingTime, Transform target, IState next = null, PointOfInterest lookAt = null)
         {
             var nextAction = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
+                _lookAt = lookAt,
                 _time = waitingTime,
                 _next = next,
             });
@@ -113,10 +111,12 @@ namespace States
             });
         }
         
-        public static IState GetRunToPlayerSequence(StateFactory _stateFactory, float maxSpeed, PointOfInterest playerPointOfInterest, IState next = null)
+        public static IState GetRunToPlayerSequence(StateFactory _stateFactory, float maxSpeed, 
+            PointOfInterest playerPointOfInterest, IState next = null, PointOfInterest lookAt = null)
         {
             var nextAction2 = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
+                _lookAt = lookAt,
                 _time = playerPointOfInterest.InterestTime,
                 _next = next,
             });
@@ -136,10 +136,11 @@ namespace States
             });
         }
 
-        public static IState GetPlayerActionState(StateFactory _stateFactory, DogState state, float actionTime, float waitingTime)
+        public static IState GetPlayerActionState(StateFactory _stateFactory, DogState state, float actionTime, float waitingTime, PointOfInterest lookAt = null)
         {
             var nextAction = _stateFactory.BuildState<WaitingState, WaitingStateParams>(new WaitingStateParams()
             {
+                _lookAt = lookAt,
                 _time = waitingTime,
             });
             
