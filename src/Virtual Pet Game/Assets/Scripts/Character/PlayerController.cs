@@ -53,7 +53,6 @@ public class PlayerController : MetricsTracker
     // range of the raycast that checks for interactions
     [SerializeField] float interactionRange;
     public bool isTargetingInteractable = false;
-    bool wasTargetingDog = false;
     
     
     [Header("ThrowBall")]
@@ -217,9 +216,9 @@ public class PlayerController : MetricsTracker
         // to see if it is about to hit anything.
         if (Physics.SphereCast(headPosition.position, interactionRadius, headOrientation.forward, out hit, interactionRange,layerMask))
         {
-            GameObject gameObject = hit.collider.gameObject;
+            GameObject colliderGameObject = hit.collider.gameObject;
 
-            if (gameObject == lastTargetObj)
+            if (colliderGameObject == lastTargetObj)
             {
                 return;
             }
@@ -227,21 +226,23 @@ public class PlayerController : MetricsTracker
 
             // Check if targeting dog
             // FIXME: need a better way to identify whether targeting a dog
-            bool isTargetingDog = gameObject.GetComponentInParent<PettingAction>() != null;
-            Debug.Log(gameObject);
+            bool isTargetingDog = colliderGameObject.CompareTag("Dog");
+            bool isFixated = presenter.getIsFixated();
+            //Debug.Log(gameObject);
 
             // If targeting dog (and was not previously), start fixation
-            if (isTargetingDog && !wasTargetingDog)
+            if (isTargetingDog && !isFixated)
             {
                 presenter.StartFixation();
             }
-            wasTargetingDog = true;
+            else if (!isTargetingDog && isFixated)
+            {
+                presenter.StopFixation();
+            }
 
+            lastTargetObj = colliderGameObject;
 
-
-            lastTargetObj = gameObject;
-
-            IInteractable interactable = gameObject.GetComponent<InteractableObject>();
+            IInteractable interactable = colliderGameObject.GetComponent<InteractableObject>();
 
             if (interactable != null)
             {
@@ -256,11 +257,10 @@ public class PlayerController : MetricsTracker
             lastTargetObj = null;
 
             // If not targeting dog anymore (but was before), stop fixation
-            if (wasTargetingDog)
+            if (presenter.getIsFixated())
             {
                 presenter.StopFixation();
             }
-            wasTargetingDog = false;
         }
 
         //CheckIsTargetingDog(hit.collider.gameObject);

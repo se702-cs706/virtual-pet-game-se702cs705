@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class MetricsPresenter : MonoBehaviour
 {
-    [SerializeField] MetricsController controller;
+    [SerializeField] private MetricsController controller;
 
-    ModelPlayTime currentPlayTime;
-    ModelFixationTime currentFixation;
+    private ModelPlayTime _currentPlayTime;
+    private ModelFixationTime _currentFixation;
+    private bool _isFixated = false;
 
     public void SetDogModelType(DogModelType model)
     {
@@ -33,17 +34,17 @@ public class MetricsPresenter : MonoBehaviour
 
     public void StartPlayTime()
     {
-        currentPlayTime = new(DateTime.Now.ToString(), controller.currentUser.id, controller.model);
+        _currentPlayTime = new ModelPlayTime(DateTime.Now.ToString(), controller.currentUser.id, controller.model);
     }
 
     public void StopPlayTime()
     {
-        TimeSpan timeSpan = DateTime.Now - DateTime.Parse(currentPlayTime.timestamp);
-        currentPlayTime.playTime = (float)timeSpan.TotalMilliseconds;
+        var timeSpan = DateTime.Now - DateTime.Parse(_currentPlayTime.timestamp);
+        _currentPlayTime.playTime = (float)timeSpan.TotalMilliseconds;
 
-        Debug.Log(currentPlayTime);
+        Debug.Log(_currentPlayTime);
 
-        controller.AddPlayTime(currentPlayTime);
+        controller.AddPlayTime(_currentPlayTime);
     }
 
     /// <summary>
@@ -52,7 +53,7 @@ public class MetricsPresenter : MonoBehaviour
     public void SwitchModelPlayTime()
     {
         // Don't record new playtime if switching between the same model.
-        if (controller.model == currentPlayTime.model) return;
+        if (controller.model == _currentPlayTime.model) return;
 
         StopPlayTime();
         StartPlayTime();
@@ -63,16 +64,25 @@ public class MetricsPresenter : MonoBehaviour
     // FIXME: duplicate of PlayTime, maybe create an abstract class for generic durations?
     public void StartFixation()
     {
-        currentFixation = new(DateTime.Now.ToString(), controller.currentUser.id, controller.model);
+        _currentFixation = new ModelFixationTime(DateTime.Now.ToString(), controller.currentUser.id, controller.model);
+        Debug.Log("Started fixation");
+        _isFixated = true;
     }
 
     public void StopFixation()
     {
-        TimeSpan timeSpan = DateTime.Now - DateTime.Parse(currentFixation.timestamp);
-        currentFixation.fixationTime = (float)timeSpan.TotalMilliseconds;
+        var timeSpan = DateTime.Now - DateTime.Parse(_currentFixation.timestamp);
+        _currentFixation.fixationTime = (float)timeSpan.TotalMilliseconds;
 
-        Debug.Log(currentFixation);
+        Debug.Log(_currentFixation);
 
-        controller.AddFixation(currentFixation);
+        controller.AddFixation(_currentFixation);
+        _isFixated = false;
+        Debug.Log("Stopped fixation");
+    }
+
+    public bool getIsFixated()
+    {
+        return _isFixated;
     }
 }
