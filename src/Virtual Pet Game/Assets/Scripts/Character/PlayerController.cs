@@ -47,6 +47,7 @@ public class PlayerController : MetricsTracker
     // range of the raycast that checks for interactions
     [SerializeField] float interactionRange;
     public bool isTargetingInteractable = false;
+    bool wasTargetingDog = false;
     
     
     [Header("ThrowBall")]
@@ -211,12 +212,28 @@ public class PlayerController : MetricsTracker
         if (Physics.SphereCast(headPosition.position, interactionRadius, headOrientation.forward, out hit, interactionRange,layerMask))
         {
             GameObject gameObject = hit.collider.gameObject;
+
             if (gameObject == lastTargetObj)
             {
                 return;
             }
 
+
+            // Check if targeting dog
+            bool isTargetingDog = gameObject.GetComponent<FixationObject>() != null;
+            Debug.Log(gameObject);
+
+            // If targeting dog (and was not previously), start fixation
+            if (isTargetingDog && !wasTargetingDog)
+            {
+                presenter.StartFixation();
+            }
+            wasTargetingDog = true;
+
+
+
             lastTargetObj = gameObject;
+
             IInteractable interactable = gameObject.GetComponent<InteractableObject>();
 
             if (interactable != null)
@@ -230,9 +247,18 @@ public class PlayerController : MetricsTracker
             isTargetingInteractable = false;
             interactions = null;
             lastTargetObj = null;
+
+            // If not targeting dog anymore (but was before), stop fixation
+            if (wasTargetingDog)
+            {
+                presenter.StopFixation();
+            }
+            wasTargetingDog = false;
         }
+
+        //CheckIsTargetingDog(hit.collider.gameObject);
     }
-    
+
     /// <summary>
     /// Perform the interaction of index "i"
     /// </summary>

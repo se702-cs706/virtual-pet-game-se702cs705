@@ -10,4 +10,9 @@ public class ModelFixationTime : DatabaseEntry
     {
         this.model = model;
     }
+
+    public override string ToString()
+    {
+        return $"[{timestamp}]: ({model}) - Fixation time: {fixationTime}ms";
+    }
 }

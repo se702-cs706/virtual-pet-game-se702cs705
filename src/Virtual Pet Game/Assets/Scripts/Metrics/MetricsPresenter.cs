@@ -71,6 +71,8 @@ public class MetricsPresenter : MonoBehaviour
         TimeSpan timeSpan = DateTime.Now - currentFixation.timestamp;
         currentFixation.fixationTime = (float)timeSpan.TotalMilliseconds;
 
+        Debug.Log(currentFixation);
+
         controller.AddFixation(currentFixation);
     }
 }
