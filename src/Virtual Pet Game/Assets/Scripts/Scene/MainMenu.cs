@@ -4,15 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MetricsTracker
+public class MainMenu : MonoBehaviour
 {
 
     public int currentMode = 1;  //mode 1: Practice, mode 2: Study
     public GameObject selectModel;
     public GameObject MainSettings;
     public GameObject GamePlay;
-
-    public static event Action GameStart;
 
     public void PlayGame()
     {

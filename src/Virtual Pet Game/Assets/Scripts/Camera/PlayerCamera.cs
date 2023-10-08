@@ -7,6 +7,10 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] float sensX;
     [SerializeField] float sensY;
     [SerializeField] Transform orientation;
+
+    // FIXME: need a better place to put this.
+    [SerializeField] MetricsPresenter metricsPresenter;
+
     private Camera cam;
     private bool goodDog = true;
     public bool isLocked { get; private set; }
@@ -79,10 +83,10 @@ public class PlayerCamera : MonoBehaviour
 
     public void setGoodDoggo(bool active)
     {
-
-        goodDog = true;
-
         goodDog = active;
 
+        // Publish change to metrics
+        DogModelType model = active ? DogModelType.HIGH_QUALITY : DogModelType.LOW_QUALITY;
+        metricsPresenter.SetDogModelType(model);
     }
 }
