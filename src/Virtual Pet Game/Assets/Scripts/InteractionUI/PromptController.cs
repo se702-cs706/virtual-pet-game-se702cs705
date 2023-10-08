@@ -6,12 +6,19 @@ using UnityEngine;
 
 public class PromptController : MonoBehaviour
 {
-
+    [Header("Basic")]
     [SerializeField] TextUIElement interact1Prompt;
     [SerializeField] TextUIElement interact2Prompt;
     [SerializeField] TextUIElement interact3Prompt;
 
+    [Header("Special")]
     [SerializeField] TextUIElement throwBallPrompt;
+
+    [Header("Voice")]
+    [SerializeField] GameObject voiceCommandsContainer;
+    [SerializeField] TextUIElement sitPrompt;
+    [SerializeField] TextUIElement comeBoyPrompt;
+
     Dictionary<InteractKey, TextUIElement> interactPrompts;
 
     private void Start()
@@ -53,6 +60,33 @@ public class PromptController : MonoBehaviour
     public void SetThrowBallKey(KeyCode key)
     {
         throwBallPrompt.SetText($"Throw Ball ({key})");
+    }
+
+    public void SetSitVisible(bool isVisible)
+    {
+        sitPrompt.SetVisible(isVisible);
+    }
+
+    public void SetSitKey(KeyCode key)
+    {
+        sitPrompt.SetText($"'Sit' ({key})");
+    }
+
+    public void SetComeBoyVisible(bool isVisible)
+    {
+        comeBoyPrompt.SetVisible(isVisible);
+    }
+
+    public void SetComeBoyKey(KeyCode key)
+    {
+        comeBoyPrompt.SetText($"'Come Boy' ({key})");
+    }
+
+    public void SetVoiceCommandsVisible(bool isVisible)
+    {
+        voiceCommandsContainer.SetActive(isVisible);
+        sitPrompt.SetVisible(isVisible);
+        comeBoyPrompt.SetVisible(isVisible);
     }
 }
 

@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 483746427376684946}
   - component: {fileID: 4598515644813711770}
   - component: {fileID: 6724112495804536535}
-  m_Layer: 0
+  - component: {fileID: 2835955221338821333}
+  - component: {fileID: 8252023949834204439}
+  - component: {fileID: 8815259994808008293}
+  m_Layer: 9
   m_Name: Bowl_1_food_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,10 +128,53 @@ MonoBehaviour:
   InterestRadius: 20
   InteractionDistance: 1
   InterestTime: 10
-  canBeUsed: 1
   InheritInterestCooldown: 40
   InterestType: 0
   interaction: {fileID: 0}
+--- !u!114 &2835955221338821333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172369813406913413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395b83902ed9f1b46ba8c65bab6f0fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactions:
+  - {fileID: 8252023949834204439}
+--- !u!114 &8252023949834204439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172369813406913413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23754884718a44d43be857db5f54cc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fill Bowl
+  interactKey: 0
+  action: {fileID: 8252023949834204439}
+  bowlController: {fileID: 8815259994808008293}
+--- !u!114 &8815259994808008293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172369813406913413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b328195e58f3498c0ee323dd6f134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: {fileID: 5799081961381152653}
+  lower: 0.3
 --- !u!1 &5799081961381152653
 GameObject:
   m_ObjectHideFlags: 0

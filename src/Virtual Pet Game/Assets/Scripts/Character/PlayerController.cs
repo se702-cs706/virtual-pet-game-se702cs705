@@ -17,6 +17,12 @@ public class PlayerController : MetricsTracker
     [Header("Presenter")]
     [SerializeField] IPresenter characterPresenter;
 
+    // TODO: see if we can reference an interface instead.
+    [Header("Deps")]
+    [SerializeField] DogManager dogManager;
+    [SerializeField] private PointOfInterest pointOfInterest;
+    [SerializeField] float sitTime = 10;
+
     [Header("Movement")]
     [SerializeField] float moveSpeed;
     [SerializeField] float groundDrag;
@@ -51,7 +57,7 @@ public class PlayerController : MetricsTracker
     
     
     [Header("ThrowBall")]
-    [Serialize] float throwForce;
+    [SerializeField] float throwForce;
     [SerializeField] GameObject BallObject;
     [SerializeField] private DogManager _manager;
     public bool hasBall = false;
@@ -296,7 +302,7 @@ public class PlayerController : MetricsTracker
         BallObject.SetActive(true);
         BallObject.GetComponent<PointOfInterest>().InterestLevel = 200;
         BallObject.transform.position = headPosition.position + (headOrientation.forward * 0.2f);
-        BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
+        BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * throwForce, ForceMode.Impulse);
         hasBall = false;
         Debug.Log("thrown ball");
     }
@@ -315,5 +321,16 @@ public class PlayerController : MetricsTracker
     public bool HasInteractions()
     {
         return interactions != null;
+    }
+
+
+    public void CallDog()
+    {
+        pointOfInterest.InterestLevel = 200;
+    }
+    
+    public void CommandDogToSit()
+    {
+        dogManager.startStateAction(DogState.Sit, sitTime);
     }
 }
