@@ -1160,6 +1160,9 @@ MonoBehaviour:
   IKObject: {fileID: 6228388707402288543}
   _groundPointFront: {fileID: 8216556651617058290}
   _groundPointBack: {fileID: 8877638238669183571}
+  lookDirection: {x: 0, y: 0, z: 0}
+  rotationDamper: 0
+  tileDamper: 0
 --- !u!1 &4263370812382175814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1790,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6228388707402288543}
   - component: {fileID: 40394215447418853}
-  - component: {fileID: 3139710794382689018}
   m_Layer: 0
   m_Name: Retriever_Color_1
   m_TagString: Untagged
@@ -1836,21 +1838,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3139710794382689018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6711628068667316005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1ddbf418cd03fd4283871391d061bda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 40394215447418853}
-  Speed: 0
-  State: 0
 --- !u!1 &6903981584859068324
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,10 +5,12 @@ namespace PointOfInterestCode.POIactions
     [RequireComponent(typeof(PointOfInterest))]
     public class DogBowlPOI : DogInteraction
     {
+        private Vector3 initialPos;
         private IStateActions _manager;
         private PointOfInterest _pointOfInterest;
         private float sTime;
         [SerializeField] private float RestoreRate;
+        [SerializeField] private BowlController bowlController;
 
         public override void InteractionStart(IStateActions manager)
         {
@@ -25,6 +27,7 @@ namespace PointOfInterestCode.POIactions
             {
                 sTime++;
                 _manager.RestoreEnergy(RestoreRate);
+                bowlController.ChangeFill(bowlController.getBowlFill() - 1/_pointOfInterest.InterestTime);
             }
         }
 
@@ -32,6 +35,7 @@ namespace PointOfInterestCode.POIactions
         {
             _pointOfInterest.canBeUsed = false;
             //TODO make bowl empty
+
         }
     }
 }
