@@ -26,13 +26,25 @@ public class InteractionState : ActionState, InitializableState<InteractionState
     public override IState onStateDuringUpdate()
     {
         _interaction.InteractionDuring();
+        
+        if (_manager.PointOfInterest.InterestLevel > 100)
+        {
+            return StatesHelper.GetPOIActionStates(_manager, _stateFactory);
+        }
+        
         return null;
     }
 
     public override IState onGoalReached()
     {
-        Debug.Log("Wtf why it not doin");
         _interaction.InteractionEnd();
-        return base.onGoalReached();
+        if (_next != null)
+        {
+            return base.onGoalReached();
+        }
+        else
+        {
+            return _next;
+        }
     }
 }

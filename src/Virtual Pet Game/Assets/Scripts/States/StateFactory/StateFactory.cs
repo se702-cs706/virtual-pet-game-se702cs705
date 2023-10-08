@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
-/// singleton factory for states
+/// singleton factory for states.
 /// </summary>
 public class StateFactory
 {
@@ -13,13 +13,13 @@ public class StateFactory
     private AgentController _controller;
     private static StateFactory _stateFactory;    
     
+    /// <summary>
+    /// always reloads the state factory as static objects does not get reset when reloading scene.
+    /// </summary>
+    /// <param name="manager"> Current dog manager</param>
+    /// <param name="controller"> Current NMA controller</param>
     public static void Initiate(DogManager manager, AgentController controller)
     {
-        if (_stateFactory != null)
-        {
-            return;
-        }
-        
         _stateFactory = new StateFactory();
         _stateFactory._manager = manager;
         _stateFactory._controller = controller;

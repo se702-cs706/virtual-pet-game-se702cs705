@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TextUIElement : MonoBehaviour, IInteractionUIElement
 {
+    public string text { get; private set; }
     GameObject _selfRef;
 
     private void Awake()
@@ -20,6 +21,7 @@ public class TextUIElement : MonoBehaviour, IInteractionUIElement
 
     public void SetText(string text)
     {
+        this.text = text;
         _selfRef.GetComponent<TextMeshProUGUI>().SetText(text);
     }
 

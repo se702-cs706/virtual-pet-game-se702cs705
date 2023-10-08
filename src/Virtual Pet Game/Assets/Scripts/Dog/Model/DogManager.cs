@@ -37,15 +37,14 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     
     [Header("POIs")]
     [SerializeField] private List<PointOfInterest> pointsOfInterest;
-
-    [SerializeField] private Transform playerTransform;
+    [SerializeField] private PointOfInterest playerPoi;
     public PointOfInterest PointOfInterest { get; set; }
 
     public void Start()
     {
         StateFactory.Initiate(this,controller);
         var stateFactory = StateFactory.getInstance();
-        var next = StatesHelper.GetRunToSequence(stateFactory, runSpeed, 1f,7, playerTransform);
+        var next = StatesHelper.GetRunToPlayerSequence(stateFactory,runSpeed, playerPoi);
         _currentState = StatesHelper.GetActionState(stateFactory, DogState.Sit, 4, next);
         _currentState.onStateEnter();
     }
@@ -213,9 +212,9 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         return sprintSpeed;
     }
 
-    public Transform getPlayerTransform()
+    public PointOfInterest getPlayerPoi()
     {
-        return playerTransform;
+        return playerPoi;
     }
 
     public GameObject getHolding()
@@ -233,5 +232,18 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     public void setHolding(GameObject gameObject)
     {
         holding = gameObject;
+    }
+
+
+
+
+
+
+
+
+    // TODO: actually implement this
+    public void GotoPlayer()
+    {
+        Debug.Log("Going to dog");
     }
 }

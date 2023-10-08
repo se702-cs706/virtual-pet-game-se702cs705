@@ -19,6 +19,9 @@ public class KeyBindings : MonoBehaviour
 
     [Header("Special")]
     public KeyCode KeyThrowBall;
+    public KeyCode KeyShowVoiceCommands;
+    public KeyCode KeyDogSit;
+    public KeyCode KeyDogComeBoy;
     public KeyCode pauseGame;
 
     public KeyCode GetInteractKeyCode(InteractKey interactKey)
