@@ -67,4 +67,14 @@ public class CharacterPresenter : MonoBehaviour, IPresenter
     {
         return characterController.HasInteractions();
     }
+
+    public void DogComeBoyKeyPressed()
+    {
+        characterController.CallDog();
+    }
+
+    public void DogSitKeyPressed()
+    {
+        characterController.CommandDogToSit();
+    }
 }

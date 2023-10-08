@@ -19,7 +19,7 @@ public interface IStateActions
     public float getWalkSpeed();
     public float getRunSpeed();
     public float getSprintSpeed();
-    public Transform getPlayerTransform();
+    public PointOfInterest getPlayerPoi();
     public GameObject getHolding();
     public void setHolding(GameObject gameObject);
     public void DropHolding();
