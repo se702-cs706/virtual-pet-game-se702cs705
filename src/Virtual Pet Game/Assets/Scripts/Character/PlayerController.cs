@@ -226,7 +226,8 @@ public class PlayerController : MetricsTracker
 
 
             // Check if targeting dog
-            bool isTargetingDog = gameObject.GetComponent<FixationObject>() != null;
+            // FIXME: need a better way to identify whether targeting a dog
+            bool isTargetingDog = gameObject.GetComponentInParent<PettingAction>() != null;
             Debug.Log(gameObject);
 
             // If targeting dog (and was not previously), start fixation
