@@ -193,7 +193,7 @@ MonoBehaviour:
   InheritInterestLevel: 10
   InterestLevel: -10
   InterestRadius: 30
-  InteractionDistance: 1
+  InteractionDistance: 1.2
   InterestTime: 0
   InheritInterestCooldown: 0
   InterestType: 2

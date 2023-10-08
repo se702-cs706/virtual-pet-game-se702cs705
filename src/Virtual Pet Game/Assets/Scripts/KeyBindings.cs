@@ -22,6 +22,7 @@ public class KeyBindings : MonoBehaviour
     public KeyCode KeyShowVoiceCommands;
     public KeyCode KeyDogSit;
     public KeyCode KeyDogComeBoy;
+    public KeyCode pauseGame;
 
     public KeyCode GetInteractKeyCode(InteractKey interactKey)
     {
