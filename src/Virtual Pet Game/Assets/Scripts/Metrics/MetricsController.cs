@@ -7,12 +7,10 @@ public class MetricsController : MonoBehaviour
     public User currentUser { private set; get; }
     public DogModelType model;
 
+    public List<InteractionEvent> interactionEvents { private set; get; } = new();
+    public List<ModelPlayTime> playTimes { private set; get; } = new();
+    public List<ModelFixationTime> fixationTimes { private set; get; } = new();
 
-    public List<InteractionEvent> interactionEvents { private set; get; }
-    public List<ModelFixationTime> fixationTimes { private set; get; }
-    public List<ModelPlayTime> playTimes { private set; get; }
-
-    ModelFixationTime currentFixation;
 
     public void SetUser(User newUser)
     {
@@ -26,29 +24,15 @@ public class MetricsController : MonoBehaviour
     }
 
 
-    public void StartFixation()
+    public void AddPlayTime(ModelPlayTime playTime)
     {
-        currentFixation = new(DateTime.Now, currentUser.id, model);
+        playTimes.Add(playTime);
     }
 
-    public void StopFixation()
+    public void AddFixation(ModelFixationTime fixationTime)
     {
-        TimeSpan timeSpan = DateTime.Now - currentFixation.timestamp;
-
-        // https://stackoverflow.com/questions/6104693/c-sharp-is-it-possible-to-convert-datetime-format-to-integer-or-float
-        currentFixation.fixationTime = (float)timeSpan.TotalMilliseconds;
-
-        Debug.Log(currentFixation.fixationTime);
-
-        fixationTimes.Add(currentFixation);
+        fixationTimes.Add(fixationTime);
     }
-
-
-
-
-
-
-
 
 
 

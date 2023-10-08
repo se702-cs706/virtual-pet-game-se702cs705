@@ -3,12 +3,16 @@
 [Serializable]
 public class ModelPlayTime : DatabaseEntry
 {
-    DogModelType model;
-    float playTime;
+    public DogModelType model { private set; get; }
+    public float playTime;
 
-    public ModelPlayTime(DateTime timestamp, string userId, DogModelType model, float playTime) : base(timestamp, userId)
+    public ModelPlayTime(DateTime timestamp, string userId, DogModelType model) : base(timestamp, userId)
     {
         this.model = model;
-        this.playTime = playTime;
+    }
+
+    public override string ToString()
+    {
+        return $"[{timestamp}]: ({model}) - Playtime: {playTime}ms";
     }
 }

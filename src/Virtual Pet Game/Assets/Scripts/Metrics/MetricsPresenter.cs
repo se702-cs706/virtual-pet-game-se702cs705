@@ -7,11 +7,8 @@ public class MetricsPresenter : MonoBehaviour
 {
     [SerializeField] MetricsController controller;
 
-    public void LogInfo(string info)
-    {
-        Debug.Log(info);
-    }
-
+    ModelPlayTime currentPlayTime;
+    ModelFixationTime currentFixation;
 
     public void SetDogModelType(DogModelType model)
     {
@@ -21,5 +18,50 @@ public class MetricsPresenter : MonoBehaviour
     public void CreateUserId()
     {
         controller.SetUser(new User());
+    }
+
+
+
+    public void StartPlayTime()
+    {
+        currentPlayTime = new(DateTime.Now, controller.currentUser.id, controller.model);
+    }
+
+    public void StopPlayTime()
+    {
+        TimeSpan timeSpan = DateTime.Now - currentPlayTime.timestamp;
+        currentPlayTime.playTime = (float)timeSpan.TotalMilliseconds;
+
+        Debug.Log(currentPlayTime);
+
+        controller.AddPlayTime(currentPlayTime);
+    }
+
+    /// <summary>
+    /// Called when swapping from one model to the other. Only used in pause menu.
+    /// </summary>
+    public void SwitchModelPlayTime()
+    {
+        // Don't record new playtime if switching between the same model.
+        if (controller.model == currentPlayTime.model) return;
+
+        StopPlayTime();
+        StartPlayTime();
+    }
+
+
+
+    // FIXME: duplicate of PlayTime, maybe create an abstract class for generic durations?
+    public void StartFixation()
+    {
+        currentFixation = new(DateTime.Now, controller.currentUser.id, controller.model);
+    }
+
+    public void StopFixation()
+    {
+        TimeSpan timeSpan = DateTime.Now - currentFixation.timestamp;
+        currentFixation.fixationTime = (float)timeSpan.TotalMilliseconds;
+
+        controller.AddFixation(currentFixation);
     }
 }
