@@ -28,7 +28,7 @@ public class BowlController : MonoBehaviour
     public void ChangeFill(float fill)
     {
         _bowlFill = fill;
-         food.transform.position = new Vector3(0, initialPos.y - lower + (fill*lower) , 0);
+         food.transform.position = new Vector3(initialPos.x, initialPos.y - lower + (fill*lower) , initialPos.z);
     }
 
     public float getBowlFill()

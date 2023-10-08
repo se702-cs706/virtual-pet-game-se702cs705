@@ -5178,7 +5178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   food: {fileID: 1126716946}
-  lower: 0.02
+  lower: 0.3
 --- !u!1 &701483941
 GameObject:
   m_ObjectHideFlags: 0
