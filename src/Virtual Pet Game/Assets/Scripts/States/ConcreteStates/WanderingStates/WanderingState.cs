@@ -25,7 +25,6 @@ public class WanderingState : TimedState, InitializableState<WanderingStateParam
     {
         if (!_controller.isMovingToTarget)
         {
-            var canReach = false;
             var randPos = Vector3.negativeInfinity;
             var path = new NavMeshPath();
             do

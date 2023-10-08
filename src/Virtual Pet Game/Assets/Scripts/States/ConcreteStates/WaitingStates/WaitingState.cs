@@ -36,7 +36,7 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
         }
 
         if (Following != null && (_controller._agent.transform.position - Following.transform.position).magnitude >=
-            Following.InteractionDistance + 0.2f)
+            Following.InteractionDistance + 0.4f)
         {
             return StatesHelper.GetRunToSequence(_stateFactory, _manager.getRunSpeed(), Following.InteractionDistance,7,Following.transform, lookAt: Following);
         }
