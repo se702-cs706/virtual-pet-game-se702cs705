@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.77267134, g: 0.9104185, b: 0.9959926, a: 1}
+  m_IndirectSpecularColor: {r: 0.77242875, g: 0.9104208, b: 0.99592954, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -5146,8 +5146,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33128757e6334e2ab46e85b9c70c851d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxYPosition: 0
   RestoreRate: 0
   food: {fileID: 1126716946}
+--- !u!114 &695262929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695262919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23754884718a44d43be857db5f54cc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Fill Bowl
+  interactKey: 0
+  action: {fileID: 695262929}
+  bowlController: {fileID: 695262930}
+--- !u!114 &695262930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695262919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b328195e58f3498c0ee323dd6f134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bowlState: 0
 --- !u!1 &701483941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,9 +5432,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2835955221338821333, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
+      propertyPath: _interactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835955221338821333, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
+      propertyPath: _interactions.Array.data[0]
+      value: 
+      objectReference: {fileID: 695262929}
     - target: {fileID: 5172369813406913413, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
       propertyPath: m_Name
       value: Bowl_1_food_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172369813406913413, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6724112495804536535, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
       propertyPath: interaction
@@ -5429,6 +5471,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5172369813406913413, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
       insertIndex: 4
       addedObject: {fileID: 695262924}
+    - targetCorrespondingSourceObject: {fileID: 5172369813406913413, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 695262930}
+    - targetCorrespondingSourceObject: {fileID: 5172369813406913413, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 695262929}
   m_SourcePrefab: {fileID: 100100000, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
 --- !u!1 &739836471
 GameObject:
