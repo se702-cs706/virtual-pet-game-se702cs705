@@ -23,7 +23,7 @@ public class MetricsPresenter : MonoBehaviour
 
     public void LogInteraction(string interactionName)
     {
-        InteractionEvent interactionEvent = new InteractionEvent(DateTime.Now, controller.currentUser.id, interactionName);
+        InteractionEvent interactionEvent = new InteractionEvent(DateTime.Now.ToString(), controller.currentUser.id, interactionName);
 
         Debug.Log(interactionEvent);
 
@@ -33,12 +33,12 @@ public class MetricsPresenter : MonoBehaviour
 
     public void StartPlayTime()
     {
-        currentPlayTime = new(DateTime.Now, controller.currentUser.id, controller.model);
+        currentPlayTime = new(DateTime.Now.ToString(), controller.currentUser.id, controller.model);
     }
 
     public void StopPlayTime()
     {
-        TimeSpan timeSpan = DateTime.Now - currentPlayTime.timestamp;
+        TimeSpan timeSpan = DateTime.Now - DateTime.Parse(currentPlayTime.timestamp);
         currentPlayTime.playTime = (float)timeSpan.TotalMilliseconds;
 
         Debug.Log(currentPlayTime);
@@ -63,12 +63,12 @@ public class MetricsPresenter : MonoBehaviour
     // FIXME: duplicate of PlayTime, maybe create an abstract class for generic durations?
     public void StartFixation()
     {
-        currentFixation = new(DateTime.Now, controller.currentUser.id, controller.model);
+        currentFixation = new(DateTime.Now.ToString(), controller.currentUser.id, controller.model);
     }
 
     public void StopFixation()
     {
-        TimeSpan timeSpan = DateTime.Now - currentFixation.timestamp;
+        TimeSpan timeSpan = DateTime.Now - DateTime.Parse(currentFixation.timestamp);
         currentFixation.fixationTime = (float)timeSpan.TotalMilliseconds;
 
         Debug.Log(currentFixation);

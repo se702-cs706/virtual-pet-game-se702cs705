@@ -11,6 +11,8 @@ public class MetricsController : MonoBehaviour
     public List<ModelPlayTime> playTimes { private set; get; } = new();
     public List<ModelFixationTime> fixationTimes { private set; get; } = new();
 
+    public FileData fileData;
+
 
     public void SetUser(User newUser)
     {
@@ -59,7 +61,9 @@ public class MetricsController : MonoBehaviour
 
     public void LogToFile()
     {
-
+        fileData = new FileData(currentUser, interactionEvents, playTimes, fixationTimes);
+        string dataJSON = JsonUtility.ToJson(fileData, true);
+        System.IO.File.WriteAllText(Application.persistentDataPath + "/" + currentUser.id.ToString() + ".json", dataJSON);
     }
 
     public void LogToDatabase()

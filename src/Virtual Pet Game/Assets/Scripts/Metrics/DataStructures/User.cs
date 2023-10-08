@@ -1,10 +1,14 @@
 ﻿using System;
 
 [Serializable]
-public class User : DatabaseEntry
+public class User
 {
-    public User() : base(DateTime.Now, Guid.NewGuid().ToString())
+    public string timestamp;
+    public string id;
+    public User()
     {
+        this.timestamp = DateTime.Now.ToString();
+        this.id = Guid.NewGuid().ToString();
     }
 
     public override string ToString()

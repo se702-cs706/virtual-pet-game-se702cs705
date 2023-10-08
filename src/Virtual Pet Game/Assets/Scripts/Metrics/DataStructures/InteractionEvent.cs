@@ -1,12 +1,16 @@
 ﻿using System;
 
 [Serializable]
-public class InteractionEvent : DatabaseEntry
+public class InteractionEvent
 {
-    string interactionName;
+    public string timestamp;
+    public string id;
+    public string interactionName;
 
-    public InteractionEvent(DateTime timestamp, string userId, string interactionName) : base(timestamp, userId)
+    public InteractionEvent(string timestamp, string userId, string interactionName)
     {
+        this.timestamp = timestamp;
+        this.id = userId;
         this.interactionName = interactionName;
     }
 

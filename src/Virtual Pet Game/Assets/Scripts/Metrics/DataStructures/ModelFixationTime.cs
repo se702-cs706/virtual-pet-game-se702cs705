@@ -1,13 +1,16 @@
 ﻿using System;
 
 [Serializable]
-public class ModelFixationTime : DatabaseEntry
+public class ModelFixationTime
 {
-    DogModelType model;
+    public string timestamp;
+    public string id;
+    public DogModelType model;
     public float fixationTime;
 
-    public ModelFixationTime(DateTime timestamp, string userId, DogModelType model): base(timestamp, userId)
+    public ModelFixationTime(string timestamp, string userId, DogModelType model)
     {
+        this.timestamp = DateTime.Now.ToString();
         this.model = model;
     }
 

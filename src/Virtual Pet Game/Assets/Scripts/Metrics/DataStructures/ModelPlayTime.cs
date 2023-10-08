@@ -1,13 +1,17 @@
 ﻿using System;
 
 [Serializable]
-public class ModelPlayTime : DatabaseEntry
+public class ModelPlayTime
 {
-    public DogModelType model { private set; get; }
+    public string timestamp;
+    public string id;
+    public DogModelType model;
     public float playTime;
 
-    public ModelPlayTime(DateTime timestamp, string userId, DogModelType model) : base(timestamp, userId)
+    public ModelPlayTime(string timestamp, string userId, DogModelType model)
     {
+        this.timestamp = timestamp;
+        this.id = userId;
         this.model = model;
     }
 
