@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7517020230877124405}
   m_Layer: 9
   m_Name: Interactable Capsule
-  m_TagString: Untagged
+  m_TagString: Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,7 +241,7 @@ MonoBehaviour:
   pointsOfInterest:
   - {fileID: 0}
   - {fileID: 0}
-  playerTransform: {fileID: 0}
+  playerPoi: {fileID: 0}
 --- !u!114 &5416979363525979610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,7 +661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6711628068667316005, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6711628068667316005, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6903981584859068324, guid: 47bef927e845efa4389f0e33f2444fb4, type: 3}
       propertyPath: m_Layer
@@ -826,6 +830,7 @@ MonoBehaviour:
   acceleration: 10
   multiplier: 2
   predictionRate: 0.4
+  eatingRate: 0
   view: {fileID: 7405351977218940765}
 --- !u!136 &3743406309478371705
 CapsuleCollider:
