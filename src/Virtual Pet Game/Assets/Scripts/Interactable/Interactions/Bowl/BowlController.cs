@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Interactable;
@@ -22,13 +23,14 @@ public class BowlController : MonoBehaviour
     }
 
     /// <summary>
-    /// if fill parameter changed, food moves up
+    /// Change the displayed fill amount of the bowl.
+    /// Also updates the bowl fill parameter.
     /// </summary>
     /// <param name="fill">percentage of food</param>
     public void ChangeFill(float fill)
     {
-        _bowlFill = fill;
-         food.transform.position = new Vector3(initialPos.x, initialPos.y - lower + (fill*lower) , initialPos.z);
+        _bowlFill = Math.Clamp(fill, 0, 1);
+         food.transform.position = new Vector3(initialPos.x, initialPos.y - lower + (_bowlFill*lower) , initialPos.z);
     }
 
     public float getBowlFill()

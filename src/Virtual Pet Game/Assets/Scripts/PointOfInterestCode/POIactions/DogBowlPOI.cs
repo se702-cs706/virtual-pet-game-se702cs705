@@ -6,7 +6,6 @@ namespace PointOfInterestCode.POIactions
     public class DogBowlPOI : DogInteraction
     {
         private Vector3 initialPos;
-        public int maxYPosition = 0;
         private IStateActions _manager;
         private PointOfInterest _pointOfInterest;
         private float sTime;
@@ -28,7 +27,7 @@ namespace PointOfInterestCode.POIactions
             {
                 sTime++;
                 _manager.RestoreEnergy(RestoreRate);
-                bowlController.ChangeFill(bowlController.getBowlFill() - 0.1f);
+                bowlController.ChangeFill(bowlController.getBowlFill() - 1/_pointOfInterest.InterestTime);
             }
         }
 
