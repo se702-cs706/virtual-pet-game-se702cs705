@@ -9,15 +9,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CapsuleDog
   - Water
   - UI
   - ground
-  - 
+  - BetterDog
   - whatIsGround
   - Interactable
-  - 
-  - 
   - 
   - 
   - 

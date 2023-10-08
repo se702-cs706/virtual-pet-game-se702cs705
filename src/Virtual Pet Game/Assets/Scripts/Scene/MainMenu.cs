@@ -17,18 +17,8 @@ public class MainMenu : MetricsTracker
     public void PlayGame()
     {
         //SceneManager.LoadSceneAsync(1);
-
-        if (currentMode == 2)
-        {  
-            selectModel.SetActive(true);
-        }
-        else
-        {
-            GamePlay.SetActive(true);
-            MainSettings.SetActive(false);
-        }
-
-        presenter.LogInfo("Start game.");
+        Time.timeScale = 1f;
+        selectModel.SetActive(true);
     }
 
     public void SetUserMode(int userInput)

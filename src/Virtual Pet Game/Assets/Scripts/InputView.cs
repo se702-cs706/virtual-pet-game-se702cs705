@@ -12,6 +12,7 @@ public class InputView : MonoBehaviour
     public CharacterPresenter characterPresenter;
     public InteractionUIPresenter interactionUIPresenter;
     public CameraPresenter cameraPresenter;
+    public GameController gameController;
 
     private void Start()
     {
@@ -54,6 +55,12 @@ public class InputView : MonoBehaviour
         if (Input.GetKeyDown(keyBindings.KeyThrowBall))
         {
             characterPresenter.ThrowBallKeyPressed();
+        }
+
+        // game pause
+        if (Input.GetKeyDown(keyBindings.pauseGame)) 
+        {
+            if (gameController.isGamePaused) gameController.ResumeGame(); else gameController.PauseGame();
         }
     }
 }
