@@ -7,7 +7,7 @@ public class EmptyBowl : MonoBehaviour
     public GameObject food;
     private bool isBowlEmpty = false;
     private Renderer[] sueloRenderers;
-    [SerializeField] private ModelPresenter mp;
+    
     private void Start()
     {
         GameObject[] suelo = GameObject.FindGameObjectsWithTag("Food_1");
