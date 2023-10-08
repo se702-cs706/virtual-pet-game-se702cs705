@@ -29,7 +29,7 @@ namespace Interactable.Interactions
 
         public override void Invoke(PlayerController controller)
         {
-            bowlController.ChangeState(BowlState.Filled);
+            bowlController.ChangeFill(1);
         }
     }
 }

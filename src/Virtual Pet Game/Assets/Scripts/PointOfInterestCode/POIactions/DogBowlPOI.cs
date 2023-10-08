@@ -11,7 +11,7 @@ namespace PointOfInterestCode.POIactions
         private PointOfInterest _pointOfInterest;
         private float sTime;
         [SerializeField] private float RestoreRate;
-        [SerializeField] private GameObject food;
+        [SerializeField] private BowlController bowlController;
 
         public override void InteractionStart(IStateActions manager)
         {
@@ -19,7 +19,6 @@ namespace PointOfInterestCode.POIactions
             _manager = manager;
             _pointOfInterest = GetComponent<PointOfInterest>();
             manager.setState(DogState.Eat);
-            initialPos = food.transform.position= new Vector3(0,0,0);
         }
 
         public override void InteractionDuring()
@@ -29,8 +28,7 @@ namespace PointOfInterestCode.POIactions
             {
                 sTime++;
                 _manager.RestoreEnergy(RestoreRate);
-                food.transform.position = new Vector3(0, 0f, 0);
-                
+                bowlController.ChangeFill(bowlController.getBowlFill() - 0.1f);
             }
         }
 
@@ -39,21 +37,6 @@ namespace PointOfInterestCode.POIactions
             _pointOfInterest.canBeUsed = false;
             //TODO make bowl empty
 
-            food.transform.position = new Vector3(0, -0.07f, 0);
-
-            
-
-
         }
-        private void Update()
-        {
-            if (food.transform.position.y <= maxYPosition)
-            {
-
-                food.transform.Translate(Vector3.up * Time.deltaTime);
-                //food.transform.position = initialPos;
-            }
-        }
-
     }
 }
