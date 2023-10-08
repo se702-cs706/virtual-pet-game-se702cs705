@@ -19,6 +19,7 @@ public class ModelPresenter : MonoBehaviour
 
     [SerializeField] private float multiplier;
     [SerializeField] private float predictionRate;
+    [SerializeField] private float eatingRate;
     [Header("View")] 
     [SerializeField] private AnimatorController view;
 

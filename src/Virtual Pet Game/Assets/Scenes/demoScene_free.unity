@@ -14733,11 +14733,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RestoreRate: 0
+  bowlController: {fileID: 1233880067}
 --- !u!4 &1233880066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 102113175538579660, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
   m_PrefabInstance: {fileID: 1511689043}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1233880067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8815259994808008293, guid: b146ca09e7d66da47a964b4d8b1cd406, type: 3}
+  m_PrefabInstance: {fileID: 1511689043}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233880060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4b328195e58f3498c0ee323dd6f134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1235041497 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 942762337184432749, guid: b9c7a183a7a2e004cb24435cb080a708, type: 3}
