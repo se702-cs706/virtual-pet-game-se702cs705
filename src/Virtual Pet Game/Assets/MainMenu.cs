@@ -1,15 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : MetricsTracker
 {
 
     public int currentMode = 1;  //mode 1: Practice, mode 2: Study
     public GameObject selectModel;
     public GameObject MainSettings;
     public GameObject GamePlay;
+
+    public static event Action GameStart;
 
     public void PlayGame()
     {
@@ -24,6 +27,8 @@ public class MainMenu : MonoBehaviour
             GamePlay.SetActive(true);
             MainSettings.SetActive(false);
         }
+
+        presenter.LogInfo("Start game.");
     }
 
     public void SetUserMode(int userInput)
