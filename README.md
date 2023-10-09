@@ -26,6 +26,11 @@ Opening the "/src/Virtual Pet Game" folder in Unity Hub should open up the proje
 
 To run the game directly, releases should contain the binary zip files of compiled executables for that version. Simply downloading and unzipping them should allow the executable to be run.
 
+For Windows, metrics are saved in "C:/Users/\<User Name\>/AppData/LocalLow/DefaultCompany/Virtual Pet Game".
+
+For MacOS, metrics are saved in "/Users/\<User Name\>/Library/Application Support/DefaultCompany/Virtual Pet Game".
+
+
 ## Playing the Game
 The game will give you a small environment to play with the dog, but first, there are some options given to the player. <br /><br />
 When you enter the game, you will begin with a menu, as seen in Fig 2. If you press play, you will be allowed to choose between the two models, and your choice will lead you straight into the game with the model of your choosing. You can also select modes to switch between Practice and Study, where Study will actively read data about the game while you play for the sake of the study, while Practice will not.<br /><br />
