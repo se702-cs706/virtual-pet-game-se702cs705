@@ -101,6 +101,7 @@ Below are the distinctions between our initial project plan and the final implem
 *	Other interactions detailed in the project plan, like throwing the ball and petting the dog, were successfully implemented.
 *	We did not go with Firebase as the way to persist data, a JSON file containing all the record data is created after each session.
 *	We remained consistent with our choice of Unity as our game engine.
+*	In the implementation, users have the option to switch between the "study" and the "practice" modes; if the user is in the "study" mode, various user interactions will be stored, whereas in the "practice" mode, the database will not be populated. This was not mentioned in the initial project plan.
 
 
 ## Licences
