@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5cab190983f0b439c940f095582ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InheritInterestLevel: 15
+  InheritInterestLevel: 10
   InterestLevel: 0
   InterestRadius: 20
   InteractionDistance: 1

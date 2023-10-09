@@ -28,20 +28,13 @@ namespace PointOfInterestCode.POIactions
             _particleSystem.Stop();
             _pointOfInterest.canBeUsed = false;
 
-            Debug.Log("Set treasure to false");
-
             if (_manager.getHolding() != null && treasure == null)
             {
                 // bury treasure
                 treasure = _manager.getHolding();
                 _manager.setHolding(null);
             }
-            if (_manager.getHolding() != null && treasure != null)
-            {
-                // nothing happens
-            }
-
-            if (_manager.getHolding() == null && treasure != null)
+            else if (_manager.getHolding() == null && treasure != null)
             {
                 //reveal treasure
                 treasure.SetActive(true);

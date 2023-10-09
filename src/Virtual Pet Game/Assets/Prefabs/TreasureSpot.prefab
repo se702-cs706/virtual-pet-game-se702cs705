@@ -4893,6 +4893,6 @@ MonoBehaviour:
   InterestRadius: 20
   InteractionDistance: 0.2
   InterestTime: 4
-  InheritInterestCooldown: 0
+  InheritInterestCooldown: 50
   InterestType: 2
   interaction: {fileID: 5667434280738377384}
