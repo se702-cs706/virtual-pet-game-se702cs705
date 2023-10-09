@@ -61,7 +61,7 @@ States are the driving force making the dog perform all of its actions. Examples
 Adding a new state requires creating new "Concrete States" in the folder "Assets/Scripts/States/ConcreteStates/" as shown in Fig x. For each new Concrete State to be added, a new State Parameter class should be defined along with it. This parameter is how the State Factory will use to instantiate a new state.
 
 ![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79814775/ade882d8-8076-4c30-97cb-ac5483d5f898)
-Figure x - States folder structure.
+<br />Figure x - States folder structure.<br />
 
 Each State has a State Enter, State Update, and State Exit function that defines the State. Abstract States define some of these. Any state using "Goal State" as a base state has to define a goal condition in which the state will run the new Update function until the goal condition returns true. Any state using "Timed State" as a base state overrides the goal condition as the pre-allocated time running out. The Exit condition can also be defined by returning a non-null State object during the Update. This way the state can be exited before the goal is completed.
 
