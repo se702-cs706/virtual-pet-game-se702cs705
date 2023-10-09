@@ -26,7 +26,9 @@ We are using Unity-Engine version 2022.3.8f1 as the current latest LTS version.
 We are using Firestore Database to persist interaction data. One using this repository should be able to connect up their own Firebase account to the game.
 
 ## How to run
-TODO
+Opening the "/src/Virtual Pet Game" folder in Unity Hub should open up the project in Editor View.
+
+To run the game directly, releases should contain the binary zip files of compiled executables for that version. Simply downloading and unzipping them should allow the executable to be ran.
 
 ## Playing the Game
 The game will give you a small environment to play with the dog, but first there are some options given to the player. <br /><br />
