@@ -12,10 +12,16 @@ using UnityEngine;
 /// Provides the presenter the ability to control the player.
 /// Also holds the player's state;
 /// </summary>
-public class PlayerController : MonoBehaviour
+public class PlayerController : MetricsTracker
 {
     [Header("Presenter")]
     [SerializeField] IPresenter characterPresenter;
+
+    // TODO: see if we can reference an interface instead.
+    [Header("Deps")]
+    [SerializeField] DogManager dogManager;
+    [SerializeField] private PointOfInterest pointOfInterest;
+    [SerializeField] float sitTime = 10;
 
     [Header("Movement")]
     [SerializeField] float moveSpeed;
@@ -50,7 +56,7 @@ public class PlayerController : MonoBehaviour
     
     
     [Header("ThrowBall")]
-    [Serialize] float throwForce;
+    [SerializeField] float throwForce;
     [SerializeField] GameObject BallObject;
     [SerializeField] private DogManager _manager;
     public bool hasBall = false;
@@ -210,14 +216,33 @@ public class PlayerController : MonoBehaviour
         // to see if it is about to hit anything.
         if (Physics.SphereCast(headPosition.position, interactionRadius, headOrientation.forward, out hit, interactionRange,layerMask))
         {
-            GameObject gameObject = hit.collider.gameObject;
-            if (gameObject == lastTargetObj)
+            GameObject colliderGameObject = hit.collider.gameObject;
+
+            if (colliderGameObject == lastTargetObj)
             {
                 return;
             }
 
-            lastTargetObj = gameObject;
-            IInteractable interactable = gameObject.GetComponent<InteractableObject>();
+
+            // Check if targeting dog
+            // FIXME: need a better way to identify whether targeting a dog
+            bool isTargetingDog = colliderGameObject.CompareTag("Dog");
+            bool isFixated = presenter.getIsFixated();
+            //Debug.Log(gameObject);
+
+            // If targeting dog (and was not previously), start fixation
+            if (isTargetingDog && !isFixated)
+            {
+                presenter.StartFixation();
+            }
+            else if (!isTargetingDog && isFixated)
+            {
+                presenter.StopFixation();
+            }
+
+            lastTargetObj = colliderGameObject;
+
+            IInteractable interactable = colliderGameObject.GetComponent<InteractableObject>();
 
             if (interactable != null)
             {
@@ -230,9 +255,17 @@ public class PlayerController : MonoBehaviour
             isTargetingInteractable = false;
             interactions = null;
             lastTargetObj = null;
+
+            // If not targeting dog anymore (but was before), stop fixation
+            if (presenter.getIsFixated())
+            {
+                presenter.StopFixation();
+            }
         }
+
+        //CheckIsTargetingDog(hit.collider.gameObject);
     }
-    
+
     /// <summary>
     /// Perform the interaction of index "i"
     /// </summary>
@@ -247,6 +280,10 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
+
+        // Log interaction metric
+        presenter.LogInteraction(interactions[i].GetName());
+
         // nullable 
         interactions?[i].Invoke(this);
         return true;
@@ -266,7 +303,7 @@ public class PlayerController : MonoBehaviour
         BallObject.SetActive(true);
         BallObject.GetComponent<PointOfInterest>().InterestLevel = 200;
         BallObject.transform.position = headPosition.position + (headOrientation.forward * 0.2f);
-        BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * 10, ForceMode.Impulse);
+        BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * throwForce, ForceMode.Impulse);
         hasBall = false;
         Debug.Log("thrown ball");
     }
@@ -285,5 +322,16 @@ public class PlayerController : MonoBehaviour
     public bool HasInteractions()
     {
         return interactions != null;
+    }
+
+
+    public void CallDog()
+    {
+        pointOfInterest.InterestLevel = 200;
+    }
+    
+    public void CommandDogToSit()
+    {
+        dogManager.startStateAction(DogState.Sit, sitTime);
     }
 }

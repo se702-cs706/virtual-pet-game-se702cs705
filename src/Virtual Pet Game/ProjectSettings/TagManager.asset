@@ -5,19 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - Dog
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CapsuleDog
   - Water
   - UI
   - ground
-  - 
+  - BetterDog
   - whatIsGround
   - Interactable
-  - 
-  - 
   - 
   - 
   - 
