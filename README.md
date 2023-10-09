@@ -99,7 +99,8 @@ Below are the distinctions between our initial project plan and the final implem
 *	New interactions that were not specified in the project plan were introduced. These include feeding the pet and the ability to issue voice commands like "sit, boy!" and "come here, boy!", as well as enabling the player to jump up and down.
 *	Some specific interactions detailed in the project plan, such as filling water and scooping poop, were not implemented.
 *	Other interactions detailed in the project plan, like throwing the ball and petting the dog, were successfully implemented.
-*	We remained consistent with our choice of Unity as our game engine and used Firebase to store our data.
+*	We did not go with Firebase as the way to persist data, a JSON file containing all the record data is created after each session.
+*	We remained consistent with our choice of Unity as our game engine.
 
 
 ## Licences
