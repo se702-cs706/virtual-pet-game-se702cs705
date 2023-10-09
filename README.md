@@ -25,6 +25,12 @@ What can they do while playing
 As this project was completed within the time frame of a bit over 1 month, a lot more work can be done on the project as well as the research study. This section will go over how to add to the code base and follow "best practice".
 
 ### Character
+#### How to Add Controls
+Adding new player controls requires modifying the files "CharacterPresenter" and "PlayerController" located in the folder "Assets/Scripts/Character/". Key binds can be added/modified in "KeyBindings" and "InputView".
+
+The "CharacterPresenter" handles incoming key presses then calls the appropriate function in the "PlayerController". Key presses come from "InputView".
+
+The "PlayerController" handles all the physics and movement of the player (what the player can do). This can be movement dictated by key presses (e.g. WASD for walking), or physics (e.g. player can walk up slopes).
 
 ### Dog
 #### How to Add States
