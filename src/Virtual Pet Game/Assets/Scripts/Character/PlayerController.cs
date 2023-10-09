@@ -302,7 +302,7 @@ public class PlayerController : MetricsTracker
         //Instantiate(BallPrefab, headPosition.position + (headOrientation.forward * 0.2f), headOrientation.rotation);
         BallObject.SetActive(true);
         BallObject.GetComponent<PointOfInterest>().InterestLevel = 200;
-        BallObject.transform.position = headPosition.position + (headOrientation.forward * 0.2f);
+        BallObject.transform.position = headPosition.position;
         BallObject.GetComponent<Rigidbody>().AddForce(headOrientation.forward * throwForce, ForceMode.Impulse);
         hasBall = false;
         Debug.Log("thrown ball");
