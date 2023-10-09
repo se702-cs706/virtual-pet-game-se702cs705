@@ -302,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bcd813704fc449548ae288af11e043d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  presenter: {fileID: 0}
   dogManager: {fileID: 0}
   pointOfInterest: {fileID: 6523894807892489845}
   sitTime: 4
@@ -533,3 +534,4 @@ MonoBehaviour:
   sensX: 1000
   sensY: 1000
   orientation: {fileID: 2730927236216639991}
+  metricsPresenter: {fileID: 0}
