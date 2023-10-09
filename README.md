@@ -31,7 +31,7 @@ As this project was completed within the time frame of a bit over 1 month, a lot
 States are the driving force making the dog perform all of its actions. Examples are: "ActionState" can play an animation from the dog's animator, and "WaitingState" will have the dog sit still and follow the playing around.
 
 Adding a new state requires creating new "Concrete States" in the folder "Assets/Scripts/States
-/ConcreteStates/". For each new Concrete State to be added, a new State Parameter class should be defined along with it. This parameter is how the State Factory will use to instnatiate a new state.
+/ConcreteStates/". For each new Concrete State to be added, a new State Parameter class should be defined along with it. This parameter is how the State Factory will use to instantiate a new state.
 
 Each State has a State Enter, State Update, and State Exit function that defines the State. Abstract States define some of these. Any state using "Goal State" as a base state has to define a goal condition in which the state will run the new Update function until the goal condition returns true. Any state using "Timed State" as a base state overrides the goal condition as the pre-allocated time running out. The Exit condition can also be defined by returning a non-null State object during the Update. This way the state can be exited before the goal is completed.
 
