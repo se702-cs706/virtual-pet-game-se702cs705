@@ -1,4 +1,4 @@
-![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79814775/a8b826bf-e07f-438e-b29b-a4b2a84f3170)# virtual-pet-game-se702cs705
+# virtual-pet-game-se702cs705
 
 <b>A Video Game for Testing User Affection and Attachment based on Visual Perception of Virtual Pets</b><br />
 by @afon072, @AoMedium, @JoelDsouza01, @jzho987, @lche262, @Plak-xD, @timelesswanderder24.
