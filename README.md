@@ -114,5 +114,6 @@ Below are the distinctions between our initial project plan and the final implem
 *	We remained consistent with our choice of Unity as our game engine.
 *	In the implementation, users have the option to switch between the "study" and the "practice" modes; if the user is in the "study" mode, various user interactions will be stored, whereas in the "practice" mode, the database will not be populated. This was not mentioned in the initial project plan.
 
-
 ## Licences
+Unity: Unity Personal Licence.
+Red Deer Golden Retriever Asset: Single Entity - License applies to a single entity. Contractors are required to have their own, separate license.
