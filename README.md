@@ -51,6 +51,17 @@ The "CharacterPresenter" handles incoming key presses then calls the appropriate
 
 The "PlayerController" handles all the physics and movement of the player (what the player can do). This can be movement dictated by key presses (e.g. WASD for walking), or physics (e.g. player can walk up slopes).
 
+
+#### How to Add Voice Commands and Subtitles
+Voice commands can be added by first navigating in the Unity Hierarchy to Game Scene > Entities > Player Prefab > Speech. Here, add a new subtitle to the list of Subtitles with an ID, text for the voice command, and the expected duration.
+
+In order to trigger the voice command, add a new key bind in the KeyBindings script (as mentioned previously) dedicated to this voice command. Connect this key bind up with the Player in the "InputView" script.
+
+#### How to Add Metrics
+Game objects that wish to publish metrics should reference the MetricsManager GameObject in the scene. This allows them to call methods within the MetricsPresenter script to record any events or changes that occur during gameplay.
+
+Methods in the MetricsPresenter can also be called on button press (see example in Main Menu Prefab > Canvas > Model_options > VP_btn)
+
 ### Dog
 
 #### Adding Models
