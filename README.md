@@ -22,6 +22,24 @@ TODO
 What can they do while playing
 
 ## Future Work
-What can be done further
+As this project was completed within the time frame of a bit over 1 month, a lot more work can be done on the project as well as the research study. This section will go over how to add to the code base and follow "best practice".
+
+### Character
+
+### Dog
+#### How to Add States
+States are the driving force making the dog perform all of its actions. Examples are: "ActionState" can play an animation from the dog's animator, and "WaitingState" will have the dog sit still and follow the playing around.
+
+Adding a new state requires creating new "Concrete States" in the folder "Assets/Scripts/States
+/ConcreteStates/". For each new Concrete State to be added, a new State Parameter class should be defined along with it. This parameter is how the State Factory will use to instnatiate a new state.
+
+Each State has a State Enter, State Update, and State Exit function that defines the State. Abstract States define some of these. Any state using "Goal State" as a base state has to define a goal condition in which the state will run the new Update function until the goal condition returns true. Any state using "Timed State" as a base state overrides the goal condition as the pre-allocated time running out. The Exit condition can also be defined by returning a non-null State object during the Update. This way the state can be exited before the goal is completed.
+
+### Point Of Interest
+Point of Interests (POIs) are how Dog Interactions are handled. Each object the dog can interact with has a PointOfInterest component. This component stores relevant parameters for defining the interaction. 
+
+If the point of interest should also have a specific interaction to be performed, that can be defined by adding a DogInteraction Object to the GameObject. DogInteraction is not a full class and each new interaction should inherit the DogInteraction class and implement the on Start, on Update and on Exit functions, which define the interaction. 
+
+Note: the current implementation does not allow for the interaction to define an exit and the time has to run out. The interaction is played by the InteractionState, and the dog will start in that state when trying to interact with the POI.
 
 ## Licences
