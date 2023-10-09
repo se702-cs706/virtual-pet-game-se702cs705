@@ -31,6 +31,18 @@ public class MetricsPresenter : MonoBehaviour
         controller.AddInteraction(interactionEvent);
     }
 
+    public void StartGameMetrics()
+    {
+        CreateUserId();
+        StartPlayTime();
+    }
+
+    public void StopGameMetrics()
+    {
+        StopPlayTime();
+        controller.LogToFile();
+    }
+
 
     public void StartPlayTime()
     {
