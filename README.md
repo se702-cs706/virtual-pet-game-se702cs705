@@ -29,7 +29,11 @@ We are using Firestore Database to persist interaction data. One using this repo
 TODO
 
 ## Playing the Game
-What can they do while playing
+The game will give you a small environment to play with the dog, but first there are some options given to the player. <br /><br />
+When you enter the game, you will begin with a menu. If you press play, you will be allowed to choose between the two models, and your choice will lead you straight into the game with the model of your choosing. You can also select mode to switch between Practice and Study, where Study will actively read data about the game while you play for the sake of the study, while practice will not.<br /><br />
+In the game, you will find a small park with the dog and some other items for the environment. The dog will act on its own by walking around and eating, but you can call to yourself by holding <b>V</b> and pressing <b>2</b>. Alternatively, holding <b>V</b> and pressing <b>1</b> will instruct the dog to sit down.<br /><br />
+While you are close enough to the dog and looking at it, you can press <b>Left Click</b> to pet the dog. There will also be a ball in the map which you can pick up by pressing <b>Left Click</b> and throw by pressing <b>Q</b>.<br /><br />
+At any moment, you can press <b>P</b> to open the menu, which you can use to either go to the main menu, or change the dog model on the fly.
 
 ## Future Work
 As this project was completed within the time frame of a bit over 1 month, a lot more work can be done on the project as well as the research study. This section will go over how to add to the code base and follow "best practice".
