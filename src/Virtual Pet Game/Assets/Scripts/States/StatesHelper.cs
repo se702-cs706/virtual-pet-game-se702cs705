@@ -4,6 +4,11 @@ using UnityEngine;
 
 namespace States
 {
+    /// <summary>
+    /// A Helper method for creating states and sequences easily.
+    /// This class uses state factory to make states.
+    /// This should be the only place where a state factory is used.
+    /// </summary>
     public class StatesHelper
     {
         public static IState GetPOIActionStates(IStateActions _manager, StateFactory _stateFactory)
@@ -14,6 +19,7 @@ namespace States
                 IState next = null;
                 if (pointOfInterest.interaction != null)
                 {
+                    // dog takes ball and runs back to player
                     IState next2 = null;
                     if (pointOfInterest.CompareTag("Ball"))
                     {

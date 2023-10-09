@@ -25,7 +25,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] private float Energy = 10;
     [SerializeField] private float Excitement = 10;
     [SerializeField] private float EnergyDropRatePS = 0.01f;
-    [SerializeField] private float ExcitementDropRatePS = 1f;
     
     [Header("Speed Params")]
     [SerializeField] private float walkSpeed = 1;
@@ -80,7 +79,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         if (_time < 0)
         {
             _time += 1;
-            Energy = Math.Max(0,Energy - EnergyDropRatePS * controller._agent.velocity.magnitude);
+            Energy = Math.Max(0,Energy - EnergyDropRatePS * (1 + controller._agent.velocity.magnitude * 0.5f));
         }
     }
 
@@ -111,7 +110,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
             
             if (poi.InterestType == InterestType.food)
             {
-                poi.InterestLevel = poi.InheritInterestLevel + 10 - Energy;
+                poi.InterestLevel = poi.InheritInterestLevel + (10 - Energy) * 2;
             }
             
             if ((poi.transform.position - position).magnitude < poi.InterestRadius

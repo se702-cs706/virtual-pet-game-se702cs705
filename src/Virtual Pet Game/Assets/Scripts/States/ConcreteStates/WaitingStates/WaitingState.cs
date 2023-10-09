@@ -41,7 +41,7 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
             (_controller._agent.transform.position - Following.transform.position).magnitude >=
             Following.InteractionDistance + 0.4f)
         {
-            _manager.setExcitement(_manager.getExcitement() - 2);
+            _manager.setExcitement(_manager.getExcitement() - 4);
             return StatesHelper.GetRunToSequence(_stateFactory, _manager.getRunSpeed(), Following.InteractionDistance,7,Following.transform, lookAt: Following);
         }
         if (Following != null &&
