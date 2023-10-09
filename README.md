@@ -74,4 +74,14 @@ The project uses a script to control the dog's agent, found in the folder "Asset
 The NavMesh is a map attached to the scene to tell the dog where it can and cannot walk. It allows you to take separate objects in the scene and individually declare them as walkable terrain or unwalkable obstacles. Through these tools, you can create a map of the game world and make your code-controlled entities avoid obstacles along with the space near them, while telling them which parts of the game world they are allowed to walk along. Fig x. shows a NavMesh baked into the world to define paths the dog can walk along. Keep in mind that the NavMesh only defines where code-controlled entities such as the dog can and cannot walk; they have no impact on where the player is allowed to walk.<br /><br />
 ![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79771780/204ba93d-5b41-4862-8ba5-eee621f45d18)<br />Figure x - NavMesh Baked into the World, Where the Light Blue Region is Walkable Land for Entities, and Obstacles Cut Their Own Unwalkable Regions Around Them<br /><br />To create a NavMesh for objects in a scene, open the scene in Unity and go to <i>Window > AI > Navigation (Obsolete)</i>. This will open a window on the right which allows you to define what NavMesh properties items have. Simply click on an item, then go to the <i>Object</i> tab in the window, and tick the <i>Navigation Static</i> field. This will make the chosen object contribute to the NavMesh, and the <i>Navigation Area</i> field can allow you to choose how it affects the NavMesh (E.g walkable, unwalkable etc...). Do this for whatever objects you want to contribute to the NavMesh, then change to the <i>Bake</i> tab in the window. From here, you can choose parameters such as the radius or height of denial unwalkable objects contribute. When you press <i>Bake</i>, your specified objects will have their NavMesh properties added to the world.
 
+## Differences between the initial project plan and the implementation
+
+Our initial project plan outlined the primary objectives and provided a general framework for our project. Since then, we have developed a more detailed virtual pet game to gauge user perception.
+Below are the distinctions between our initial project plan and the final implementation:
+*	New interactions that were not specified in the project plan were introduced. These include feeding the pet and the ability to issue voice commands like "sit, boy!" and "come here, boy!", as well as enabling the player to jump up and down.
+*	Some specific interactions detailed in the project plan, such as filling water and scooping poop, were not implemented.
+*	Other interactions detailed in the project plan, like throwing the ball and petting the dog, were successfully implemented.
+*	We remained consistent with our choice of Unity as our game engine and used Firebase to store our data.
+
+
 ## Licences
