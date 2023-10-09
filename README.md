@@ -1,4 +1,4 @@
-# virtual-pet-game-se702cs705
+![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79814775/d430c673-6a21-4405-8002-8c909a9cc178)# virtual-pet-game-se702cs705
 
 <b>A Video Game for Testing User Affection and Attachment based on Visual Perception of Virtual Pets</b><br />
 by @afon072, @AoMedium, @JoelDsouza01, @jzho987, @lche262, @Plak-xD, @timelesswanderder24.
@@ -9,19 +9,17 @@ This virtual-pet game was developed to support a research study of "How does peo
 We believe our research can help encourage a wider usage of virtual pets by helping people get motivated to interact with them and form attachments with them, providing users with benefits such as mental health, education, and relaxation and companionship.
 
 ## System Prerequisites
-## Hardware Requirements:
+As the game is rendered with unity's HDRP, only these following systems work with the requirement. (Taken from Unity's Website https://unity.com/how-to/getting-started-with-hdrp)
+- Windows and Windows Store, with DirectX 11 or DirectX 12 and Shader Model 5.0
+- Modern consoles (minimum Sony PlayStation 4 or Microsoft Xbox One)
+- MacOS (minimum version 10.13) using Metal graphics
+- Linux and Windows platforms with Vulkan
+
 For optimal game experience and performance, we suggest to use the following configuraion:
 - Processor: Intel Core i5 or equivalent
 - Memory: 8 GB RAM
-- Storage: 40 GB available space
+- Storage: 1 GB available space
 - Graphic Card: optional
-
-## Software Requirements: 
-You will also need the following tools to access the game:
-- OS: Windows 7 SP1 64-bit, Windows 8.1 64-bit or Windows 10 64-bit, 2011 or newer Mac computer
-- Browser: Google Chrome, Latest Version
-- Unity 2020 or higher
-- Visual Studio
 
 ## Technology
 We are using Unity-Engine version 2022.3.8f1 as the current latest LTS version.
