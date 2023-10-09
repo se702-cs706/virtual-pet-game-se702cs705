@@ -304,7 +304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dogManager: {fileID: 0}
   pointOfInterest: {fileID: 6523894807892489845}
-  sitTime: 10
+  sitTime: 4
   moveSpeed: 5
   groundDrag: 5
   jumpForce: 4.5

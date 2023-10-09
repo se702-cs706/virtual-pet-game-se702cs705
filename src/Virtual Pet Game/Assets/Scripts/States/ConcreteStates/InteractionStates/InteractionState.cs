@@ -38,17 +38,17 @@ public class InteractionState : ActionState, InitializableState<InteractionState
     public override IState onGoalReached()
     {
         _interaction.InteractionEnd();
-        
-        if (_next != null)
+
+        if(_next != null)
         {
-            return base.onGoalReached();
+            return _next;
         }
-        
+
         if (_manager.getEnergy() > 7)
         {
             return StatesHelper.GetZoomiesState(_manager, _stateFactory);
         }
-        
-        return _next;
+
+        return StatesHelper.GetIdleState(_stateFactory);
     }
 }

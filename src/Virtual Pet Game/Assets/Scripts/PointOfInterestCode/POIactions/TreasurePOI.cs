@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace PointOfInterestCode.POIactions
 {
+    [RequireComponent(typeof(PointOfInterest))]
     public class TreasurePOI: DogInteraction
     {
         private IStateActions _manager;
@@ -25,6 +26,10 @@ namespace PointOfInterestCode.POIactions
         public override void InteractionEnd()
         {
             _particleSystem.Stop();
+            _pointOfInterest.canBeUsed = false;
+
+            Debug.Log("Set treasure to false");
+
             if (_manager.getHolding() != null && treasure == null)
             {
                 // bury treasure

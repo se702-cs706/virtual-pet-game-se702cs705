@@ -89,10 +89,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         {
             return null;
         }
-        if (pointsOfInterest.Count == 1)
-        {
-            return pointsOfInterest[0];
-        }
         
         var position = transform.position;
         var mostInterestPoi = null as PointOfInterest;
@@ -119,7 +115,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
                 mostInterestPoi = poi;
             }
         }
-        
+
         return mostInterestPoi;
     }
     
