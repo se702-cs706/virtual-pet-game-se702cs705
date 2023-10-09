@@ -36,9 +36,9 @@ The game will give you a small environment to play with the dog, but first, ther
 When you enter the game, you will begin with a menu, as seen in Fig 2. If you press play, you will be allowed to choose between the two models, and your choice will lead you straight into the game with the model of your choosing. You can also select modes to switch between Practice and Study, where Study will actively read data about the game while you play for the sake of the study, while Practice will not.<br /><br />
 ![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79771780/05653fe7-9771-4a58-8b1a-403431378f8a)<br />Figure 2 - Main Menu Where You Can Choose the Mode and Start Playing<br /><br />
 In the game, you will find a small park with the dog and some other items for the environment. The dog will act on its own by walking around and eating, but you can call to yourself by holding <b>V</b> and pressing <b>2</b>, like in Fig 3. Alternatively, holding <b>V</b> and pressing <b>1</b> will instruct the dog to sit down.<br /><br />
-![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79771780/476e59ae-e98e-443d-a96b-f3cf06082a90)<br />Figure 3 - Player Holding Down <b>V</b> to Open the Instruction Popup<br /><br />
+![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79771780/62b238da-72a4-4fa4-aad7-f642b32281f4)<br />Figure 3 - Player Holding Down <b>V</b> to Open the Instruction Popup<br /><br />
 While you are close enough to the dog and looking at it, you can press <b>Left Click</b> to pet the dog, as displayed in Fig 4. There will also be a ball in the map, which you can pick up by pressing <b>Left Click</b> and throw by pressing <b>Q</b>.<br /><br />
-![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79771780/6037462e-89c3-4f47-b994-4d969cc141c1)<br />Figure 4 - User Interacting with Dog. Ball is Also Shown in the Background.<br /><br />
+![image](https://github.com/se702-cs706/virtual-pet-game-se702cs705/assets/79771780/b2336237-e877-4a15-a445-b204b3b3d31c)<br />Figure 4 - User Interacting with Dog. Ball is Also Shown in the Background.<br /><br />
 At any moment, you can press <b>P</b> to open the menu, which you can use to either go to the main menu or change the dog model on the fly.
 
 ## Future Work
