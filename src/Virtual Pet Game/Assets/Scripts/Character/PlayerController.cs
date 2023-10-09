@@ -325,9 +325,13 @@ public class PlayerController : MetricsTracker
     }
 
 
-    public void CallDog()
+    public IEnumerator CallDog()
     {
         pointOfInterest.InterestLevel = 200;
+
+        yield return new WaitForSeconds(1f);
+
+        pointOfInterest.InterestLevel = 10;
     }
     
     public void CommandDogToSit()

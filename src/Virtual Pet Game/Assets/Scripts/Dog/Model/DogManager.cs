@@ -25,7 +25,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [SerializeField] private float Energy = 10;
     [SerializeField] private float Excitement = 10;
     [SerializeField] private float EnergyDropRatePS = 0.01f;
-    [SerializeField] private float ExcitementDropRatePS = 1f;
     
     [Header("Speed Params")]
     [SerializeField] private float walkSpeed = 1;
@@ -38,13 +37,14 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [Header("POIs")]
     [SerializeField] private List<PointOfInterest> pointsOfInterest;
     [SerializeField] private PointOfInterest playerPoi;
-    public PointOfInterest PointOfInterest { get; set; }
 
     public void Start()
     {
         StateFactory.Initiate(this,controller);
         var stateFactory = StateFactory.getInstance();
-        var next = StatesHelper.GetRunToPlayerSequence(stateFactory,runSpeed, playerPoi);
+        var next = 
+            StatesHelper.GetRunToSequence(stateFactory,runSpeed, playerPoi.InteractionDistance,playerPoi.InterestTime, 
+                playerPoi.transform, lookAt:playerPoi);
         _currentState = StatesHelper.GetActionState(stateFactory, DogState.Sit, 4, next);
         _currentState.onStateEnter();
     }
@@ -60,7 +60,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 
         HandleState();
         DropParams();
-        UpdatePointOfInterest();
     }
 
     private void HandleState()
@@ -80,29 +79,22 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         if (_time < 0)
         {
             _time += 1;
-            Energy = Math.Max(0,Energy - EnergyDropRatePS * controller._agent.velocity.magnitude);
-            Excitement = Math.Max(0,Excitement - ExcitementDropRatePS);
+            Energy = Math.Max(0,Energy - EnergyDropRatePS * (1 + controller._agent.velocity.magnitude * 0.5f));
         }
     }
 
-    private void UpdatePointOfInterest()
+    public PointOfInterest GetPointOfInterest()
     {
         if (pointsOfInterest.Count == 0)
         {
-            PointOfInterest = null;
-            return;
-        }
-        if (pointsOfInterest.Count == 1)
-        {
-            PointOfInterest = pointsOfInterest[0];
-            return;
+            return null;
         }
         
         var position = transform.position;
         var mostInterestPoi = null as PointOfInterest;
         foreach (var poi in pointsOfInterest)
         {
-            if (!poi.canBeUsed)
+            if (!poi.canBeUsed || poi.InterestLevel < 0)
             {
                 continue;
             }
@@ -114,7 +106,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
             
             if (poi.InterestType == InterestType.food)
             {
-                poi.InterestLevel = poi.InheritInterestLevel + 10 - Energy;
+                poi.InterestLevel = poi.InheritInterestLevel + (10 - Energy) * 2;
             }
             
             if ((poi.transform.position - position).magnitude < poi.InterestRadius
@@ -123,8 +115,8 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
                 mostInterestPoi = poi;
             }
         }
-        
-        PointOfInterest = mostInterestPoi;
+
+        return mostInterestPoi;
     }
     
     public float GetEnergy()
@@ -169,11 +161,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         return _state;
     }
-    
-    public void setLookAt(Transform lookAt)
-    {
-        //TODO implement sub
-    }
 
     public float getEnergy()
     {
@@ -183,7 +170,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     public void RestoreEnergy(float energy)
     {
         Energy += energy;
-        Energy = Math.Max(Energy, 10);
+        Energy = Math.Min(Energy, 10);
     }
 
     public float getExcitement()
@@ -191,10 +178,10 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         return Excitement;
     }
 
-    public void RaiseExcitement(float excitement)
+    public void setExcitement(float excitement)
     {
-        Excitement += excitement;
-        Excitement = Math.Max(Excitement, 10);
+        Excitement = excitement;
+        Excitement = Math.Clamp(Excitement, 0, 10);
     }
 
     public float getWalkSpeed()
@@ -232,18 +219,5 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     public void setHolding(GameObject gameObject)
     {
         holding = gameObject;
-    }
-
-
-
-
-
-
-
-
-    // TODO: actually implement this
-    public void GotoPlayer()
-    {
-        Debug.Log("Going to dog");
     }
 }

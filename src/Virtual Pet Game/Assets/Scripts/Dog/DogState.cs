@@ -11,4 +11,5 @@ public enum DogState
     Pet = 4,
     Eat = 5,
     Rest = 6,
+    Dig = 7,
 }

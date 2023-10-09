@@ -27,7 +27,7 @@ public class InteractionState : ActionState, InitializableState<InteractionState
     {
         _interaction.InteractionDuring();
         
-        if (_manager.PointOfInterest.InterestLevel > 100)
+        if (_manager.GetPointOfInterest().InterestLevel > 100)
         {
             return StatesHelper.GetPOIActionStates(_manager, _stateFactory);
         }
@@ -38,13 +38,17 @@ public class InteractionState : ActionState, InitializableState<InteractionState
     public override IState onGoalReached()
     {
         _interaction.InteractionEnd();
-        if (_next != null)
-        {
-            return base.onGoalReached();
-        }
-        else
+
+        if(_next != null)
         {
             return _next;
         }
+
+        if (_manager.getEnergy() > 7)
+        {
+            return StatesHelper.GetZoomiesState(_manager, _stateFactory);
+        }
+
+        return StatesHelper.GetIdleState(_stateFactory);
     }
 }

@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 2896813078000682434}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   presenter: {fileID: 0}
   dogManager: {fileID: 0}
   pointOfInterest: {fileID: 6523894807892489845}
-  sitTime: 10
+  sitTime: 4
   moveSpeed: 5
   groundDrag: 5
   jumpForce: 4.5
@@ -322,7 +322,7 @@ MonoBehaviour:
   interactionRadius: 0.3
   interactionRange: 2.5
   isTargetingInteractable: 0
-  throwForce: 25
+  throwForce: 15
   BallObject: {fileID: 0}
   _manager: {fileID: 0}
   hasBall: 0

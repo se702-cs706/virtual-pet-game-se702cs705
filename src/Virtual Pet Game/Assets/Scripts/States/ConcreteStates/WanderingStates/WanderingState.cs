@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using States;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WanderingState : TimedState, InitializableState<WanderingStateParams>
 {
@@ -23,26 +25,16 @@ public class WanderingState : TimedState, InitializableState<WanderingStateParam
     {
         if (!_controller.isMovingToTarget)
         {
-            var randPos = new Vector3(Random.Range(-5, 5), _controller._agent.transform.position.y, Random.Range(-5, 5)) + _controller._agent.transform.position;
-            if (randPos.x > 15)
+            var randPos = Vector3.negativeInfinity;
+            var path = new NavMeshPath();
+            do
             {
-                randPos.x = 15;
-            }
+                var position = _controller._agent.transform.position;
+                randPos =
+                    new Vector3(Random.Range(-6, 6), position.y, Random.Range(-6, 6)) +
+                    position;
+            } while (!_controller._agent.CalculatePath(randPos, path));
 
-            if (randPos.x < -15)
-            {
-                randPos.x = -15;
-            }
-
-            if (randPos.z > 10)
-            {
-                randPos.x = 10;
-            }
-
-            if (randPos.z < -20)
-            {
-                randPos.z = -20;
-            }
             _controller.target = randPos;
             _controller.isMovingToTarget = true;
             Debug.Log(_controller.target);
@@ -54,6 +46,11 @@ public class WanderingState : TimedState, InitializableState<WanderingStateParam
             {
                 _time = 10,
             });
+        }
+
+        if (_manager.GetPointOfInterest().InterestLevel > 100)
+        {
+            return StatesHelper.GetPOIActionStates(_manager, _stateFactory);
         }
 
         return null;
