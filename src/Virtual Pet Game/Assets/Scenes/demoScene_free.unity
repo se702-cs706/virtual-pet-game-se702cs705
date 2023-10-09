@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.77242875, g: 0.9104208, b: 0.99592954, a: 1}
+  m_IndirectSpecularColor: {r: 0.77267134, g: 0.9104185, b: 0.9959926, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -3817,6 +3817,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Scene
       objectReference: {fileID: 0}
+    - target: {fileID: 717487100242038851, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925932689435479204, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925932689435479204, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2696466388484463652, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.78061
@@ -3964,6 +3976,30 @@ PrefabInstance:
     - target: {fileID: 6844316435701066204, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
       propertyPath: InheritInterestLevel
       value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467610117366420977, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467610117366420977, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467610117366420977, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467610117366420977, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467610117366420977, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 103.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467610117366420977, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.380001
       objectReference: {fileID: 0}
     - target: {fileID: 8324051108919031386, guid: 2aa0ca2489acf2f4dad78a621fd777be, type: 3}
       propertyPath: mainMenu
