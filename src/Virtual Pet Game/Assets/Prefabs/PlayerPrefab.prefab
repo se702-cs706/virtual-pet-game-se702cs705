@@ -321,7 +321,7 @@ MonoBehaviour:
   interactionRadius: 0.3
   interactionRange: 2.5
   isTargetingInteractable: 0
-  throwForce: 0
+  throwForce: 15
   BallObject: {fileID: 0}
   _manager: {fileID: 0}
   hasBall: 0
