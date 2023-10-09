@@ -31,6 +31,6 @@ public class PettingAction : Interaction<PlayerController>
     public override void Invoke(PlayerController controller)
     {
         _dogManager.startStateAction(DogState.Pet, duration);
-        // TODO add player action
+        _dogManager.setExcitement(_dogManager.getExcitement() + 1);
     }
 }

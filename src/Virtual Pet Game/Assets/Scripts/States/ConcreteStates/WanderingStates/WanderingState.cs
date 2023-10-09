@@ -48,7 +48,7 @@ public class WanderingState : TimedState, InitializableState<WanderingStateParam
             });
         }
 
-        if (_manager.PointOfInterest.InterestLevel > 100)
+        if (_manager.GetPointOfInterest().InterestLevel > 100)
         {
             return StatesHelper.GetPOIActionStates(_manager, _stateFactory);
         }

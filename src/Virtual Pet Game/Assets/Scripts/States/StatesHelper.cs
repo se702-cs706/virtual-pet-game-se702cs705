@@ -8,25 +8,43 @@ namespace States
     {
         public static IState GetPOIActionStates(IStateActions _manager, StateFactory _stateFactory)
         {
-            if (_manager.PointOfInterest != null)
+            var pointOfInterest = _manager.GetPointOfInterest();
+            if (pointOfInterest != null)
             {
                 IState next = null;
-                if (_manager.PointOfInterest.interaction != null)
+                if (pointOfInterest.interaction != null)
                 {
+                    IState next2 = null;
+                    if (pointOfInterest.CompareTag("Ball"))
+                    {
+                        next2 = GetRunToPlayerSequence(_stateFactory, _manager.getRunSpeed(), _manager.getPlayerPoi(),
+                            lookAt: _manager.getPlayerPoi());
+                    }
+                    
                     next = _stateFactory.BuildState<InteractionState, InteractionStateParams>(
                     new InteractionStateParams()
                     {
-                        _interaction = _manager.PointOfInterest.interaction,
-                        _time = _manager.PointOfInterest.InterestTime,
+                        _next = next2,
+                        _interaction = pointOfInterest.interaction,
+                        _time = pointOfInterest.InterestTime,
                     });
+                }
+                else if(pointOfInterest.CompareTag("Player"))
+                {
+                    next = _stateFactory.BuildState<WaitingState, WaitingStateParams>(
+                        new WaitingStateParams()
+                        {
+                            _time = pointOfInterest.InterestTime,
+                            _lookAt = pointOfInterest,
+                        });
                 }
                 
                 return _stateFactory.BuildState<RunningToState, RunningToStateParams>(new RunningToStateParams()
                 {
                     _maxSpeed = _manager.getRunSpeed(),
                     _next = next,
-                    distance = _manager.PointOfInterest.InteractionDistance,
-                    _target = _manager.PointOfInterest.transform,
+                    distance = pointOfInterest.InteractionDistance,
+                    _target = pointOfInterest.transform,
                 });
             }
 

@@ -38,13 +38,14 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     [Header("POIs")]
     [SerializeField] private List<PointOfInterest> pointsOfInterest;
     [SerializeField] private PointOfInterest playerPoi;
-    public PointOfInterest PointOfInterest { get; set; }
 
     public void Start()
     {
         StateFactory.Initiate(this,controller);
         var stateFactory = StateFactory.getInstance();
-        var next = StatesHelper.GetRunToPlayerSequence(stateFactory,runSpeed, playerPoi, lookAt:playerPoi);
+        var next = 
+            StatesHelper.GetRunToSequence(stateFactory,runSpeed, playerPoi.InteractionDistance,playerPoi.InterestTime, 
+                playerPoi.transform, lookAt:playerPoi);
         _currentState = StatesHelper.GetActionState(stateFactory, DogState.Sit, 4, next);
         _currentState.onStateEnter();
     }
@@ -60,7 +61,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
 
         HandleState();
         DropParams();
-        UpdatePointOfInterest();
     }
 
     private void HandleState()
@@ -81,28 +81,25 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         {
             _time += 1;
             Energy = Math.Max(0,Energy - EnergyDropRatePS * controller._agent.velocity.magnitude);
-            Excitement = Math.Max(0,Excitement - ExcitementDropRatePS);
         }
     }
 
-    private void UpdatePointOfInterest()
+    public PointOfInterest GetPointOfInterest()
     {
         if (pointsOfInterest.Count == 0)
         {
-            PointOfInterest = null;
-            return;
+            return null;
         }
         if (pointsOfInterest.Count == 1)
         {
-            PointOfInterest = pointsOfInterest[0];
-            return;
+            return pointsOfInterest[0];
         }
         
         var position = transform.position;
         var mostInterestPoi = null as PointOfInterest;
         foreach (var poi in pointsOfInterest)
         {
-            if (!poi.canBeUsed)
+            if (!poi.canBeUsed || poi.InterestLevel < 0)
             {
                 continue;
             }
@@ -124,7 +121,7 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
             }
         }
         
-        PointOfInterest = mostInterestPoi;
+        return mostInterestPoi;
     }
     
     public float GetEnergy()
@@ -169,11 +166,6 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     {
         return _state;
     }
-    
-    public void setLookAt(Transform lookAt)
-    {
-        //TODO implement sub
-    }
 
     public float getEnergy()
     {
@@ -191,10 +183,10 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
         return Excitement;
     }
 
-    public void RaiseExcitement(float excitement)
+    public void setExcitement(float excitement)
     {
-        Excitement += excitement;
-        Excitement = Math.Max(Excitement, 10);
+        Excitement = excitement;
+        Excitement = Math.Clamp(Excitement, 0, 10);
     }
 
     public float getWalkSpeed()
@@ -232,18 +224,5 @@ public class DogManager : MonoBehaviour, IStateActions, IManagerModel
     public void setHolding(GameObject gameObject)
     {
         holding = gameObject;
-    }
-
-
-
-
-
-
-
-
-    // TODO: actually implement this
-    public void GotoPlayer()
-    {
-        Debug.Log("Going to dog");
     }
 }

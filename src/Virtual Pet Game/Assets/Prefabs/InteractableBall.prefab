@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5103092445316476418}
   m_Layer: 9
   m_Name: InteractableBall
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

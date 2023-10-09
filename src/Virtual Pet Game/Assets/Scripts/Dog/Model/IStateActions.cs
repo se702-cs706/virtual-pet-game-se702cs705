@@ -6,16 +6,15 @@ using UnityEngine;
 /// </summary>
 public interface IStateActions
 {
-    public PointOfInterest PointOfInterest { get; set; }
+    public PointOfInterest GetPointOfInterest();
     public void setState(DogState state);
     public void resetTime();
     public float getActionTime();
     public DogState getState();
-    public void setLookAt(Transform lookAt);
     public float getEnergy();
     public void RestoreEnergy(float energy);
     public float getExcitement();
-    public void RaiseExcitement(float excitement);
+    public void setExcitement(float excitement);
     public float getWalkSpeed();
     public float getRunSpeed();
     public float getSprintSpeed();

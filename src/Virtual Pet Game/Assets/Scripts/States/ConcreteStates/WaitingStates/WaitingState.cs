@@ -27,18 +27,29 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
         if (_manager.getState() != DogState.Idle)
         {
             var time = _manager.getActionTime();
-            return StatesHelper.GetPlayerActionState(_stateFactory, _manager.getState(), time, 5);
+            return StatesHelper.GetPlayerActionState(_stateFactory, _manager.getState(), time, 5, Following);
         }
 
-        if (_manager.PointOfInterest.InterestLevel > 100)
+        if (_manager.GetPointOfInterest().InterestLevel > 100)
         {
+            _manager.setExcitement(_manager.getExcitement() + 3);
             return StatesHelper.GetPOIActionStates(_manager, _stateFactory);
         }
 
-        if (Following != null && (_controller._agent.transform.position - Following.transform.position).magnitude >=
+        if (Following != null &&
+            _manager.getExcitement() > 5 &&
+            (_controller._agent.transform.position - Following.transform.position).magnitude >=
             Following.InteractionDistance + 0.4f)
         {
+            _manager.setExcitement(_manager.getExcitement() - 2);
             return StatesHelper.GetRunToSequence(_stateFactory, _manager.getRunSpeed(), Following.InteractionDistance,7,Following.transform, lookAt: Following);
+        }
+        if (Following != null &&
+             _manager.getExcitement() < 5 &&
+             (_controller._agent.transform.position - Following.transform.position).magnitude >=
+             Following.InteractionDistance + 0.4f)
+        {
+            return getFinishedState();
         }
 
         return null;
@@ -46,12 +57,16 @@ public class WaitingState : TimedState, InitializableState<WaitingStateParams>
 
     public override IState onGoalReached()
     {
-        return StatesHelper.GetPOIActionStates( _manager, _stateFactory);
+        return getFinishedState();
     }
 
     public override void onStateExit()
     {
-        _manager.setLookAt(null);
+    }
+
+    private IState getFinishedState()
+    {
+        return StatesHelper.GetPOIActionStates( _manager, _stateFactory);
     }
 
 }
