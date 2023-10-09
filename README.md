@@ -9,7 +9,19 @@ This virtual-pet game was developed to support a research study of "How does peo
 We believe our research can help encourage a wider usage of virtual pets by helping people get motivated to interact with them and form attachments with them, providing users with benefits such as mental health, education, and relaxation and companionship.
 
 ## System Prerequisites
-Stuff someone needs to run this
+## Hardware Requirements:
+For optimal game experience and performance, we suggest to use the following configuraion:
+- Processor: Intel Core i5 or equivalent
+- Memory: 8 GB RAM
+- Storage: 40 GB available space
+- Graphic Card: optional
+
+## Software Requirements: 
+You will also need the following tools to access the game:
+- OS: Windows 7 SP1 64-bit, Windows 8.1 64-bit or Windows 10 64-bit, 2011 or newer Mac computer
+- Browser: Google Chrome, Latest Version
+- Unity 2020 or higher
+- Visual Studio
 
 ## Technology
 We are using Unity-Engine version 2022.3.8f1 as the current latest LTS version.
