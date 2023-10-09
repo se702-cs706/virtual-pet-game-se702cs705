@@ -116,4 +116,5 @@ Below are the distinctions between our initial project plan and the final implem
 
 ## Licences
 Unity: Unity Personal Licence.
+
 Red Deer Golden Retriever Asset: Single Entity - License applies to a single entity. Contractors are required to have their own, separate license.
